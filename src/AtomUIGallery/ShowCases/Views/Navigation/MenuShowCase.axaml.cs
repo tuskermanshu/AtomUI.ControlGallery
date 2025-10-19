@@ -25,6 +25,7 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
                 InitNavMenuTreeNodes(viewModel);
                 InitMenuTreeNodes(viewModel);
                 InitContextMenuItems(viewModel);
+                InitMenuFlyoutMenuItems(viewModel);
             }
         });
         InitializeComponent();
@@ -173,5 +174,50 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
             ItemKey = "4"
         });
         viewModel.NavMenuItems = nodes;
+    }
+
+    private void InitMenuFlyoutMenuItems(MenuViewModel viewModel)
+    {
+
+        var nodes = new List<IMenuItemData>();
+        nodes.Add(new MenuItemData()
+        {
+            Header       = "Cut",
+            InputGesture = KeyGesture.Parse("Ctrl+X"),
+            Icon = AntDesignIconPackage.ScissorOutlined(),
+        });
+        nodes.Add(new MenuItemData() {
+                Header       = "Copy",
+                InputGesture = KeyGesture.Parse("Ctrl+C"),
+                Icon         = AntDesignIconPackage.CopyOutlined(),
+            }
+        );
+        nodes.Add(new MenuItemData() {
+                Header       = "Delete",
+                InputGesture = KeyGesture.Parse("Ctrl+D"),
+                Icon         = AntDesignIconPackage.DeleteOutlined(),
+            }
+        );
+        
+        nodes.Add(new MenuItemData() {
+                Header    = "Paste",
+                Children = [
+                    new MenuItemData()
+                    {
+                        Header       = "Paste",
+                        InputGesture = KeyGesture.Parse("Ctrl+P"),
+                        Icon         = AntDesignIconPackage.FileDoneOutlined(),
+                    },
+                    new MenuSeparatorData(),
+                    new MenuItemData()
+                    {
+                        Header       = "Paste from History",
+                        InputGesture = KeyGesture.Parse("Ctrl+Shift+V"),
+                    }
+                ]
+            }
+        );
+
+        viewModel.MenuFlyoutItems = nodes;
     }
 }
