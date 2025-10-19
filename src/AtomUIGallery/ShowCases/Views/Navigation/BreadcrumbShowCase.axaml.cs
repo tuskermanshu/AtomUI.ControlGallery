@@ -1,8 +1,10 @@
 using AtomUI.Controls;
+using AtomUI.Controls.Primitives;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.ReactiveUI;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.Views;
 
@@ -12,6 +14,33 @@ public partial class BreadcrumbShowCase : ReactiveUserControl<BreadcrumbViewMode
     public BreadcrumbShowCase()
     {
         InitializeComponent();
+        this.WhenActivated(disposables =>
+        {
+            if (DataContext is BreadcrumbViewModel viewModel)
+            {
+                viewModel.BreadcrumbItems = [
+                    new BreadcrumbItemData()
+                    {
+                        Separator = ":",
+                        Content = "Location"
+                    },
+                    new BreadcrumbItemData()
+                    {
+                        NavigateContext = "#",
+                        Content = "Application Center"
+                    },
+                    new BreadcrumbItemData()
+                    {
+                        NavigateContext = "#",
+                        Content         = "Application List"
+                    },
+                    new BreadcrumbItemData()
+                    {
+                        Content         = "An Application"
+                    }
+                ];
+            }
+        });
     }
     
     protected override void OnAttachedToVisualTree(VisualTreeAttachmentEventArgs e)
