@@ -2,19 +2,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="AtomUIGallery.ShowCases.Views.TreeViewShowCase"
              xmlns:atom="https://atomui.net"
-             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls">
+             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
+             xmlns:viewModels="clr-namespace:AtomUIGallery.ShowCases.ViewModels">
     <gallerycontrols:ShowCasePanel>
         <gallerycontrols:ShowCaseItem
             Title="Basic"
             Description="The most basic usage, tell you how to use checkable, selectable, disabled, defaultExpandKeys, and etc.">
-            <atom:TreeView ToggleType="CheckBox" IsDefaultExpandAll="True">
-                <atom:TreeViewItem Header="parent 1">
-                    <atom:TreeViewItem Header="parent 1-0">
-                        <atom:TreeViewItem Header="leaf" IsChecked="True" />
-                        <atom:TreeViewItem Header="leaf" />
+            <atom:TreeView ToggleType="CheckBox"
+                           x:DataType="viewModels:TreeViewViewModel"
+                           DefaultExpandedPaths="{Binding BasicTreeViewDefaultExpandedPaths}"
+                           DefaultSelectedPaths="{Binding BasicTreeViewDefaultSelectedPaths}"
+                           DefaultCheckedPaths="{Binding BasicTreeViewDefaultCheckedPaths}">
+                <atom:TreeViewItem Header="parent 1" ItemKey="0-0">
+                    <atom:TreeViewItem Header="parent 1-0" ItemKey="0-0-0">
+                        <atom:TreeViewItem Header="leaf" ItemKey="0-0-0-0" IsEnabled="False"/>
+                        <atom:TreeViewItem Header="leaf" ItemKey="0-0-0-1" />
                     </atom:TreeViewItem>
-                    <atom:TreeViewItem Header="parent 1-1" IsChecked="True">
-                        <atom:TreeViewItem Header="sss" />
+                    <atom:TreeViewItem Header="parent 1-1" ItemKey="0-0-1">
+                        <atom:TreeViewItem Header="sss" ItemKey="0-0-1-0">
+                            <atom:TreeViewItem Header="ccc" ItemKey="0-0-1-0-0" />
+                        </atom:TreeViewItem>
+                        <atom:TreeViewItem Header="xxx" ItemKey="0-0-1-1">
+                            <atom:TreeViewItem Header="aaaa" ItemKey="0-0-1-1-0" />
+                        </atom:TreeViewItem>
                     </atom:TreeViewItem>
                 </atom:TreeViewItem>
             </atom:TreeView>
@@ -30,7 +40,7 @@
                 </atom:TreeViewItem>
             </atom:TreeView>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Tree with line"
             Description="Tree with connected line between nodes, turn on by showLine, customize the preset icon by switcherIcon.">
@@ -39,17 +49,17 @@
                     <TextBlock VerticalAlignment="Center">showLine:</TextBlock>
                     <atom:ToggleSwitch VerticalAlignment="Center" IsChecked="{Binding ShowLineSwitchChecked,Mode=TwoWay}" />
                 </StackPanel>
-
+        
                 <StackPanel Orientation="Horizontal" Spacing="10">
                     <TextBlock VerticalAlignment="Center" >showIcon:</TextBlock>
                     <atom:ToggleSwitch VerticalAlignment="Center" IsChecked="{Binding ShowIconSwitchChecked,Mode=TwoWay}" />
                 </StackPanel>
-
+        
                 <StackPanel Orientation="Horizontal" Spacing="10">
                     <TextBlock VerticalAlignment="Center">ShowLeafIcon:</TextBlock>
                     <atom:ToggleSwitch VerticalAlignment="Center" IsChecked="{Binding ShowLeafIconSwitchChecked,Mode=TwoWay}" />
                 </StackPanel>
-
+        
                 <atom:TreeView IsShowLine="{Binding ShowLineSwitchChecked}"
                                IsShowIcon="{Binding ShowIconSwitchChecked}"
                                IsShowLeafIcon="{Binding ShowLeafIconSwitchChecked}"
@@ -78,7 +88,7 @@
                 </atom:TreeView>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="draggable"
             Description="Drag treeNode to insert after the other treeNode or insert into the other parent TreeNode."

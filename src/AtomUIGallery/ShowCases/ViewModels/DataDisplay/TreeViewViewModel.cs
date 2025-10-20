@@ -1,4 +1,5 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls.Primitives;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
@@ -32,6 +33,30 @@ public class TreeViewViewModel : ReactiveObject, IRoutableViewModel
     {
         get => _showLeafIconSwitchChecked;
         set => this.RaiseAndSetIfChanged(ref _showLeafIconSwitchChecked, value);
+    }
+    
+    private IList<TreeNodePath>? _basicTreeViewDefaultExpandedPaths;
+
+    public IList<TreeNodePath>? BasicTreeViewDefaultExpandedPaths
+    {
+        get => _basicTreeViewDefaultExpandedPaths;
+        set => this.RaiseAndSetIfChanged(ref _basicTreeViewDefaultExpandedPaths, value);
+    }
+    
+    private IList<TreeNodePath>? _basicTreeViewDefaultSelectedPaths;
+
+    public IList<TreeNodePath>? BasicTreeViewDefaultSelectedPaths
+    {
+        get => _basicTreeViewDefaultSelectedPaths;
+        set => this.RaiseAndSetIfChanged(ref _basicTreeViewDefaultSelectedPaths, value);
+    }
+    
+    private IList<TreeNodePath>? _basicTreeViewDefaultCheckedPaths;
+
+    public IList<TreeNodePath>? BasicTreeViewDefaultCheckedPaths
+    {
+        get => _basicTreeViewDefaultCheckedPaths;
+        set => this.RaiseAndSetIfChanged(ref _basicTreeViewDefaultCheckedPaths, value);
     }
 
     public TreeViewViewModel(IScreen screen)
