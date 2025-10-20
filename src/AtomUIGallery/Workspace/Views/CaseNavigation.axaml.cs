@@ -32,7 +32,7 @@ public partial class CaseNavigation : UserControl
                 return;
             }
 
-            caseNavigationViewModel.NavigateTo(showCaseId);
+            caseNavigationViewModel.NavigateTo(showCaseId.Value.ToString());
         }
     }
 
