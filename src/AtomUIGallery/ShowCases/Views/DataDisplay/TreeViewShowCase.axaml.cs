@@ -1,5 +1,7 @@
-﻿using AtomUI.Controls.Primitives;
+﻿using AtomUI.Controls;
+using AtomUI.Controls.Primitives;
 using AtomUIGallery.ShowCases.ViewModels;
+using Avalonia.Interactivity;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
 
@@ -14,6 +16,7 @@ public partial class TreeViewShowCase : ReactiveUserControl<TreeViewViewModel>
             if (DataContext is TreeViewViewModel viewModel)
             {
                 InitBasicTreeViewData(viewModel);
+                viewModel.TreeViewNodeHoverMode = TreeItemHoverMode.Default;
             }
         });
         InitializeComponent();
@@ -36,5 +39,22 @@ public partial class TreeViewShowCase : ReactiveUserControl<TreeViewViewModel>
             new TreeNodePath("0-0/0-0-0"),
             new TreeNodePath("0-0/0-0-1")
         ];
+    }
+
+    private void HandleHoverModeChanged(object? sender, RoutedEventArgs e)
+    {
+        if (sender is RadioButton radioButton)
+        {
+            if (radioButton.IsChecked == true)
+            {
+                if (radioButton.Tag is TreeItemHoverMode hoverMode)
+                {
+                    if (DataContext is TreeViewViewModel viewModel)
+                    {
+                        viewModel.TreeViewNodeHoverMode = hoverMode;
+                    }
+                }
+            }
+        }
     }
 }

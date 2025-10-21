@@ -1,4 +1,5 @@
-﻿using AtomUI.Controls.Primitives;
+﻿using AtomUI.Controls;
+using AtomUI.Controls.Primitives;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
@@ -57,6 +58,14 @@ public class TreeViewViewModel : ReactiveObject, IRoutableViewModel
     {
         get => _basicTreeViewDefaultCheckedPaths;
         set => this.RaiseAndSetIfChanged(ref _basicTreeViewDefaultCheckedPaths, value);
+    }
+    
+    private TreeItemHoverMode _treeViewNodeHoverMode;
+
+    public TreeItemHoverMode TreeViewNodeHoverMode
+    {
+        get => _treeViewNodeHoverMode;
+        set => this.RaiseAndSetIfChanged(ref _treeViewNodeHoverMode, value);
     }
 
     public TreeViewViewModel(IScreen screen)
