@@ -188,6 +188,30 @@
                 </atom:SearchEdit>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
+        
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Search box with loading"
+            Description="Search loading when onSearch.">
+            <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
+                <atom:SearchEdit Watermark="input search loading default"
+                                 Width="400"
+                                 IsOperating="True"
+                                 HorizontalAlignment="Left"/>
+                <atom:SearchEdit Watermark="input search loading with enterButton" Width="400"
+                                 HorizontalAlignment="Left"
+                                 IsOperating="True"
+                                 SearchButtonStyle="Primary"/>
+
+                <atom:SearchEdit Watermark="input search text"
+                                 Width="400"
+                                 IsOperating="True"
+                                 HorizontalAlignment="Left"
+                                 SearchButtonStyle="Primary" 
+                                 SearchButtonText="Search" 
+                                 SizeType="Large"/>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
 
     </gallerycontrols:ShowCasePanel>
 </UserControl>
