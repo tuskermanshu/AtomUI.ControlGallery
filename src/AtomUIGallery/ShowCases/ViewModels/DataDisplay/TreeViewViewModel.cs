@@ -67,6 +67,14 @@ public class TreeViewViewModel : ReactiveObject, IRoutableViewModel
         get => _treeViewNodeHoverMode;
         set => this.RaiseAndSetIfChanged(ref _treeViewNodeHoverMode, value);
     }
+    
+    private List<ITreeViewItemData> _basicTreeNodes = [];
+    
+    public List<ITreeViewItemData> BasicTreeNodes
+    {
+        get => _basicTreeNodes;
+        set => this.RaiseAndSetIfChanged(ref _basicTreeNodes, value);
+    }
 
     public TreeViewViewModel(IScreen screen)
     {

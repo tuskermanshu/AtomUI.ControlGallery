@@ -17,6 +17,7 @@ public partial class TreeViewShowCase : ReactiveUserControl<TreeViewViewModel>
             {
                 InitBasicTreeViewData(viewModel);
                 viewModel.TreeViewNodeHoverMode = TreeItemHoverMode.Default;
+                InitBasicTreeNodes(viewModel);
             }
         });
         InitializeComponent();
@@ -36,8 +37,7 @@ public partial class TreeViewShowCase : ReactiveUserControl<TreeViewViewModel>
         
         viewModel.BasicTreeViewDefaultCheckedPaths =
         [
-            new TreeNodePath("0-0/0-0-0"),
-            new TreeNodePath("0-0/0-0-1")
+            new TreeNodePath("0-0/0-0-1/0-0-1-1")
         ];
     }
 
@@ -56,5 +56,67 @@ public partial class TreeViewShowCase : ReactiveUserControl<TreeViewViewModel>
                 }
             }
         }
+    }
+    
+    private void InitBasicTreeNodes(TreeViewViewModel viewModel)
+    {
+        viewModel.BasicTreeNodes = [
+            new TreeViewItemData()
+            {
+                Header  = "parent 1",
+                ItemKey = "0-0",
+                Children = [
+                    new TreeViewItemData()
+                    {
+                        Header  = "parent 1-0",
+                        ItemKey = "0-0-0",
+                        Children = [
+                            new TreeViewItemData()
+                            {
+                                Header    = "leaf 1",
+                                ItemKey   = "0-0-0-0",
+                                IsEnabled = false
+                            },
+                            new TreeViewItemData()
+                            {
+                                Header  = "leaf 2",
+                                ItemKey = "0-0-0-1"
+                            }
+                        ]
+                    },
+                    new TreeViewItemData()
+                    {
+                        Header  = "parent 1-1",
+                        ItemKey = "0-0-1",
+                        Children = [
+                            new TreeViewItemData()
+                            {
+                                Header    = "sss",
+                                ItemKey   = "0-0-1-0",
+                                Children = [
+                                    new TreeViewItemData()
+                                    {
+                                        Header  = "ccc",
+                                        ItemKey = "0-0-1-0-0"
+                                    }
+                                ]
+                            },
+                            new TreeViewItemData()
+                            {
+                                Header  = "xxx",
+                                ItemKey = "0-0-1-1",
+                                Children = [
+                                    new TreeViewItemData()
+                                    {
+                                        Header  = "aaaa",
+                                        ItemKey = "0-0-1-1-0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ];
     }
 }
