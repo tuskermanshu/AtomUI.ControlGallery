@@ -1,7 +1,4 @@
-﻿using AtomUI.Controls;
-using AtomUI.Fonts.AlibabaSans;
-using AtomUI.Theme;
-using AtomUI.Theme.Language;
+﻿using AtomUI.Fonts.AlibabaSans;
 using Avalonia;
 using Avalonia.Media;
 using Avalonia.ReactiveUI;
