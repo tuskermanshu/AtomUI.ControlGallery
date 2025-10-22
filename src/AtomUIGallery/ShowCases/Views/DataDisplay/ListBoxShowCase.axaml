@@ -2,7 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="AtomUIGallery.ShowCases.Views.ListBoxShowCase"
              xmlns:atom="https://atomui.net"
-             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls">
+             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
+             xmlns:viewModels="clr-namespace:AtomUIGallery.ShowCases.ViewModels">
     <gallerycontrols:ShowCasePanel>
         <gallerycontrols:ShowCaseItem
             Title="Basic usage"
@@ -15,6 +16,18 @@
             </atom:ListBox>
         </gallerycontrols:ShowCaseItem>
 
+        <gallerycontrols:ShowCaseItem
+            Title="Generate by template"
+            Description="Generate item by ItemsSource.">
+            <atom:ListBox ItemsSource="{Binding ListItems}" x:DataType="viewModels:ListBoxViewModel">
+                <atom:ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <atom:TextBlock Text="{Binding Content}"/>
+                    </DataTemplate>
+                </atom:ListBox.ItemTemplate>
+            </atom:ListBox>
+        </gallerycontrols:ShowCaseItem>
+        
         <gallerycontrols:ShowCaseItem
             Title="Hover effect"
             Description="Disabled item hover effect.">
