@@ -36,14 +36,14 @@ public partial class ListBoxShowCase : ReactiveUserControl<ListBoxViewModel>
             }
         });
         InitializeComponent();
-        // SelectionModeOptionGroup.OptionCheckedChanged += HandleSelectionModeOptionCheckedChanged;
+        SelectionModeOptionGroup.OptionCheckedChanged += HandleSelectionModeOptionCheckedChanged;
     }
 
     private void HandleSelectionModeOptionCheckedChanged(object? sender, OptionCheckedChangedEventArgs e)
     {
         if (DataContext is ListBoxViewModel viewModel)
         {
-            if (sender is OptionButton optionButton && optionButton.IsChecked == true && optionButton.Tag is SelectionMode selectionMode)
+            if (e.CheckedOption.IsChecked == true && e.CheckedOption.Tag is SelectionMode selectionMode)
             {
                 viewModel.SelectionMode = selectionMode;
             }
