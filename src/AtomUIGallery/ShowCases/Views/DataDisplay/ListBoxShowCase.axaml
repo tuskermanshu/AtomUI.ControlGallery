@@ -19,13 +19,38 @@
         <gallerycontrols:ShowCaseItem
             Title="Generate by template"
             Description="Generate item by ItemsSource.">
-            <atom:ListBox ItemsSource="{Binding ListItems}" x:DataType="viewModels:ListBoxViewModel">
+            <atom:ListBox ItemsSource="{Binding ListItems}"
+                          x:DataType="viewModels:ListBoxViewModel"
+                          IsShowSelectedIndicator="True">
                 <atom:ListBox.ItemTemplate>
                     <DataTemplate>
                         <atom:TextBlock Text="{Binding Content}"/>
                     </DataTemplate>
                 </atom:ListBox.ItemTemplate>
             </atom:ListBox>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Selection"
+            Description="You can set single selection, multiple selection or no selection.">
+           <StackPanel Spacing="20">
+               <StackPanel Orientation="Horizontal" Spacing="5" DockPanel.Dock="Top">
+                   <atom:TextBlock VerticalAlignment="Center">Selection Mode:</atom:TextBlock>
+                   <atom:OptionButtonGroup ButtonStyle="Solid" Name="SelectionModeOptionGroup">
+                       <atom:OptionButton IsChecked="True" Tag="{x:Static SelectionMode.Single}">Single</atom:OptionButton>
+                       <atom:OptionButton Tag="{x:Static SelectionMode.Multiple}">Multiple</atom:OptionButton>
+                       <atom:OptionButton Tag="{x:Static SelectionMode.Toggle}">Toggle</atom:OptionButton>
+                   </atom:OptionButtonGroup>
+               </StackPanel>
+               <atom:ListBox SelectionMode="{Binding SelectionMode}"
+                             x:DataType="viewModels:ListBoxViewModel"
+                             IsShowSelectedIndicator="True">
+                   <atom:ListBoxItem>Blue</atom:ListBoxItem>
+                   <atom:ListBoxItem>Green</atom:ListBoxItem>
+                   <atom:ListBoxItem>Red</atom:ListBoxItem>
+                   <atom:ListBoxItem>Yellow</atom:ListBoxItem>
+               </atom:ListBox>
+           </StackPanel>
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
@@ -38,7 +63,7 @@
                 <atom:ListBoxItem>Yellow</atom:ListBoxItem>
             </atom:ListBox>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Item disabled"
             Description="Disabled item.">

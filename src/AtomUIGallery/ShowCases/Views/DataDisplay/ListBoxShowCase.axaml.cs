@@ -1,5 +1,6 @@
 ﻿using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
+using Avalonia.Controls;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
 
@@ -31,8 +32,21 @@ public partial class ListBoxShowCase : ReactiveUserControl<ListBoxViewModel>
                         Content = "Yellow"
                     }
                 ];
+                viewModel.SelectionMode = SelectionMode.Single;
             }
         });
         InitializeComponent();
+        // SelectionModeOptionGroup.OptionCheckedChanged += HandleSelectionModeOptionCheckedChanged;
+    }
+
+    private void HandleSelectionModeOptionCheckedChanged(object? sender, OptionCheckedChangedEventArgs e)
+    {
+        if (DataContext is ListBoxViewModel viewModel)
+        {
+            if (sender is OptionButton optionButton && optionButton.IsChecked == true && optionButton.Tag is SelectionMode selectionMode)
+            {
+                viewModel.SelectionMode = selectionMode;
+            }
+        }
     }
 }

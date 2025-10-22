@@ -1,4 +1,5 @@
 ﻿using AtomUI.Controls;
+using Avalonia.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
@@ -19,6 +20,14 @@ public class ListBoxViewModel : ReactiveObject, IRoutableViewModel
         set => this.RaiseAndSetIfChanged(ref _listItems, value);
     }
 
+    private SelectionMode _selectionMode;
+    
+    public SelectionMode SelectionMode
+    {
+        get => _selectionMode;
+        set => this.RaiseAndSetIfChanged(ref _selectionMode, value);
+    }
+    
     public ListBoxViewModel(IScreen screen)
     {
         HostScreen = screen;
