@@ -74,5 +74,11 @@
                 <atom:ListBoxItem>Yellow</atom:ListBoxItem>
             </atom:ListBox>
         </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Empty"
+            Description="show empty indicator when no data.">
+            <atom:ListBox IsShowEmptyIndicator="True"/>
+        </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
 </UserControl>
