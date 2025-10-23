@@ -6,11 +6,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class ListBoxViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "ListBox";
+    public static TreeNodeKey ID = "ListBox";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private List<IListBoxItemData> _listItems = [];
     

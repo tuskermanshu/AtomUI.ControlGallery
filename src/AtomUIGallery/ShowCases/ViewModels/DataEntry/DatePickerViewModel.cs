@@ -7,11 +7,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class DatePickerViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "DatePicker";
+    public static TreeNodeKey ID = "DatePicker";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     private SizeType _pickerSizeType = SizeType.Middle;
 

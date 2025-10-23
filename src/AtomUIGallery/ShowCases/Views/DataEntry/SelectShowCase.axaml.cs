@@ -1,12 +1,12 @@
-﻿using AtomUIGallery.ShowCases.ViewModels;
+using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.Views;
 
-public partial class SliderShowCase : ReactiveUserControl<SliderViewModel>
+public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
 {
-    public SliderShowCase()
+    public SelectShowCase()
     {
         this.WhenActivated(disposables => { });
         InitializeComponent();

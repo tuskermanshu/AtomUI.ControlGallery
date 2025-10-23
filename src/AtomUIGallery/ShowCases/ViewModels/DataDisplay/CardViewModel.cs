@@ -1,15 +1,16 @@
-﻿using Avalonia.Media;
+﻿using AtomUI.Controls;
+using Avalonia.Media;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class CardViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Card";
+    public static TreeNodeKey ID = "Card";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private IBrush? _borderlessFrameBg;
 

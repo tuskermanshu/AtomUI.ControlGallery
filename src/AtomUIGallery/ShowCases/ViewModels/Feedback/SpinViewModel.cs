@@ -1,14 +1,15 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class SpinViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Spin";
+    public static TreeNodeKey ID = "Spin";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private bool _isLoadingSwitchChecked;
 

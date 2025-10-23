@@ -1,14 +1,15 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class SplitButtonViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "SplitButton";
+    public static TreeNodeKey ID = "SplitButton";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public SplitButtonViewModel(IScreen screen)
     {

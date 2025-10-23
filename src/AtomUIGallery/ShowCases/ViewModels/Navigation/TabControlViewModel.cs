@@ -8,11 +8,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class TabControlViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "TabControl";
+    public static TreeNodeKey ID = "TabControl";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     #region TabStrip
 

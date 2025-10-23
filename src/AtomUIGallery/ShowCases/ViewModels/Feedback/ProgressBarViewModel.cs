@@ -6,11 +6,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class ProgressBarViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "ProgressBar";
+    public static TreeNodeKey ID = "ProgressBar";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private LinearGradientBrush _twoStopsGradientStrokeColor;
 

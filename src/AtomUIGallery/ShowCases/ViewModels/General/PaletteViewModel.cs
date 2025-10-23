@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using AtomUI.Controls;
 using AtomUI.Theme.Palette;
 using ReactiveUI;
 
@@ -32,11 +33,11 @@ public class PresetPaletteInfoPair
 
 public class PaletteViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Palette";
+    public static TreeNodeKey ID = "Palette";
 
     public IScreen HostScreen { get; }
 
-    public string? UrlPathSegment { get; } = ID;
+    public string? UrlPathSegment { get; } = ID.ToString();
 
     public ObservableCollection<PresetPaletteInfoPair> PresetPaletteInfos { get; set; }
     

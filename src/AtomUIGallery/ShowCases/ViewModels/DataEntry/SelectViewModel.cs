@@ -3,16 +3,16 @@ using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
-public class ColorPickerViewModel : ReactiveObject, IRoutableViewModel
+public class SelectViewModel : ReactiveObject, IRoutableViewModel
 {
-    public static TreeNodeKey ID = "ColorPicker";
+    public static TreeNodeKey ID = "Select";
     
     public IScreen HostScreen { get; }
     
     public string UrlPathSegment { get; } = ID.ToString();
-
-    public ColorPickerViewModel(IScreen screen)
+        
+    public SelectViewModel(IScreen screen)
     {
-        HostScreen = screen;
+        HostScreen  = screen;
     }
 }

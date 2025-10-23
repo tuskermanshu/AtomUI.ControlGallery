@@ -1,14 +1,15 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class CalendarViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Calendar";
+    public static TreeNodeKey ID = "Calendar";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public CalendarViewModel(IScreen screen)
     {

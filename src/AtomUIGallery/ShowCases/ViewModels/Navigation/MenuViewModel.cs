@@ -7,11 +7,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class MenuViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Menu";
+    public static TreeNodeKey ID = "Menu";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private List<IMenuItemData> _menuItems = [];
     

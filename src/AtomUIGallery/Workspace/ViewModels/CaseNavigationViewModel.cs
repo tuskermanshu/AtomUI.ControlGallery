@@ -1,4 +1,5 @@
-﻿using AtomUIGallery.ShowCases.ViewModels;
+﻿using AtomUI.Controls;
+using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Threading;
 using ReactiveUI;
 
@@ -6,15 +7,15 @@ namespace AtomUIGallery.Workspace.ViewModels;
 
 public class CaseNavigationViewModel : ReactiveObject
 {
-    private Dictionary<string, Func<IRoutableViewModel>> _showCaseViewModelFactories;
-    private string? _currentShowCase;
+    private Dictionary<TreeNodeKey, Func<IRoutableViewModel>> _showCaseViewModelFactories;
+    private TreeNodeKey? _currentShowCase;
     private DispatcherTimer _dispatcherTimer;
 
     public IScreen HostScreen { get; }
 
     public CaseNavigationViewModel(IScreen hostScreen)
     {
-        _showCaseViewModelFactories = new Dictionary<string, Func<IRoutableViewModel>>();
+        _showCaseViewModelFactories = new Dictionary<TreeNodeKey, Func<IRoutableViewModel>>();
         HostScreen                  = hostScreen;
         RegisterShowCaseViewModels();
         _dispatcherTimer      =  new DispatcherTimer();
@@ -76,6 +77,7 @@ public class CaseNavigationViewModel : ReactiveObject
         _showCaseViewModelFactories.Add(LineEditViewModel.ID, () => new LineEditViewModel(HostScreen));
         _showCaseViewModelFactories.Add(NumberUpDownViewModel.ID, () => new NumberUpDownViewModel(HostScreen));
         _showCaseViewModelFactories.Add(RadioButtonViewModel.ID, () => new RadioButtonViewModel(HostScreen));
+        _showCaseViewModelFactories.Add(SelectViewModel.ID, () => new SelectViewModel(HostScreen));
         _showCaseViewModelFactories.Add(SliderViewModel.ID, () => new SliderViewModel(HostScreen));
         _showCaseViewModelFactories.Add(TimePickerViewModel.ID, () => new TimePickerViewModel(HostScreen));
         _showCaseViewModelFactories.Add(ToggleSwitchViewModel.ID, () => new ToggleSwitchViewModel(HostScreen));
@@ -107,7 +109,7 @@ public class CaseNavigationViewModel : ReactiveObject
         _showCaseViewModelFactories.Add(TabControlViewModel.ID, () => new TabControlViewModel(HostScreen));
     }
 
-    public void NavigateTo(string showCaseId)
+    public void NavigateTo(TreeNodeKey showCaseId)
     {
         if (_currentShowCase is not null && _currentShowCase == showCaseId)
         {

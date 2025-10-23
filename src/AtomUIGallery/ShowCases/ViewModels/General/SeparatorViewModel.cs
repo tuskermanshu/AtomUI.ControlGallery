@@ -1,14 +1,15 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class SeparatorViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Separator";
+    public static TreeNodeKey ID = "Separator";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public SeparatorViewModel(IScreen screen)
     {

@@ -1,14 +1,15 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class ComboBoxViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "ComboBox";
+    public static TreeNodeKey ID = "ComboBox";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
         
     private List<ComboBoxItemData> _comboBoxItems = [];

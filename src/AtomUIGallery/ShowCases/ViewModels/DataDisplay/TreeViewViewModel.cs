@@ -6,11 +6,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class TreeViewViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "TreeView";
+    public static TreeNodeKey ID = "TreeView";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private bool _showLineSwitchChecked = true;
 

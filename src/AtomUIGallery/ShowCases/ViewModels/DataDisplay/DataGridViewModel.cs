@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using AtomUI.Controls;
 using DynamicData;
 using ReactiveUI;
 
@@ -6,11 +7,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public partial class DataGridViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "DataGrid";
+    public static TreeNodeKey ID = "DataGrid";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public ObservableCollection<DataGridBaseInfo> BasicCaseDataSource { get; }
     public ObservableCollection<DataGridBaseInfo> FilterAndSorterDataSource { get; }

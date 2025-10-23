@@ -6,11 +6,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class ExpanderViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Expander";
+    public static TreeNodeKey ID = "Expander";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private ExpanderIconPosition _toggleIconPosition;
 

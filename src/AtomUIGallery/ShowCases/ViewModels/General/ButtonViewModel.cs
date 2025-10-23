@@ -8,12 +8,12 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class ButtonViewModel : ReactiveObject, IRoutableViewModel, IActivatableViewModel
 {
-    public const string ID = "Button";
+    public static TreeNodeKey ID = "Button";
 
     public IScreen HostScreen { get; }
     public ViewModelActivator Activator { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     private SizeType _buttonSizeType;
 

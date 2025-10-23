@@ -35,6 +35,7 @@ internal class en_US : LanguageProvider
     public const string DataEntry_NumberUpDown = "NumberUpDown";
     public const string DataEntry_RadioButton = "RadioButton";
     public const string DataEntry_ToggleSwitch = "ToggleSwitch";
+    public const string DataEntry_Select = "Select";
     public const string DataEntry_Slider = "Slider";
     public const string DataEntry_DatePicker = "DatePicker";
     public const string DataEntry_TimePicker = "TimePicker";

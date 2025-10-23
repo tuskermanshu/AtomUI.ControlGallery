@@ -1,14 +1,15 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class BoxPanelViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "BoxPanelShowCase";
+    public static TreeNodeKey ID = "BoxPanelShowCase";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public BoxPanelViewModel(IScreen screen)
     {

@@ -6,11 +6,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class SkeletonViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Skeleton";
+    public static TreeNodeKey ID = "Skeleton";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private bool _isSkeletonActive;
 
