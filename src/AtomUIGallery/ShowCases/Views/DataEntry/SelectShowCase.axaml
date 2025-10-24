@@ -8,7 +8,7 @@
             Title="Basic"
             Description="Basic Usage.">
             <WrapPanel ItemSpacing="10" LineSpacing="10">
-                <atom:Select Width="120">
+                <atom:Select Width="120" Mode="Single">
                     <atom:SelectOption Header="Jack"/>
                     <atom:SelectOption Header="Lucy"/>
                     <atom:SelectOption Header="yiminghe"/>
