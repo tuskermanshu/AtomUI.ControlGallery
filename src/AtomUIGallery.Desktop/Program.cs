@@ -53,7 +53,6 @@ internal class Program
                          .UsePlatformDetect()
                          .WithAlibabaSansFont()
                          .With(new Win32PlatformOptions())
-                         .WithAlibabaSansFont()
                          .LogToTrace();
         
     }
