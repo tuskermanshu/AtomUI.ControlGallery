@@ -7,14 +7,22 @@
         <gallerycontrols:ShowCaseItem
             Title="Basic"
             Description="Basic button spinner.">
-            <atom:ButtonSpinner>
-                <atom:TextBlock
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Center"
-                    Text="床前明月光" />
-            </atom:ButtonSpinner>
+            <StackPanel Orientation="Vertical" Spacing="20">
+                <atom:ButtonSpinner>
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner>
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+            </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Three sizes of Input"
             Description="There are three sizes of an button spinner: large (40px), default (32px) and small (24px).">
@@ -37,9 +45,28 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
+                
+                <atom:ButtonSpinner SizeType="Large">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner SizeType="Middle">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner SizeType="Small">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Variants"
             Description="Variants of Input.">
@@ -62,9 +89,28 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
+                
+                <atom:ButtonSpinner StyleVariant="Outline">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner StyleVariant="Filled">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner StyleVariant="Borderless">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Disabled"
             Description="Variants of disabled Input.">
@@ -87,9 +133,28 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
+                
+                <atom:ButtonSpinner StyleVariant="Outline" IsEnabled="False">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner StyleVariant="Filled" IsEnabled="False">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner StyleVariant="Borderless" IsEnabled="False">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Pre / Post tab"
             Description="Using pre and post tabs example.">
@@ -104,7 +169,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     RightAddOn="{atom:IconProvider Kind=SettingOutlined}"
                     Width="400"
@@ -114,7 +179,39 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
+                <atom:ButtonSpinner
+                    LeftAddOn="http://"
+                    Width="400"
+                    HorizontalAlignment="Left"
+                    InnerRightContent=".com">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                
+                <atom:ButtonSpinner
+                    LeftAddOn="http://"
+                    RightAddOn=".com"
+                    Width="400"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    RightAddOn="{atom:IconProvider Kind=SettingOutlined}"
+                    Width="400"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
                 <atom:ButtonSpinner
                     LeftAddOn="http://"
                     Width="400"
@@ -127,12 +224,12 @@
                 </atom:ButtonSpinner>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="prefix and suffix"
             Description="Add a prefix or suffix icons inside input.">
             <StackPanel Orientation="Vertical" Spacing="10">
-
+        
                 <atom:ButtonSpinner
                     InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
                     InnerRightContent="{atom:IconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}"
@@ -143,7 +240,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     InnerLeftContent="￥"
                     InnerRightContent="RMB"
@@ -154,7 +251,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     InnerLeftContent="￥" InnerRightContent="RMB" IsEnabled="False"
                     Width="400"
@@ -164,10 +261,44 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+                
+                
+                
+                <atom:ButtonSpinner
+                    InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
+                    InnerRightContent="{atom:IconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}"
+                    Width="400"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    InnerLeftContent="￥"
+                    InnerRightContent="RMB"
+                    Width="400"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    InnerLeftContent="￥" InnerRightContent="RMB" IsEnabled="False"
+                    Width="400"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Status"
             Description="Add status to Input with status, which could be error or warning.">
@@ -190,7 +321,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
@@ -201,7 +332,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
@@ -212,7 +343,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
@@ -224,7 +355,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
@@ -236,8 +367,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
-
+                
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
@@ -249,7 +379,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
@@ -261,7 +391,100 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+                
+                
+                
+                
+                
+                <atom:ButtonSpinner
+                    Status="Error"
+                    Width="400"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                <atom:ButtonSpinner
+                    Status="Warning"
+                    Width="400"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    Status="Error"
+                    Width="400"
+                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    Status="Warning"
+                    Width="400"
+                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    HorizontalAlignment="Left">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    Status="Error"
+                    Width="400"
+                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    HorizontalAlignment="Left"
+                    StyleVariant="Filled">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    Status="Warning"
+                    Width="400"
+                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    HorizontalAlignment="Left"
+                    StyleVariant="Filled">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+                
+                <atom:ButtonSpinner
+                    Status="Error"
+                    Width="400"
+                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    HorizontalAlignment="Left"
+                    StyleVariant="Borderless">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
+                <atom:ButtonSpinner
+                    Status="Warning"
+                    Width="400"
+                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    HorizontalAlignment="Left"
+                    StyleVariant="Borderless">
+                    <atom:TextBlock
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        Text="床前明月光" />
+                </atom:ButtonSpinner>
+        
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
