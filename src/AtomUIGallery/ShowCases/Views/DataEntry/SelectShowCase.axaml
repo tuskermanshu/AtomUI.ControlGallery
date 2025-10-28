@@ -6,13 +6,37 @@
     <gallerycontrols:ShowCasePanel>
         <gallerycontrols:ShowCaseItem
             Title="Basic"
-            Description="Basic Usage.">
+            Description="Basic Usage." OccupyEntireRow="False">
             <WrapPanel ItemSpacing="10" LineSpacing="10">
-                <atom:Select Width="120" Mode="Single">
-                    <atom:SelectOption Header="Jack"/>
-                    <atom:SelectOption Header="Lucy"/>
-                    <atom:SelectOption Header="yiminghe"/>
-                    <atom:SelectOption Header="Disabled" IsEnabled="False"/>
+                <atom:Select Mode="Single" PlaceholderText="Please select" Width="120">
+                    <atom:Select.DefaultValues>
+                        <x:String>lucy</x:String>
+                    </atom:Select.DefaultValues>
+                    <atom:SelectOption Header="Jack" Value="jack"/>
+                    <atom:SelectOption Header="Lucy" Value="lucy"/>
+                    <atom:SelectOption Header="yiminghe" Value="Yiminghe"/>
+                    <atom:SelectOption Header="Disabled" IsEnabled="False" Value="disabled"/>
+                </atom:Select>
+                
+                <atom:Select Mode="Single" PlaceholderText="Please select" IsEnabled="False" Width="120">
+                    <atom:Select.DefaultValues>
+                        <x:String>lucy</x:String>
+                    </atom:Select.DefaultValues>
+                    <atom:SelectOption Header="Lucy" Value="lucy"/>
+                </atom:Select>
+                
+                <atom:Select Mode="Single" PlaceholderText="Please select" IsLoading="True" Width="120">
+                    <atom:Select.DefaultValues>
+                        <x:String>lucy</x:String>
+                    </atom:Select.DefaultValues>
+                    <atom:SelectOption Header="Lucy" Value="lucy"/>
+                </atom:Select>
+                
+                <atom:Select Mode="Single" PlaceholderText="Please select" IsAllowClear="True" Width="120">
+                    <atom:Select.DefaultValues>
+                        <x:String>lucy</x:String>
+                    </atom:Select.DefaultValues>
+                    <atom:SelectOption Header="Lucy" Value="lucy"/>
                 </atom:Select>
             </WrapPanel>
         </gallerycontrols:ShowCaseItem>
