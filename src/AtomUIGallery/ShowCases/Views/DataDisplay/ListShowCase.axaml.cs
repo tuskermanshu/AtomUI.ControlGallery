@@ -6,28 +6,28 @@ using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.Views;
 
-public partial class ListBoxShowCase : ReactiveUserControl<ListBoxViewModel>
+public partial class ListShowCase : ReactiveUserControl<ListViewModel>
 {
-    public ListBoxShowCase()
+    public ListShowCase()
     {
         this.WhenActivated(disposables =>
         {
-            if (DataContext is ListBoxViewModel viewModel)
+            if (DataContext is ListViewModel viewModel)
             {
                 viewModel.ListItems = [
-                    new ListBoxItemData()
+                    new ListItemData()
                     {
                         Content = "Blue"
                     },
-                    new ListBoxItemData()
+                    new ListItemData()
                     {
                         Content = "Green"
                     },
-                    new ListBoxItemData()
+                    new ListItemData()
                     {
                         Content = "Red"
                     },
-                    new ListBoxItemData()
+                    new ListItemData()
                     {
                         Content = "Yellow"
                     }
@@ -41,7 +41,7 @@ public partial class ListBoxShowCase : ReactiveUserControl<ListBoxViewModel>
 
     private void HandleSelectionModeOptionCheckedChanged(object? sender, OptionCheckedChangedEventArgs e)
     {
-        if (DataContext is ListBoxViewModel viewModel)
+        if (DataContext is ListViewModel viewModel)
         {
             if (e.CheckedOption.IsChecked == true && e.CheckedOption.Tag is SelectionMode selectionMode)
             {

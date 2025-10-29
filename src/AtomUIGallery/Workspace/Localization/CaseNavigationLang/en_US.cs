@@ -52,7 +52,7 @@ internal class en_US : LanguageProvider
     public const string DataDisplay_Empty = "Empty";
     public const string DataDisplay_GroupBox = "GroupBox";
     public const string DataDisplay_InfoFlyout = "InfoFlyout";
-    public const string DataDisplay_ListBox = "ListBox";
+    public const string DataDisplay_List = "List";
     public const string DataDisplay_Segmented = "Segmented";
     public const string DataDisplay_Timeline = "Timeline";
     public const string DataDisplay_TreeView = "TreeView";

@@ -18,7 +18,7 @@ namespace AtomUIGallery.Workspace.Localization.CaseNavigationLang
         public static readonly LanguageResourceKey DataDisplay_Expander = new LanguageResourceKey("CaseNavigation.DataDisplay_Expander", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_GroupBox = new LanguageResourceKey("CaseNavigation.DataDisplay_GroupBox", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_InfoFlyout = new LanguageResourceKey("CaseNavigation.DataDisplay_InfoFlyout", "AtomUIGallery");
-        public static readonly LanguageResourceKey DataDisplay_ListBox = new LanguageResourceKey("CaseNavigation.DataDisplay_ListBox", "AtomUIGallery");
+        public static readonly LanguageResourceKey DataDisplay_List = new LanguageResourceKey("CaseNavigation.DataDisplay_List", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_Segmented = new LanguageResourceKey("CaseNavigation.DataDisplay_Segmented", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_Tag = new LanguageResourceKey("CaseNavigation.DataDisplay_Tag", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_Timeline = new LanguageResourceKey("CaseNavigation.DataDisplay_Timeline", "AtomUIGallery");

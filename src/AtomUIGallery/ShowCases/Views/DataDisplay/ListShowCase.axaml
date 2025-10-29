@@ -1,6 +1,6 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="AtomUIGallery.ShowCases.Views.ListBoxShowCase"
+             x:Class="AtomUIGallery.ShowCases.Views.ListShowCase"
              xmlns:atom="https://atomui.net"
              xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
              xmlns:viewModels="clr-namespace:AtomUIGallery.ShowCases.ViewModels">
@@ -8,26 +8,26 @@
         <gallerycontrols:ShowCaseItem
             Title="Basic usage"
             Description="Basic usage example.">
-            <atom:ListBox>
-                <atom:ListBoxItem>Blue</atom:ListBoxItem>
-                <atom:ListBoxItem>Green</atom:ListBoxItem>
-                <atom:ListBoxItem>Red</atom:ListBoxItem>
-                <atom:ListBoxItem>Yellow</atom:ListBoxItem>
-            </atom:ListBox>
+            <atom:List>
+                <atom:ListItem>Blue</atom:ListItem>
+                <atom:ListItem>Green</atom:ListItem>
+                <atom:ListItem>Red</atom:ListItem>
+                <atom:ListItem>Yellow</atom:ListItem>
+            </atom:List>
         </gallerycontrols:ShowCaseItem>
 
         <gallerycontrols:ShowCaseItem
             Title="Generate by template"
             Description="Generate item by ItemsSource.">
-            <atom:ListBox ItemsSource="{Binding ListItems}"
-                          x:DataType="viewModels:ListBoxViewModel"
+            <atom:List ItemsSource="{Binding ListItems}"
+                          x:DataType="viewModels:ListViewModel"
                           IsShowSelectedIndicator="True">
-                <atom:ListBox.ItemTemplate>
+                <atom:List.ItemTemplate>
                     <DataTemplate>
                         <atom:TextBlock Text="{Binding Content}"/>
                     </DataTemplate>
-                </atom:ListBox.ItemTemplate>
-            </atom:ListBox>
+                </atom:List.ItemTemplate>
+            </atom:List>
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
@@ -42,43 +42,43 @@
                        <atom:OptionButton Tag="{x:Static SelectionMode.Toggle}">Toggle</atom:OptionButton>
                    </atom:OptionButtonGroup>
                </StackPanel>
-               <atom:ListBox SelectionMode="{Binding SelectionMode}"
-                             x:DataType="viewModels:ListBoxViewModel"
+               <atom:List SelectionMode="{Binding SelectionMode}"
+                             x:DataType="viewModels:ListViewModel"
                              IsShowSelectedIndicator="True">
-                   <atom:ListBoxItem>Blue</atom:ListBoxItem>
-                   <atom:ListBoxItem>Green</atom:ListBoxItem>
-                   <atom:ListBoxItem>Red</atom:ListBoxItem>
-                   <atom:ListBoxItem>Yellow</atom:ListBoxItem>
-               </atom:ListBox>
+                   <atom:ListItem>Blue</atom:ListItem>
+                   <atom:ListItem>Green</atom:ListItem>
+                   <atom:ListItem>Red</atom:ListItem>
+                   <atom:ListItem>Yellow</atom:ListItem>
+               </atom:List>
            </StackPanel>
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
             Title="Hover effect"
             Description="Disabled item hover effect.">
-            <atom:ListBox DisabledItemHoverEffect="True">
-                <atom:ListBoxItem>Blue</atom:ListBoxItem>
-                <atom:ListBoxItem>Green</atom:ListBoxItem>
-                <atom:ListBoxItem>Red</atom:ListBoxItem>
-                <atom:ListBoxItem>Yellow</atom:ListBoxItem>
-            </atom:ListBox>
+            <atom:List DisabledItemHoverEffect="True">
+                <atom:ListItem>Blue</atom:ListItem>
+                <atom:ListItem>Green</atom:ListItem>
+                <atom:ListItem>Red</atom:ListItem>
+                <atom:ListItem>Yellow</atom:ListItem>
+            </atom:List>
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
             Title="Item disabled"
             Description="Disabled item.">
-            <atom:ListBox>
-                <atom:ListBoxItem>Blue</atom:ListBoxItem>
-                <atom:ListBoxItem>Green</atom:ListBoxItem>
-                <atom:ListBoxItem IsEnabled="False">Red</atom:ListBoxItem>
-                <atom:ListBoxItem>Yellow</atom:ListBoxItem>
-            </atom:ListBox>
+            <atom:List>
+                <atom:ListItem>Blue</atom:ListItem>
+                <atom:ListItem>Green</atom:ListItem>
+                <atom:ListItem IsEnabled="False">Red</atom:ListItem>
+                <atom:ListItem>Yellow</atom:ListItem>
+            </atom:List>
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
             Title="Empty"
             Description="show empty indicator when no data.">
-            <atom:ListBox IsShowEmptyIndicator="True"/>
+            <atom:List IsShowEmptyIndicator="True"/>
         </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
 </UserControl>

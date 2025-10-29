@@ -52,7 +52,7 @@ internal class zh_CN : LanguageProvider
     public const string DataDisplay_Empty = "Empty 空状态";
     public const string DataDisplay_GroupBox = "GroupBox 分组盒";
     public const string DataDisplay_InfoFlyout = "InfoFlyout 信息提示";
-    public const string DataDisplay_ListBox = "ListBox 列表";
+    public const string DataDisplay_List = "List 列表";
     public const string DataDisplay_Segmented = "Segmented 分段控制器";
     public const string DataDisplay_Timeline = "Timeline 时间轴";
     public const string DataDisplay_TreeView = "TreeView 树形控件";

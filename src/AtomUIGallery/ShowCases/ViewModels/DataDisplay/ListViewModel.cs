@@ -4,9 +4,9 @@ using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
-public class ListBoxViewModel : ReactiveObject, IRoutableViewModel
+public class ListViewModel : ReactiveObject, IRoutableViewModel
 {
-    public static TreeNodeKey ID = "ListBox";
+    public static TreeNodeKey ID = "List";
     
     public IScreen HostScreen { get; }
     
@@ -28,7 +28,7 @@ public class ListBoxViewModel : ReactiveObject, IRoutableViewModel
         set => this.RaiseAndSetIfChanged(ref _selectionMode, value);
     }
     
-    public ListBoxViewModel(IScreen screen)
+    public ListViewModel(IScreen screen)
     {
         HostScreen = screen;
     }
