@@ -111,11 +111,11 @@ public partial class DataGridShowCase : ReactiveUserControl<DataGridViewModel>
     {
         if (ShowTopPaginationCheckBox.IsChecked == true)
         {
-            BasicPagingCaseGrid.PaginationVisibility |= DataGridGridPaginationVisibility.Top;
+            BasicPagingCaseGrid.PaginationVisibility |= DataGridPaginationVisibility.Top;
         }
         else
         {
-            BasicPagingCaseGrid.PaginationVisibility &= ~DataGridGridPaginationVisibility.Top;
+            BasicPagingCaseGrid.PaginationVisibility &= ~DataGridPaginationVisibility.Top;
         }
     }
     
@@ -123,11 +123,11 @@ public partial class DataGridShowCase : ReactiveUserControl<DataGridViewModel>
     {
         if (ShowBottomPaginationCheckBox.IsChecked == true)
         {
-            BasicPagingCaseGrid.PaginationVisibility |= DataGridGridPaginationVisibility.Bottom;
+            BasicPagingCaseGrid.PaginationVisibility |= DataGridPaginationVisibility.Bottom;
         }
         else
         {
-            BasicPagingCaseGrid.PaginationVisibility &= ~DataGridGridPaginationVisibility.Bottom;
+            BasicPagingCaseGrid.PaginationVisibility &= ~DataGridPaginationVisibility.Bottom;
         }
     }
     

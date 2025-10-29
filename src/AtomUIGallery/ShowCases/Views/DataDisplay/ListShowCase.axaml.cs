@@ -32,6 +32,25 @@ public partial class ListShowCase : ReactiveUserControl<ListViewModel>
                         Content = "Yellow"
                     }
                 ];
+                viewModel.ListItemsWidthDisabled = [
+                    new ListItemData()
+                    {
+                        Content = "Blue"
+                    },
+                    new ListItemData()
+                    {
+                        Content = "Green"
+                    },
+                    new ListItemData()
+                    {
+                        Content = "Red"
+                    },
+                    new ListItemData()
+                    {
+                        Content = "Yellow",
+                        IsEnabled = false
+                    }
+                ];
                 viewModel.SelectionMode = SelectionMode.Single;
             }
         });
