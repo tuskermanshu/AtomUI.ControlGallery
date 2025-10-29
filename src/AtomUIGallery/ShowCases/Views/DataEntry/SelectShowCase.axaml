@@ -40,5 +40,18 @@
                 </atom:Select>
             </WrapPanel>
         </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Select with search field"
+            Description="Search the options while expanded.">
+            <atom:Select Mode="Single" PlaceholderText="Please select" IsSearchEnabled="True">
+                <atom:Select.DefaultValues>
+                    <x:String>lucy</x:String>
+                </atom:Select.DefaultValues>
+                <atom:SelectOption Header="Jack" Value="jack"/>
+                <atom:SelectOption Header="Lucy" Value="lucy"/>
+                <atom:SelectOption Header="Tom" Value="tom"/>
+            </atom:Select>
+        </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
 </UserControl>
