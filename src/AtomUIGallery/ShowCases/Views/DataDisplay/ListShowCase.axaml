@@ -73,7 +73,7 @@
                 </atom:List.ItemTemplate>
             </atom:List>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Item disabled"
             Description="Disabled item.">
@@ -92,5 +92,36 @@
             Description="show empty indicator when no data.">
             <atom:List IsShowEmptyIndicator="True" />
         </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Filter"
+            Description="You can filter the data based on criteria; here we've filtered for items containing 'a'.">
+            <atom:List Name="FilteredList"
+                x:DataType="viewModels:ListViewModel"
+                       ItemsSource="{Binding GroupListItems}"
+                       IsGroupEnabled="False">
+                <atom:List.ItemTemplate>
+                    <DataTemplate x:DataType="atom:ListItemData">
+                        <atom:TextBlock Text="{Binding Content}" />
+                    </DataTemplate>
+                </atom:List.ItemTemplate>
+            </atom:List>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Ordered"
+            Description="We can sort according to specified attributes.">
+            <atom:List Name="OrderedList" 
+                       x:DataType="viewModels:ListViewModel"
+                       ItemsSource="{Binding GroupListItems}"
+                       IsGroupEnabled="True">
+                <atom:List.ItemTemplate>
+                    <DataTemplate x:DataType="atom:ListItemData">
+                        <atom:TextBlock Text="{Binding Content}" />
+                    </DataTemplate>
+                </atom:List.ItemTemplate>
+            </atom:List>
+        </gallerycontrols:ShowCaseItem>
+        
     </gallerycontrols:ShowCasePanel>
 </UserControl>

@@ -1,4 +1,6 @@
-﻿using AtomUI.Controls;
+﻿using System.Collections.Specialized;
+using AtomUI.Controls;
+using AtomUI.Controls.Data;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
 using Avalonia.ReactiveUI;
@@ -56,7 +58,9 @@ public partial class ListShowCase : ReactiveUserControl<ListViewModel>
             }
         });
         InitializeComponent();
-        // SelectionModeOptionGroup.OptionCheckedChanged += HandleSelectionModeOptionCheckedChanged;
+        SelectionModeOptionGroup.OptionCheckedChanged += HandleSelectionModeOptionCheckedChanged;
+        FilteredList.CollectionViewChanged += HandleFilterCollectionViewChanged;
+        OrderedList.CollectionViewChanged += HandleOrderedCollectionViewChanged;
     }
 
     private void HandleSelectionModeOptionCheckedChanged(object? sender, OptionCheckedChangedEventArgs e)
@@ -177,5 +181,25 @@ public partial class ListShowCase : ReactiveUserControl<ListViewModel>
             },
          
         ];
+    }
+
+    private void HandleFilterCollectionViewChanged(object? sender, ListCollectionViewChangedEventArgs e)
+    {
+        if (FilteredList.CollectionView != null)
+        {
+            FilteredList.CollectionView.FilterDescriptions.Add(new ListFilterDescription()
+            {
+                PropertyPath = "Content",
+                FilterConditions = ["a"]
+            });
+        }
+    }
+    
+    private void HandleOrderedCollectionViewChanged(object? sender, ListCollectionViewChangedEventArgs e)
+    {
+        if (OrderedList.CollectionView != null)
+        {
+            OrderedList.CollectionView.SortDescriptions.Add(ListSortDescription.FromPath("Content"));
+        }
     }
 }
