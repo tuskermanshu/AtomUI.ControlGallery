@@ -12,25 +12,25 @@ public class ListViewModel : ReactiveObject, IRoutableViewModel
     
     public string UrlPathSegment { get; } = ID.ToString();
     
-    private List<IListBoxItemData>? _listItems;
+    private List<IListItemData>? _listItems;
     
-    public List<IListBoxItemData>? ListItems
+    public List<IListItemData>? ListItems
     {
         get => _listItems;
         set => this.RaiseAndSetIfChanged(ref _listItems, value);
     }
     
-    private List<IListBoxItemData>? _listItemsWidthDisabled = [];
+    private List<IListItemData>? _listItemsWidthDisabled = [];
     
-    public List<IListBoxItemData>? ListItemsWidthDisabled
+    public List<IListItemData>? ListItemsWidthDisabled
     {
         get => _listItemsWidthDisabled;
         set => this.RaiseAndSetIfChanged(ref _listItemsWidthDisabled, value);
     }
     
-    private List<IListBoxItemData>? _groupListItems;
+    private List<IListItemData>? _groupListItems;
     
-    public List<IListBoxItemData>? GroupListItems
+    public List<IListItemData>? GroupListItems
     {
         get => _groupListItems;
         set => this.RaiseAndSetIfChanged(ref _groupListItems, value);
