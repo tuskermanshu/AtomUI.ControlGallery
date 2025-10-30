@@ -10,7 +10,8 @@
             Title="Basic usage"
             Description="Basic usage example.">
             <atom:List ItemsSource="{Binding ListItems}"
-                       x:DataType="viewModels:ListViewModel">
+                       x:DataType="viewModels:ListViewModel"
+                       IsItemSelectable="False">
                 <atom:List.ItemTemplate>
                     <DataTemplate x:DataType="atom:ListItemData">
                         <atom:TextBlock Text="{Binding Content}" />
