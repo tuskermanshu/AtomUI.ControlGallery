@@ -18,7 +18,7 @@
                 </atom:List.ItemTemplate>
             </atom:List>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Selection"
             Description="You can set single selection, multiple selection or no selection.">
@@ -43,13 +43,28 @@
                 </atom:List>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Hover effect"
             Description="Disabled item hover effect.">
             <atom:List DisabledItemHoverEffect="True"
                        x:DataType="viewModels:ListViewModel"
                        ItemsSource="{Binding ListItems}">
+                <atom:List.ItemTemplate>
+                    <DataTemplate x:DataType="atom:ListItemData">
+                        <atom:TextBlock Text="{Binding Content}" />
+                    </DataTemplate>
+                </atom:List.ItemTemplate>
+            </atom:List>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Group"
+            Description="You can group the data based on conditions.">
+            <atom:List x:DataType="viewModels:ListViewModel"
+                       ItemsSource="{Binding GroupListItems}"
+                       IsGroupEnabled="True"
+                       Height="300">
                 <atom:List.ItemTemplate>
                     <DataTemplate x:DataType="atom:ListItemData">
                         <atom:TextBlock Text="{Binding Content}" />
@@ -70,7 +85,7 @@
                 </atom:List.ItemTemplate>
             </atom:List>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Empty"
             Description="show empty indicator when no data.">

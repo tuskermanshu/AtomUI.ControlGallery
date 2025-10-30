@@ -27,6 +27,14 @@ public class ListViewModel : ReactiveObject, IRoutableViewModel
         get => _listItemsWidthDisabled;
         set => this.RaiseAndSetIfChanged(ref _listItemsWidthDisabled, value);
     }
+    
+    private List<IListBoxItemData>? _groupListItems;
+    
+    public List<IListBoxItemData>? GroupListItems
+    {
+        get => _groupListItems;
+        set => this.RaiseAndSetIfChanged(ref _groupListItems, value);
+    }
 
     private SelectionMode _selectionMode;
     
