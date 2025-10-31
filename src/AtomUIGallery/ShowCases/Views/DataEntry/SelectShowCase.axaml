@@ -12,46 +12,58 @@
                     <atom:Select.DefaultValues>
                         <x:String>lucy</x:String>
                     </atom:Select.DefaultValues>
-                    <atom:SelectOption Header="Jack" Value="jack"/>
-                    <atom:SelectOption Header="Lucy" Value="lucy"/>
-                    <atom:SelectOption Header="yiminghe" Value="Yiminghe"/>
-                    <atom:SelectOption Header="Disabled" IsEnabled="False" Value="disabled"/>
+                    <atom:SelectOption Header="Jack" Value="jack" />
+                    <atom:SelectOption Header="Lucy" Value="lucy" />
+                    <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    <atom:SelectOption Header="Disabled" IsEnabled="False" Value="disabled" />
                 </atom:Select>
-                
+
                 <atom:Select Mode="Single" PlaceholderText="Please select" IsEnabled="False" Width="120">
                     <atom:Select.DefaultValues>
                         <x:String>lucy</x:String>
                     </atom:Select.DefaultValues>
-                    <atom:SelectOption Header="Lucy" Value="lucy"/>
+                    <atom:SelectOption Header="Lucy" Value="lucy" />
                 </atom:Select>
-                
+
                 <atom:Select Mode="Single" PlaceholderText="Please select" IsLoading="True" Width="120">
                     <atom:Select.DefaultValues>
                         <x:String>lucy</x:String>
                     </atom:Select.DefaultValues>
-                    <atom:SelectOption Header="Lucy" Value="lucy"/>
+                    <atom:SelectOption Header="Lucy" Value="lucy" />
                 </atom:Select>
-                
+
                 <atom:Select Mode="Single" PlaceholderText="Please select" IsAllowClear="True" Width="120">
                     <atom:Select.DefaultValues>
                         <x:String>lucy</x:String>
                     </atom:Select.DefaultValues>
-                    <atom:SelectOption Header="Lucy" Value="lucy"/>
+                    <atom:SelectOption Header="Lucy" Value="lucy" />
                 </atom:Select>
             </WrapPanel>
         </gallerycontrols:ShowCaseItem>
-        
+
         <gallerycontrols:ShowCaseItem
             Title="Select with search field"
             Description="Search the options while expanded.">
             <atom:Select Mode="Single" PlaceholderText="Please select" IsSearchEnabled="True">
-                <atom:Select.DefaultValues>
-                    <x:String>lucy</x:String>
-                </atom:Select.DefaultValues>
-                <atom:SelectOption Header="Jack" Value="jack"/>
-                <atom:SelectOption Header="Lucy" Value="lucy"/>
-                <atom:SelectOption Header="Tom" Value="tom"/>
+                <atom:SelectOption Header="Jack" Value="jack" />
+                <atom:SelectOption Header="Lucy" Value="lucy" />
+                <atom:SelectOption Header="Tom" Value="tom" />
             </atom:Select>
         </gallerycontrols:ShowCaseItem>
+
+        <gallerycontrols:ShowCaseItem
+            Title="Custom Search"
+            Description="Customize search using filterOption, Case-sensitive search for Header.">
+            <atom:Select Name="CustomSearchSelect"
+                         Mode="Single"
+                         PlaceholderText="Select a person"
+                         IsSearchEnabled="True"
+                         OptionFilterProp="Header">
+                <atom:SelectOption Header="Jack" Value="jack" />
+                <atom:SelectOption Header="Lucy" Value="lucy" />
+                <atom:SelectOption Header="Tom" Value="tom" />
+            </atom:Select>
+        </gallerycontrols:ShowCaseItem>
+        
     </gallerycontrols:ShowCasePanel>
 </UserControl>
