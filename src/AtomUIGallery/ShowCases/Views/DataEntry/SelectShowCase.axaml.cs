@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
@@ -9,9 +10,15 @@ public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
 {
     public SelectShowCase()
     {
-        this.WhenActivated(disposables => { });
+        this.WhenActivated(disposables =>
+        {
+            if (DataContext is SelectViewModel viewModel)
+            {
+                InitializeRandomOptions(viewModel);
+            }
+        });
         InitializeComponent();
-        CustomSearchSelect.FilterFn = CustomFilter;
+        // CustomSearchSelect.FilterFn = CustomFilter;
     }
 
     public static bool CustomFilter(object value, object filterValue)
@@ -25,5 +32,34 @@ public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
             return false;
         }
         return valueStr.Contains(filterStr, StringComparison.Ordinal);
+    }
+
+    private void InitializeRandomOptions(SelectViewModel viewModel)
+    {
+        var options = new List<SelectOption>();
+        for (var i = 10; i < 36; i++)
+        {
+            var base36Str = ConvertToBase36(i);
+            options.Add(new SelectOption 
+            {
+                Header = base36Str + i,
+                Value = base36Str + i
+            });
+        }
+        viewModel.RandomOptions = options;
+    }
+    
+    public static string ConvertToBase36(int num)
+    {
+        if (num == 0) return "0";
+        const string chars  = "0123456789abcdefghijklmnopqrstuvwxyz";
+        string       result = "";
+        while (num > 0)
+        {
+            int remainder = num % 36;
+            result =  chars[remainder] + result;
+            num    /= 36;
+        }
+        return result;
     }
 }

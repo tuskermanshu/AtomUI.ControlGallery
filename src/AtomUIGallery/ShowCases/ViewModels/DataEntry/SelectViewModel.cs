@@ -10,6 +10,14 @@ public class SelectViewModel : ReactiveObject, IRoutableViewModel
     public IScreen HostScreen { get; }
     
     public string UrlPathSegment { get; } = ID.ToString();
+    
+    private List<SelectOption>? _randomOptions;
+
+    public List<SelectOption>? RandomOptions
+    {
+        get => _randomOptions;
+        set => this.RaiseAndSetIfChanged(ref _randomOptions, value);
+    }
         
     public SelectViewModel(IScreen screen)
     {
