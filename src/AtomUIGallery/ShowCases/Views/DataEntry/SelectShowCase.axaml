@@ -41,7 +41,7 @@
         <!--         </atom:Select> -->
         <!--     </WrapPanel> -->
         <!-- </gallerycontrols:ShowCaseItem> -->
-        <!-- -->
+        
         <!-- <gallerycontrols:ShowCaseItem -->
         <!--     Title="Select with search field" -->
         <!--     Description="Search the options while expanded."> -->
@@ -73,6 +73,7 @@
                          PlaceholderText="Select a person"
                          IsAllowClear="True"
                          HorizontalAlignment="Stretch"
+                         IsSearchEnabled="True"
                          x:DataType="viewModels:SelectViewModel"
                          OptionsSource="{Binding RandomOptions}"/>
         </gallerycontrols:ShowCaseItem>
