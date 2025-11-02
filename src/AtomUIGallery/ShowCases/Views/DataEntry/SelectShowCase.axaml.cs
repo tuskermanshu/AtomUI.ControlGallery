@@ -1,6 +1,8 @@
 using System.Diagnostics;
+using AtomUI;
 using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
+using Avalonia.Controls;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
 
@@ -61,5 +63,16 @@ public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
             num    /= 36;
         }
         return result;
+    }
+
+    private void HandleSizeTypeChanged(object? sender, OptionCheckedChangedEventArgs e)
+    {
+        if (DataContext is SelectViewModel viewModel)
+        {
+            if (e.CheckedOption.Tag is SizeType sizeType)
+            {
+                viewModel.SelectSizeType = sizeType;
+            }
+        }
     }
 }

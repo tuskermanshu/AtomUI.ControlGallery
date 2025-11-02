@@ -1,3 +1,4 @@
+using AtomUI;
 using AtomUI.Controls;
 using ReactiveUI;
 
@@ -17,6 +18,14 @@ public class SelectViewModel : ReactiveObject, IRoutableViewModel
     {
         get => _randomOptions;
         set => this.RaiseAndSetIfChanged(ref _randomOptions, value);
+    }
+    
+    private SizeType _selectSizeType;
+
+    public SizeType SelectSizeType
+    {
+        get => _selectSizeType;
+        set => this.RaiseAndSetIfChanged(ref _selectSizeType, value);
     }
         
     public SelectViewModel(IScreen screen)
