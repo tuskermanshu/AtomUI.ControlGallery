@@ -60,15 +60,27 @@
         <gallerycontrols:ShowCaseItem
             Title="multiple selection"
             Description="Multiple selection, selecting from existing items.">
-            <atom:Select Mode="Multiple"
-                         PlaceholderText="Select a person"
-                         IsAllowClear="True"
-                         HorizontalAlignment="Stretch"
-                         IsSearchEnabled="True"
-                         x:DataType="viewModels:SelectViewModel"
-                         OptionsSource="{Binding RandomOptions}"
-                         DefaultValues="a10, c12"
-                         />
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <atom:Select Mode="Multiple"
+                             PlaceholderText="Select a person"
+                             IsAllowClear="True"
+                             HorizontalAlignment="Stretch"
+                             IsSearchEnabled="True"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding RandomOptions}"
+                             DefaultValues="a10, c12"
+                />
+                <atom:Select Mode="Multiple"
+                             PlaceholderText="Select a person"
+                             IsAllowClear="True"
+                             HorizontalAlignment="Stretch"
+                             IsSearchEnabled="True"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding RandomOptions}"
+                             DefaultValues="a10, c12"
+                             IsEnabled="False"
+                />
+            </StackPanel>
         </gallerycontrols:ShowCaseItem>
         
     </gallerycontrols:ShowCasePanel>
