@@ -339,9 +339,26 @@
                              x:DataType="viewModels:SelectViewModel"
                              OptionsSource="{Binding MaxTagCountOptions}"
                              PlaceholderText="Select Item..."
-                             HorizontalAlignment="Stretch" 
+                             HorizontalAlignment="Stretch"
                              IsSearchEnabled="True"
                              IsResponsiveMaxTagCount="True"/>
+                
+                <atom:Select Mode="Multiple"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding MaxTagCountOptions}"
+                             PlaceholderText="Select Item..."
+                             IsEnabled="False"
+                             HorizontalAlignment="Stretch"
+                             IsSearchEnabled="True"
+                             IsResponsiveMaxTagCount="True"/>
+                
+                <atom:Select Mode="Multiple"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding MaxTagCountOptions}"
+                             PlaceholderText="Select Item..."
+                             HorizontalAlignment="Stretch" 
+                             IsSearchEnabled="True"
+                             MaxTagCount="5"/>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
         
