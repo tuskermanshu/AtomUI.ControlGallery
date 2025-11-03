@@ -16,6 +16,7 @@ public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
             if (DataContext is SelectViewModel viewModel)
             {
                 InitializeRandomOptions(viewModel);
+                InitializeMaxTagCountOptions(viewModel);
             }
         });
         InitializeComponent();
@@ -48,6 +49,21 @@ public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
             });
         }
         viewModel.RandomOptions = options;
+    }
+    
+    private void InitializeMaxTagCountOptions(SelectViewModel viewModel)
+    {
+        var options = new List<SelectOption>();
+        for (var i = 10; i < 36; i++)
+        {
+            var base36Str = ConvertToBase36(i);
+            options.Add(new SelectOption 
+            {
+                Header = $"Long label: {base36Str + i}",
+                Value  = base36Str + i
+            });
+        }
+        viewModel.MaxTagCountOptions = options;
     }
     
     public static string ConvertToBase36(int num)

@@ -20,6 +20,14 @@ public class SelectViewModel : ReactiveObject, IRoutableViewModel
         set => this.RaiseAndSetIfChanged(ref _randomOptions, value);
     }
     
+    private List<SelectOption>? _maxTagCountOptions;
+
+    public List<SelectOption>? MaxTagCountOptions
+    {
+        get => _maxTagCountOptions;
+        set => this.RaiseAndSetIfChanged(ref _maxTagCountOptions, value);
+    }
+    
     private SizeType _selectSizeType;
 
     public SizeType SelectSizeType

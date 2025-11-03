@@ -330,6 +330,20 @@
                 </atom:Select>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Responsive maxTagCount"
+            Description="Auto collapse to tag with responsive case. Not recommend use in large form case since responsive calculation has a perf cost.">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <atom:Select Mode="Multiple"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding MaxTagCountOptions}"
+                             PlaceholderText="Select Item..."
+                             HorizontalAlignment="Stretch" 
+                             IsSearchEnabled="True"
+                             IsResponsiveMaxTagCount="True"/>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
     </gallerycontrols:ShowCasePanel>
 </UserControl>
