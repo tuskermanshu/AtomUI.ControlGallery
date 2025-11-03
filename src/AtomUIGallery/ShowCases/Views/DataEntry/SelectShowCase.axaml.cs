@@ -2,7 +2,6 @@ using System.Diagnostics;
 using AtomUI;
 using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
-using Avalonia.Controls;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
 
@@ -20,7 +19,7 @@ public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
             }
         });
         InitializeComponent();
-        // CustomSearchSelect.FilterFn = CustomFilter;
+        CustomSearchSelect.FilterFn = CustomFilter;
     }
 
     public static bool CustomFilter(object value, object filterValue)
@@ -75,4 +74,10 @@ public partial class SelectShowCase : ReactiveUserControl<SelectViewModel>
             }
         }
     }
+}
+
+public record CustomOption : SelectOption
+{
+    public string? Description { get; set; }
+    public string? Emoji { get; set; }
 }

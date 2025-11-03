@@ -3,7 +3,8 @@
              x:Class="AtomUIGallery.ShowCases.Views.SelectShowCase"
              xmlns:atom="https://atomui.net"
              xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
-             xmlns:viewModels="clr-namespace:AtomUIGallery.ShowCases.ViewModels">
+             xmlns:viewModels="clr-namespace:AtomUIGallery.ShowCases.ViewModels"
+             xmlns:views="clr-namespace:AtomUIGallery.ShowCases.Views">
     <gallerycontrols:ShowCasePanel>
         <gallerycontrols:ShowCaseItem
             Title="Basic"
@@ -68,7 +69,7 @@
                              IsSearchEnabled="False"
                              x:DataType="viewModels:SelectViewModel"
                              OptionsSource="{Binding RandomOptions}"
-                             DefaultValues="a10, c12"/>
+                             DefaultValues="a10, c12" />
                 <atom:Select Mode="Multiple"
                              PlaceholderText="Select a person"
                              IsAllowClear="True"
@@ -76,22 +77,21 @@
                              x:DataType="viewModels:SelectViewModel"
                              OptionsSource="{Binding RandomOptions}"
                              DefaultValues="a10, c12"
-                             IsEnabled="False"
-                />
+                             IsEnabled="False" />
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
             Title="Sizes"
             Description="The height of the input field for the select defaults to 32px. If size is set to large, the height will be 40px, and if set to small, 24px.">
-            
+        
             <StackPanel Orientation="Vertical" Spacing="10">
                 <atom:OptionButtonGroup ButtonStyle="Outline" OptionCheckedChanged="HandleSizeTypeChanged">
                     <atom:OptionButton Tag="{x:Static atom:SizeType.Large}">Large</atom:OptionButton>
                     <atom:OptionButton IsChecked="True" Tag="{x:Static atom:SizeType.Middle}">Default</atom:OptionButton>
                     <atom:OptionButton Tag="{x:Static atom:SizeType.Small}">Small</atom:OptionButton>
                 </atom:OptionButtonGroup>
-                
+        
                 <atom:Select Mode="Single"
                              SizeType="{Binding SelectSizeType}"
                              PlaceholderText="Select a person"
@@ -99,8 +99,8 @@
                              x:DataType="viewModels:SelectViewModel"
                              OptionsSource="{Binding RandomOptions}"
                              DefaultValues="a10"
-                             Width="200"/>
-                
+                             Width="200" />
+        
                 <atom:Select Mode="Multiple"
                              SizeType="{Binding SelectSizeType}"
                              PlaceholderText="Select a person"
@@ -109,10 +109,196 @@
                              IsSearchEnabled="False"
                              x:DataType="viewModels:SelectViewModel"
                              OptionsSource="{Binding RandomOptions}"
-                             DefaultValues="a10, c12"/>
+                             DefaultValues="a10, c12" />
             </StackPanel>
-           
+        
         </gallerycontrols:ShowCaseItem>
         
+        <gallerycontrols:ShowCaseItem
+            Title="Custom dropdown options"
+            Description="Use optionRender to customize the rendering dropdown options">
+            <atom:Select Mode="Multiple" PlaceholderText="Please select" IsSearchEnabled="True"
+                         HorizontalAlignment="Stretch">
+                <views:CustomOption Header="China" Value="china" Description="China (中国)" Emoji="🇨🇳" />
+                <views:CustomOption Header="USA" Value="usa" Description="USA (美国)" Emoji="🇺🇸" />
+                <views:CustomOption Header="Japan" Value="japan" Description="Japan (日本)" Emoji="🇯🇵" />
+                <views:CustomOption Header="Korea" Value="korea" Description="Korea (韩国)" Emoji="🇰🇷" />
+                <atom:Select.OptionTemplate>
+                    <DataTemplate x:DataType="views:CustomOption">
+                        <StackPanel Orientation="Horizontal" Spacing="5">
+                            <TextBlock Text="{Binding Emoji}" />
+                            <TextBlock Text="{Binding Description}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </atom:Select.OptionTemplate>
+            </atom:Select>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Option Group"
+            Description="Using OptGroup to group the options.">
+            <atom:Select Mode="Single" PlaceholderText="Please select" DefaultValues="lucy" Width="200"
+                         IsGroupEnabled="True">
+                <atom:SelectOption Header="Jack" Value="jack" Group="Manager" />
+                <atom:SelectOption Header="Lucy" Value="lucy" Group="Manager" />
+                <atom:SelectOption Header="Chloe" Value="chloe" Group="engineer" />
+                <atom:SelectOption Header="Lucas" Value="lucas" Group="engineer" />
+            </atom:Select>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Variants"
+            Description="Variants of Select, there are four variants: outlined filled borderless and underlined.">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <UniformGrid Columns="2" ColumnSpacing="10">
+                    <atom:Select Mode="Single"
+                                 PlaceholderText="Outline"
+                                 HorizontalAlignment="Stretch">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                    <atom:Select Mode="Multiple" PlaceholderText="Please select"
+                                 HorizontalAlignment="Stretch"
+                                 DefaultValues="lucy"
+                                 IsSearchEnabled="True">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                </UniformGrid>
+        
+                <UniformGrid Columns="2" ColumnSpacing="10">
+                    <atom:Select Mode="Single"
+                                 PlaceholderText="Filled"
+                                 HorizontalAlignment="Stretch"
+                                 StyleVariant="Filled">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                    <atom:Select Mode="Multiple" PlaceholderText="Please select"
+                                 HorizontalAlignment="Stretch"
+                                 StyleVariant="Filled"
+                                 IsSearchEnabled="True"
+                                 DefaultValues="lucy">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                </UniformGrid>
+        
+                <UniformGrid Columns="2" ColumnSpacing="10">
+                    <atom:Select Mode="Single"
+                                 PlaceholderText="Borderless"
+                                 HorizontalAlignment="Stretch"
+                                 StyleVariant="Borderless">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                    <atom:Select Mode="Multiple" PlaceholderText="Please select"
+                                 HorizontalAlignment="Stretch"
+                                 StyleVariant="Borderless"
+                                 IsSearchEnabled="True"
+                                 DefaultValues="lucy">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                </UniformGrid>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Prefix and Suffix"
+            Description="Custom prefix and suffixIcon." OccupyEntireRow="True">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <atom:Select Mode="Single"
+                                 PlaceholderText="Outline"
+                                 DefaultValues="lucy"
+                                 HorizontalAlignment="Stretch"
+                                 Width="200"
+                                 ContentLeftAddOn="User">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                    <atom:Select Mode="Single" PlaceholderText="Please select"
+                                 HorizontalAlignment="Stretch"
+                                 DefaultValues="lucy"
+                                 IsSearchEnabled="True"
+                                 Width="200"
+                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+        
+                    <atom:Select Mode="Single" PlaceholderText="Please select"
+                                 HorizontalAlignment="Stretch"
+                                 DefaultValues="lucy"
+                                 IsSearchEnabled="True"
+                                 Width="200"
+                                 IsEnabled="False"
+                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                </StackPanel>
+        
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <atom:Select Mode="Multiple"
+                                 PlaceholderText="Outline"
+                                 DefaultValues="lucy"
+                                 HorizontalAlignment="Stretch"
+                                 Width="200"
+                                 ContentLeftAddOn="User">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                    <atom:Select Mode="Multiple" PlaceholderText="Please select"
+                                 HorizontalAlignment="Stretch"
+                                 DefaultValues="lucy"
+                                 IsSearchEnabled="True"
+                                 Width="200"
+                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+        
+                    <atom:Select Mode="Multiple" PlaceholderText="Please select"
+                                 HorizontalAlignment="Stretch"
+                                 DefaultValues="lucy"
+                                 IsSearchEnabled="True"
+                                 Width="200"
+                                 IsEnabled="False"
+                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                        <atom:SelectOption Header="Jack" Value="jack" />
+                        <atom:SelectOption Header="Lucy" Value="lucy" />
+                        <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
+                    </atom:Select>
+                </StackPanel>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Hide Already Selected"
+            Description="Hide already selected options in the dropdown.">
+            <atom:Select Mode="Multiple"
+                         PlaceholderText="Inserted are removed"
+                         IsHideSelectedOptions="True"
+                         HorizontalAlignment="Stretch">
+                <atom:SelectOption Header="Apples" Value="Apples" />
+                <atom:SelectOption Header="Nails" Value="Nails" />
+                <atom:SelectOption Header="Bananas" Value="Bananas" />
+                <atom:SelectOption Header="Helicopters" Value="Helicopters" />
+            </atom:Select>
+        </gallerycontrols:ShowCaseItem>
+
     </gallerycontrols:ShowCasePanel>
 </UserControl>
