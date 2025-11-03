@@ -82,6 +82,19 @@
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
+            Title="Tags"
+            Description="Allow user to select tags from list or input custom tag.">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <atom:Select Mode="Tags"
+                             PlaceholderText="Tags Mode"
+                             HorizontalAlignment="Stretch"
+                             IsSearchEnabled="False"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding RandomOptions}"/>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
             Title="Sizes"
             Description="The height of the input field for the select defaults to 32px. If size is set to large, the height will be 40px, and if set to small, 24px.">
         
@@ -211,6 +224,82 @@
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
+            Title="Hide Already Selected"
+            Description="Hide already selected options in the dropdown.">
+            <atom:Select Mode="Multiple"
+                         PlaceholderText="Inserted are removed"
+                         IsHideSelectedOptions="True"
+                         HorizontalAlignment="Stretch">
+                <atom:SelectOption Header="Apples" Value="Apples" />
+                <atom:SelectOption Header="Nails" Value="Nails" />
+                <atom:SelectOption Header="Bananas" Value="Bananas" />
+                <atom:SelectOption Header="Helicopters" Value="Helicopters" />
+            </atom:Select>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Status"
+            Description="Add status to Select with status, which could be error or warning.">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <atom:Select Mode="Single" HorizontalAlignment="Stretch" Status="Error"/>
+                <atom:Select Mode="Single" HorizontalAlignment="Stretch" Status="Warning"/>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Max Count"
+            Description="You can set the maxCount prop to control the max number of items can be selected. When the limit is exceeded, the options will become disabled.">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <atom:Select Mode="Multiple"
+                             HorizontalAlignment="Stretch"
+                             PlaceholderText="Please select"
+                             MaxCount="3"
+                             IsShowMaxCountIndicator="True">
+                    <atom:SelectOption Header="Ava Swift" Value="Ava Swift" />
+                    <atom:SelectOption Header="Cole Reed" Value="Cole Reed" />
+                    <atom:SelectOption Header="Mia Blake" Value="Mia Blake" />
+                    <atom:SelectOption Header="Jake Stone" Value="Jake Stone" />
+                    <atom:SelectOption Header="Lily Lane" Value="Lily Lane" />
+                    <atom:SelectOption Header="Ryan Chase" Value="Ryan Chase" />
+                    <atom:SelectOption Header="Zoe Fox" Value="Zoe Fox" />
+                    <atom:SelectOption Header="Alex Grey" Value="Alex Grey" />
+                    <atom:SelectOption Header="Elle Blair" Value="Elle Blair" />
+                </atom:Select>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Responsive maxTagCount"
+            Description="Auto collapse to tag with responsive case. Not recommend use in large form case since responsive calculation has a perf cost.">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <atom:Select Mode="Multiple"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding MaxTagCountOptions}"
+                             PlaceholderText="Select Item..."
+                             HorizontalAlignment="Stretch"
+                             IsSearchEnabled="True"
+                             IsResponsiveMaxTagCount="True"/>
+        
+                <atom:Select Mode="Multiple"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding MaxTagCountOptions}"
+                             PlaceholderText="Select Item..."
+                             IsEnabled="False"
+                             HorizontalAlignment="Stretch"
+                             IsSearchEnabled="True"
+                             IsResponsiveMaxTagCount="True"/>
+        
+                <atom:Select Mode="Multiple"
+                             x:DataType="viewModels:SelectViewModel"
+                             OptionsSource="{Binding MaxTagCountOptions}"
+                             PlaceholderText="Select Item..."
+                             HorizontalAlignment="Stretch"
+                             IsSearchEnabled="True"
+                             MaxTagCount="5"/>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
             Title="Prefix and Suffix"
             Description="Custom prefix and suffixIcon." OccupyEntireRow="True">
             <StackPanel Orientation="Vertical" Spacing="10">
@@ -283,82 +372,6 @@
                         <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
                     </atom:Select>
                 </StackPanel>
-            </StackPanel>
-        </gallerycontrols:ShowCaseItem>
-        
-        <gallerycontrols:ShowCaseItem
-            Title="Hide Already Selected"
-            Description="Hide already selected options in the dropdown.">
-            <atom:Select Mode="Multiple"
-                         PlaceholderText="Inserted are removed"
-                         IsHideSelectedOptions="True"
-                         HorizontalAlignment="Stretch">
-                <atom:SelectOption Header="Apples" Value="Apples" />
-                <atom:SelectOption Header="Nails" Value="Nails" />
-                <atom:SelectOption Header="Bananas" Value="Bananas" />
-                <atom:SelectOption Header="Helicopters" Value="Helicopters" />
-            </atom:Select>
-        </gallerycontrols:ShowCaseItem>
-        
-        <gallerycontrols:ShowCaseItem
-            Title="Status"
-            Description="Add status to Select with status, which could be error or warning.">
-            <StackPanel Orientation="Vertical" Spacing="10">
-                <atom:Select Mode="Single" HorizontalAlignment="Stretch" Status="Error"/>
-                <atom:Select Mode="Single" HorizontalAlignment="Stretch" Status="Warning"/>
-            </StackPanel>
-        </gallerycontrols:ShowCaseItem>
-        
-        <gallerycontrols:ShowCaseItem
-            Title="Max Count"
-            Description="You can set the maxCount prop to control the max number of items can be selected. When the limit is exceeded, the options will become disabled.">
-            <StackPanel Orientation="Vertical" Spacing="10">
-                <atom:Select Mode="Multiple"
-                             HorizontalAlignment="Stretch"
-                             PlaceholderText="Please select"
-                             MaxCount="3"
-                             IsShowMaxCountIndicator="True">
-                    <atom:SelectOption Header="Ava Swift" Value="Ava Swift" />
-                    <atom:SelectOption Header="Cole Reed" Value="Cole Reed" />
-                    <atom:SelectOption Header="Mia Blake" Value="Mia Blake" />
-                    <atom:SelectOption Header="Jake Stone" Value="Jake Stone" />
-                    <atom:SelectOption Header="Lily Lane" Value="Lily Lane" />
-                    <atom:SelectOption Header="Ryan Chase" Value="Ryan Chase" />
-                    <atom:SelectOption Header="Zoe Fox" Value="Zoe Fox" />
-                    <atom:SelectOption Header="Alex Grey" Value="Alex Grey" />
-                    <atom:SelectOption Header="Elle Blair" Value="Elle Blair" />
-                </atom:Select>
-            </StackPanel>
-        </gallerycontrols:ShowCaseItem>
-        
-        <gallerycontrols:ShowCaseItem
-            Title="Responsive maxTagCount"
-            Description="Auto collapse to tag with responsive case. Not recommend use in large form case since responsive calculation has a perf cost.">
-            <StackPanel Orientation="Vertical" Spacing="10">
-                <atom:Select Mode="Multiple"
-                             x:DataType="viewModels:SelectViewModel"
-                             OptionsSource="{Binding MaxTagCountOptions}"
-                             PlaceholderText="Select Item..."
-                             HorizontalAlignment="Stretch"
-                             IsSearchEnabled="True"
-                             IsResponsiveMaxTagCount="True"/>
-                
-                <atom:Select Mode="Multiple"
-                             x:DataType="viewModels:SelectViewModel"
-                             OptionsSource="{Binding MaxTagCountOptions}"
-                             PlaceholderText="Select Item..."
-                             IsEnabled="False"
-                             HorizontalAlignment="Stretch"
-                             IsSearchEnabled="True"
-                             IsResponsiveMaxTagCount="True"/>
-                
-                <atom:Select Mode="Multiple"
-                             x:DataType="viewModels:SelectViewModel"
-                             OptionsSource="{Binding MaxTagCountOptions}"
-                             PlaceholderText="Select Item..."
-                             HorizontalAlignment="Stretch" 
-                             IsSearchEnabled="True"
-                             MaxTagCount="5"/>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
         
