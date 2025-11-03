@@ -2,7 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="AtomUIGallery.ShowCases.Views.BreadcrumbShowCase"
              xmlns:atom="https://atomui.net"
-             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls">
+             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
+             xmlns:viewModels="clr-namespace:AtomUIGallery.ShowCases.ViewModels">
     <gallerycontrols:ShowCasePanel>
         <gallerycontrols:ShowCaseItem
             Title="Basic Usage"
@@ -16,7 +17,7 @@
                 </atom:Breadcrumb>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="With an Icon"
             Description="The icon should be placed in front of the text.">
@@ -48,7 +49,7 @@
                     <atom:BreadcrumbItem>Home</atom:BreadcrumbItem>
                     <atom:BreadcrumbItem NavigateContext="#">Application Center</atom:BreadcrumbItem>
                     <atom:BreadcrumbItem NavigateContext="#">Application List</atom:BreadcrumbItem>
-                    <atom:BreadcrumbItem NavigateContext="#">An Application</atom:BreadcrumbItem>
+                    <atom:BreadcrumbItem>An Application</atom:BreadcrumbItem>
                 </atom:Breadcrumb>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
@@ -62,6 +63,21 @@
                     <atom:BreadcrumbItem NavigateContext="#">Application Center</atom:BreadcrumbItem>
                     <atom:BreadcrumbItem NavigateContext="#">Application List</atom:BreadcrumbItem>
                     <atom:BreadcrumbItem>An Application</atom:BreadcrumbItem>
+                </atom:Breadcrumb>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Generate BreadcrumbItem by template"
+            Description="Generate BreadcrumbItem by template.">
+            <StackPanel>
+                <atom:Breadcrumb ItemsSource="{Binding BreadcrumbItems}"
+                                 x:DataType="viewModels:BreadcrumbViewModel">
+                    <atom:Breadcrumb.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Content}"/>
+                        </DataTemplate>
+                    </atom:Breadcrumb.ItemTemplate>
                 </atom:Breadcrumb>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>

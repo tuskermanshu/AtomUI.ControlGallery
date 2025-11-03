@@ -5,11 +5,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class CollapseViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Collapse";
+    public static TreeNodeKey ID = "Collapse";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     private CollapseExpandIconPosition _collapseExpandIconPosition;
 

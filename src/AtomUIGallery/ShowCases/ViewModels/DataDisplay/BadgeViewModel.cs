@@ -1,4 +1,5 @@
 ﻿using System.Reactive.Disposables;
+using AtomUI.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
@@ -7,11 +8,11 @@ public class BadgeViewModel : ReactiveObject, IRoutableViewModel, IActivatableVi
 {
     public ViewModelActivator Activator { get; }
 
-    public const string ID = "Badge";
+    public static TreeNodeKey ID = "Badge";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     private double _dynamicBadgeCount = 5;
 

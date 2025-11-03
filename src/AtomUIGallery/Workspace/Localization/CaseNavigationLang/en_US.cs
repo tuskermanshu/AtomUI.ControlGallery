@@ -35,6 +35,7 @@ internal class en_US : LanguageProvider
     public const string DataEntry_NumberUpDown = "NumberUpDown";
     public const string DataEntry_RadioButton = "RadioButton";
     public const string DataEntry_ToggleSwitch = "ToggleSwitch";
+    public const string DataEntry_Select = "Select";
     public const string DataEntry_Slider = "Slider";
     public const string DataEntry_DatePicker = "DatePicker";
     public const string DataEntry_TimePicker = "TimePicker";
@@ -51,7 +52,7 @@ internal class en_US : LanguageProvider
     public const string DataDisplay_Empty = "Empty";
     public const string DataDisplay_GroupBox = "GroupBox";
     public const string DataDisplay_InfoFlyout = "InfoFlyout";
-    public const string DataDisplay_ListBox = "ListBox";
+    public const string DataDisplay_List = "List";
     public const string DataDisplay_Segmented = "Segmented";
     public const string DataDisplay_Timeline = "Timeline";
     public const string DataDisplay_TreeView = "TreeView";

@@ -6,11 +6,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class InfoFlyoutViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "InfoFlyout";
+    public static TreeNodeKey ID = "InfoFlyout";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     private bool _showArrow = true;
 

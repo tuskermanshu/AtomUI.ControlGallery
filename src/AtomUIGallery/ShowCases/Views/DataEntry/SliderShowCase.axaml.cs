@@ -6,8 +6,6 @@ namespace AtomUIGallery.ShowCases.Views;
 
 public partial class SliderShowCase : ReactiveUserControl<SliderViewModel>
 {
-    
-    
     public SliderShowCase()
     {
         this.WhenActivated(disposables => { });

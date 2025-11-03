@@ -1,14 +1,15 @@
+using AtomUI.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class StepsViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Steps";
+    public static TreeNodeKey ID = "Steps";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private int _currentStep;
 

@@ -18,7 +18,7 @@ namespace AtomUIGallery.Workspace.Localization.CaseNavigationLang
         public static readonly LanguageResourceKey DataDisplay_Expander = new LanguageResourceKey("CaseNavigation.DataDisplay_Expander", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_GroupBox = new LanguageResourceKey("CaseNavigation.DataDisplay_GroupBox", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_InfoFlyout = new LanguageResourceKey("CaseNavigation.DataDisplay_InfoFlyout", "AtomUIGallery");
-        public static readonly LanguageResourceKey DataDisplay_ListBox = new LanguageResourceKey("CaseNavigation.DataDisplay_ListBox", "AtomUIGallery");
+        public static readonly LanguageResourceKey DataDisplay_List = new LanguageResourceKey("CaseNavigation.DataDisplay_List", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_Segmented = new LanguageResourceKey("CaseNavigation.DataDisplay_Segmented", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_Tag = new LanguageResourceKey("CaseNavigation.DataDisplay_Tag", "AtomUIGallery");
         public static readonly LanguageResourceKey DataDisplay_Timeline = new LanguageResourceKey("CaseNavigation.DataDisplay_Timeline", "AtomUIGallery");
@@ -31,6 +31,7 @@ namespace AtomUIGallery.Workspace.Localization.CaseNavigationLang
         public static readonly LanguageResourceKey DataEntry_LineEdit = new LanguageResourceKey("CaseNavigation.DataEntry_LineEdit", "AtomUIGallery");
         public static readonly LanguageResourceKey DataEntry_NumberUpDown = new LanguageResourceKey("CaseNavigation.DataEntry_NumberUpDown", "AtomUIGallery");
         public static readonly LanguageResourceKey DataEntry_RadioButton = new LanguageResourceKey("CaseNavigation.DataEntry_RadioButton", "AtomUIGallery");
+        public static readonly LanguageResourceKey DataEntry_Select = new LanguageResourceKey("CaseNavigation.DataEntry_Select", "AtomUIGallery");
         public static readonly LanguageResourceKey DataEntry_Slider = new LanguageResourceKey("CaseNavigation.DataEntry_Slider", "AtomUIGallery");
         public static readonly LanguageResourceKey DataEntry_TimePicker = new LanguageResourceKey("CaseNavigation.DataEntry_TimePicker", "AtomUIGallery");
         public static readonly LanguageResourceKey DataEntry_ToggleSwitch = new LanguageResourceKey("CaseNavigation.DataEntry_ToggleSwitch", "AtomUIGallery");

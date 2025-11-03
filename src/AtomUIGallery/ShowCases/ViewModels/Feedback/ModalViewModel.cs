@@ -5,11 +5,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class ModalViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Modal";
+    public static TreeNodeKey ID = "Modal";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private bool _isBasicModalOpened;
 

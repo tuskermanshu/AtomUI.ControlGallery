@@ -5,11 +5,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class CarouselViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Carousel";
+    public static TreeNodeKey ID = "Carousel";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private CarouselPaginationPosition _paginationPosition = CarouselPaginationPosition.Bottom;
 

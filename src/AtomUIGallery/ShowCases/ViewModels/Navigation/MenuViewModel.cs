@@ -7,11 +7,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class MenuViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Menu";
+    public static TreeNodeKey ID = "Menu";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
     private List<IMenuItemData> _menuItems = [];
     
@@ -19,6 +19,14 @@ public class MenuViewModel : ReactiveObject, IRoutableViewModel
     {
         get => _menuItems;
         set => this.RaiseAndSetIfChanged(ref _menuItems, value);
+    }
+    
+    private List<IMenuItemData> _menuFlyoutItems = [];
+    
+    public List<IMenuItemData> MenuFlyoutItems
+    {
+        get => _menuFlyoutItems;
+        set => this.RaiseAndSetIfChanged(ref _menuFlyoutItems, value);
     }
         
     private List<IMenuItemData> _contextMenuItems = [];

@@ -7,17 +7,17 @@
         <gallerycontrols:ShowCaseItem
             Title="Basic"
             Description="Simplest Usage.">
-            <atom:EmptyIndicator PresetImage="Default" />
+            <atom:Empty PresetImage="Default" />
         </gallerycontrols:ShowCaseItem>
 
         <gallerycontrols:ShowCaseItem
             Title="Size"
             Description="AtomUI supports three sizes of buttons: small, default and large.">
             <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal">
-                    <atom:EmptyIndicator PresetImage="Simple" SizeType="Small" />
-                    <atom:EmptyIndicator PresetImage="Simple" SizeType="Middle" />
-                    <atom:EmptyIndicator PresetImage="Simple" SizeType="Large" />
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <atom:Empty PresetImage="Simple" SizeType="Small" />
+                    <atom:Empty PresetImage="Simple" SizeType="Middle" />
+                    <atom:Empty PresetImage="Simple" SizeType="Large" />
                 </StackPanel>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
@@ -26,7 +26,7 @@
             Title="Customize"
             Description="Customize image source, image size, description and extra content.">
             <StackPanel Orientation="Vertical" Spacing="10">
-                <atom:EmptyIndicator ImagePath="avares://AtomUIGallery/Assets/EmptyShowCase/empty.svg"
+                <atom:Empty ImagePath="avares://AtomUIGallery/Assets/EmptyShowCase/empty.svg"
                                      SizeType="Large"
                                      Description="Customize Description" />
                 <atom:Button HorizontalAlignment="Center" ButtonType="Primary">Create Now</atom:Button>
@@ -36,7 +36,7 @@
         <gallerycontrols:ShowCaseItem
             Title="No description"
             Description="Simplest Usage with no description.">
-            <atom:EmptyIndicator PresetImage="Default" IsShowDescription="False" />
+            <atom:Empty PresetImage="Default" IsShowDescription="False" />
         </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
 </UserControl>

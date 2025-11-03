@@ -1,14 +1,15 @@
-﻿using ReactiveUI;
+﻿using AtomUI.Controls;
+using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class PopupConfirmViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "PopupConfirm";
+    public static TreeNodeKey ID = "PopupConfirm";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public PopupConfirmViewModel(IScreen screen)
     {

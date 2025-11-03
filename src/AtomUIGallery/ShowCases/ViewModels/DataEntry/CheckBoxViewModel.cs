@@ -9,12 +9,12 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 public class CheckBoxViewModel : ReactiveObject, IRoutableViewModel,
                                  IActivatableViewModel
 {
-    public const string ID = "CheckBox";
+    public static TreeNodeKey ID = "CheckBox";
 
     public IScreen HostScreen { get; }
     public ViewModelActivator Activator { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public bool? _controlledCheckBoxCheckedStatus;
 

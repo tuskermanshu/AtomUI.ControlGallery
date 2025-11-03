@@ -1,15 +1,16 @@
+using AtomUI.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class AboutUsViewModel : ReactiveObject, IRoutableViewModel, IActivatableViewModel
 {
-    public const string ID = "AboutUs";
+    public static TreeNodeKey ID = "AboutUs";
 
     public IScreen HostScreen { get; }
     public ViewModelActivator Activator { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
     
 
     public AboutUsViewModel(IScreen screen)

@@ -1,16 +1,18 @@
-﻿using Avalonia.Controls;
+﻿using AtomUI.Controls;
+using Avalonia.Controls;
 using ReactiveUI;
 using ButtonSpinner = AtomUI.Controls.ButtonSpinner;
+using TextBlock = Avalonia.Controls.TextBlock;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class ButtonSpinnerViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "ButtonSpinner";
+    public static TreeNodeKey ID = "ButtonSpinner";
 
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public ButtonSpinnerViewModel(IScreen screen)
     {

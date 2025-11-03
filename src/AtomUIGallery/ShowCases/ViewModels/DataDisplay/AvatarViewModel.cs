@@ -1,15 +1,16 @@
 using System.Reactive.Disposables;
+using AtomUI.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class AvatarViewModel : ReactiveObject, IRoutableViewModel, IActivatableViewModel
 {
-    public const string ID = "Avatar";
+    public static TreeNodeKey ID = "Avatar";
     public ViewModelActivator Activator { get; }
     public IScreen HostScreen { get; }
 
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     private string? _avatarText;
 

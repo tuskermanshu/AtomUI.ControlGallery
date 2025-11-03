@@ -6,11 +6,11 @@ namespace AtomUIGallery.ShowCases.ViewModels;
 
 public class TooltipViewModel : ReactiveObject, IRoutableViewModel
 {
-    public const string ID = "Tooltip";
+    public static TreeNodeKey ID = "Tooltip";
     
     public IScreen HostScreen { get; }
     
-    public string UrlPathSegment { get; } = ID;
+    public string UrlPathSegment { get; } = ID.ToString();
 
     public TooltipViewModel(IScreen screen)
     {

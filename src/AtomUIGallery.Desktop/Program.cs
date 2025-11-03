@@ -1,7 +1,4 @@
-﻿using AtomUI.Controls;
-using AtomUI.Fonts.AlibabaSans;
-using AtomUI.Theme;
-using AtomUI.Theme.Language;
+﻿using AtomUI.Fonts.AlibabaSans;
 using Avalonia;
 using Avalonia.Media;
 using Avalonia.ReactiveUI;
@@ -56,15 +53,6 @@ internal class Program
                          .UsePlatformDetect()
                          .WithAlibabaSansFont()
                          .With(new Win32PlatformOptions())
-                         .UseAtomUI(builder =>
-                         {
-                             builder.WithDefaultLanguageVariant(LanguageVariant.zh_CN);
-                             builder.WithDefaultTheme(IThemeManager.DEFAULT_THEME_ID);
-                             builder.UseOSSControls();
-                             builder.UseGalleryControls();
-                             builder.UseOSSDataGrid();
-                             builder.UseColorPicker();
-                         })
                          .LogToTrace();
         
     }

@@ -14,7 +14,7 @@
                     Text="床前明月光" />
             </atom:ButtonSpinner>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Three sizes of Input"
             Description="There are three sizes of an button spinner: large (40px), default (32px) and small (24px).">
@@ -39,7 +39,7 @@
                 </atom:ButtonSpinner>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Variants"
             Description="Variants of Input.">
@@ -64,7 +64,7 @@
                 </atom:ButtonSpinner>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Disabled"
             Description="Variants of disabled Input.">
@@ -89,7 +89,7 @@
                 </atom:ButtonSpinner>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Pre / Post tab"
             Description="Using pre and post tabs example.">
@@ -104,7 +104,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     RightAddOn="{atom:IconProvider Kind=SettingOutlined}"
                     Width="400"
@@ -114,7 +114,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     LeftAddOn="http://"
                     Width="400"
@@ -125,14 +125,15 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
+                
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="prefix and suffix"
             Description="Add a prefix or suffix icons inside input.">
             <StackPanel Orientation="Vertical" Spacing="10">
-
+        
                 <atom:ButtonSpinner
                     InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
                     InnerRightContent="{atom:IconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}"
@@ -143,7 +144,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     InnerLeftContent="￥"
                     InnerRightContent="RMB"
@@ -154,7 +155,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     InnerLeftContent="￥" InnerRightContent="RMB" IsEnabled="False"
                     Width="400"
@@ -164,10 +165,10 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
-
+        
         <gallerycontrols:ShowCaseItem
             Title="Status"
             Description="Add status to Input with status, which could be error or warning.">
@@ -190,7 +191,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
@@ -201,7 +202,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
@@ -212,7 +213,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
@@ -224,7 +225,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
@@ -236,8 +237,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
-
+                
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
@@ -249,7 +249,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
@@ -261,7 +261,7 @@
                         VerticalAlignment="Center"
                         Text="床前明月光" />
                 </atom:ButtonSpinner>
-
+        
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
