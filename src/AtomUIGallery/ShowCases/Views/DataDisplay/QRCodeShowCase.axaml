@@ -26,33 +26,16 @@
                 <atom:QRCode Value="https://atomui.net" Icon="avares://AtomUIGallery/Assets/ATOMUI-LOGO.png" />
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
+        
         <gallerycontrols:ShowCaseItem Title="不同的状态"
                                       Description="可以通过 Status 的值控制二维码的状态，提供了 Active、Expired、Loading、Scanned 四个值。">
             <WrapPanel ItemSpacing="20" LineSpacing="20" Orientation="Horizontal">
-                <atom:QRCode Value="https://atomui.net" Status="Loading">
-                    <atom:QRCode.LoadingContent>
-                        <atom:Spin ZIndex="1" IsSpinning="True" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </atom:QRCode.LoadingContent>
-                </atom:QRCode>
-                <atom:QRCode Value="https://atomui.net" Status="Expired">
-                    <atom:QRCode.ExpiredContent>
-                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <atom:TextBlock HorizontalAlignment="Center">二维码过期</atom:TextBlock>
-                            <atom:Button HorizontalAlignment="Center"
-                                         Icon="{atom:IconProvider Kind=ReloadOutlined}"
-                                         ButtonType="Link">
-                                点击刷新
-                            </atom:Button>
-                        </StackPanel>
-                    </atom:QRCode.ExpiredContent>
-                </atom:QRCode>
-                <atom:QRCode Value="https://atomui.net" Status="Scanned">
-                    <atom:QRCode.ScannedContent>
-                        <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">已扫描</atom:TextBlock>
-                    </atom:QRCode.ScannedContent>
-                </atom:QRCode>
+                <atom:QRCode Value="https://atomui.net" Status="Loading"/>
+                <atom:QRCode Value="https://atomui.net" Status="Expired"/>
+                <atom:QRCode Value="https://atomui.net" Status="Scanned"/>
             </WrapPanel>
         </gallerycontrols:ShowCaseItem>
+        
         <gallerycontrols:ShowCaseItem Title="自定义状态渲染器"
                                       Description="可以通过 LoadingTemplate、ExpiredTemplate、ScannedTemplate 的值控制二维码不同状态的渲染逻辑。">
             <WrapPanel ItemSpacing="20" LineSpacing="20" Orientation="Horizontal">
@@ -68,7 +51,7 @@
                     <atom:QRCode.ExpiredContent>
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
-                                        VerticalAlignment="Center">
+                                        VerticalAlignment="Center" Spacing="5">
                                 <atom:Icon IconInfo="{atom:IconInfoProvider Kind=CloseCircleFilled}"
                                            NormalFilledBrush="Red" Width="16" Height="16" />
                                 <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">二维码过期</atom:TextBlock>
@@ -83,7 +66,8 @@
                 <atom:QRCode Value="https://atomui.net" Status="Scanned">
                     <atom:QRCode.ScannedContent>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
+                                    VerticalAlignment="Center"
+                                    Spacing="5">
                             <atom:Icon IconInfo="{atom:IconInfoProvider Kind=CheckCircleFilled}"
                                        NormalFilledBrush="Green" Width="16" Height="16" />
                             <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">已扫描</atom:TextBlock>
@@ -110,7 +94,7 @@
                              Color="{DynamicResource {x:Static atom:SharedTokenKey.ColorSuccessText}}" />
                 <atom:QRCode Value="https://atomui.net"
                              Color="{DynamicResource {x:Static atom:SharedTokenKey.ColorInfoText}}"
-                             BgColor="{DynamicResource {x:Static atom:SharedTokenKey.ColorBgLayout}}" />
+                             Background="{DynamicResource {x:Static atom:SharedTokenKey.ColorBgLayout}}" />
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
         <gallerycontrols:ShowCaseItem Title="纠错比例"
@@ -123,11 +107,10 @@
         </gallerycontrols:ShowCaseItem>
         <gallerycontrols:ShowCaseItem Title="高级用法"
                                       Description="带气泡卡片的例子。">
-            <!-- <atom:Button></atom:Button> -->
             <atom:FlyoutHost Trigger="Hover">
                 <atom:FlyoutHost.Flyout>
                     <atom:Flyout>
-                        <atom:QRCode Value="https://atomui.net" Bordered="False" />
+                        <atom:QRCode Value="https://atomui.net" IsBordered="False" />
                     </atom:Flyout>
                 </atom:FlyoutHost.Flyout>
                 <atom:Button ButtonType="Primary">Hover me</atom:Button>
