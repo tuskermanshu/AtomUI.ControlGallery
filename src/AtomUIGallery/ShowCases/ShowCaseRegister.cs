@@ -47,6 +47,7 @@ internal static class ShowCaseRegister
         Locator.CurrentMutable.Register(() => new GroupBoxShowCase(), typeof(IViewFor<GroupBoxViewModel>));
         Locator.CurrentMutable.Register(() => new InfoFlyoutShowCase(), typeof(IViewFor<InfoFlyoutViewModel>));
         Locator.CurrentMutable.Register(() => new ListShowCase(), typeof(IViewFor<ListViewModel>));
+        Locator.CurrentMutable.Register(() => new QRCodeShowCase(), typeof(IViewFor<QRCodeViewModel>));
         Locator.CurrentMutable.Register(() => new SegmentedShowCase(), typeof(IViewFor<SegmentedViewModel>));
         Locator.CurrentMutable.Register(() => new TagShowCase(), typeof(IViewFor<TagViewModel>));
         Locator.CurrentMutable.Register(() => new TimelineShowCase(), typeof(IViewFor<TimelineViewModel>));
