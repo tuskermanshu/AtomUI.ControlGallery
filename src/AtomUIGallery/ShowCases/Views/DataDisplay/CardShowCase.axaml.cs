@@ -4,8 +4,8 @@ using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia;
 using Avalonia.Controls.Primitives;
 using Avalonia.Media;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 

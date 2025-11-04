@@ -61,12 +61,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia.ReactiveUI"/>
+        <PackageReference Include="ReactiveUI.Avalonia"/>
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="../AtomUIGallery.Icon.Application/AtomUIGallery.Icon.Application.csproj"/>
-        <ProjectReference Include="..\..\packages\AtomUI\src\AtomUI.Controls\AtomUI.Controls.csproj" />
     </ItemGroup>
     
 </Project>

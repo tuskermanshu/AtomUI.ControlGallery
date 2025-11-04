@@ -1,10 +1,8 @@
-﻿using AtomUI.Controls;
-using AtomUIGallery.ShowCases.ViewModels;
+﻿using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
-using Avalonia.LogicalTree;
-using Avalonia.ReactiveUI;
 using Avalonia.VisualTree;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 using ButtonSpinner = AtomUI.Controls.ButtonSpinner;
 
 namespace AtomUIGallery.ShowCases.Views;

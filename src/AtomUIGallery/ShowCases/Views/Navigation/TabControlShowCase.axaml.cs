@@ -1,8 +1,8 @@
 ﻿using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Interactivity;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 using TabItem = AtomUI.Controls.TabItem;
 
 namespace AtomUIGallery.ShowCases.Views;

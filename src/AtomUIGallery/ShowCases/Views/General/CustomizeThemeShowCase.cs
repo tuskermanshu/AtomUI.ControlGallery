@@ -1,7 +1,6 @@
-using System.Reactive.Disposables;
 using AtomUIGallery.ShowCases.ViewModels;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 

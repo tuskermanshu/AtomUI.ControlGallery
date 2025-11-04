@@ -1,10 +1,9 @@
-﻿using System.Collections.Specialized;
-using AtomUI.Controls;
+﻿using AtomUI.Controls;
 using AtomUI.Controls.Data;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 

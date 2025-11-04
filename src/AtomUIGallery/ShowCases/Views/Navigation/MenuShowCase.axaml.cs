@@ -3,8 +3,8 @@ using AtomUI.Controls.Primitives;
 using AtomUI.IconPkg.AntDesign;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Input;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 

@@ -3,8 +3,8 @@ using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Data.Converters;
 using Avalonia.Interactivity;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 
