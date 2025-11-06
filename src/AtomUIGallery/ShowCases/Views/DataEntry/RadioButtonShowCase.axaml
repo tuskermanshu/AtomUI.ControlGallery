@@ -115,6 +115,52 @@
         </gallerycontrols:ShowCaseItem>
         
         <gallerycontrols:ShowCaseItem
+            Title="Option Button with icon"
+            Description="OptionButton Group with icon.">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <atom:OptionButtonGroup ButtonStyle="Solid">
+                    <atom:OptionButton IsChecked="True" Icon="{atom:IconProvider Kind=AppleOutlined}">macOS</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=LinuxOutlined}">Linux</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=WindowsOutlined}">Windows</atom:OptionButton>
+                </atom:OptionButtonGroup>
+                
+                <atom:OptionButtonGroup ButtonStyle="Outline">
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=AppleOutlined}">macOS</atom:OptionButton>
+                    <atom:OptionButton IsChecked="True" Icon="{atom:IconProvider Kind=LinuxOutlined}">Linux</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=WindowsOutlined}">Windows</atom:OptionButton>
+                </atom:OptionButtonGroup>
+                
+                <atom:OptionButtonGroup ButtonStyle="Solid" IsEnabled="False">
+                    <atom:OptionButton IsChecked="True" Icon="{atom:IconProvider Kind=AppleOutlined}">macOS</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=LinuxOutlined}">Linux</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=WindowsOutlined}">Windows</atom:OptionButton>
+                </atom:OptionButtonGroup>
+                
+                <atom:OptionButtonGroup ButtonStyle="Outline" IsEnabled="False">
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=AppleOutlined}">macOS</atom:OptionButton>
+                    <atom:OptionButton IsChecked="True" Icon="{atom:IconProvider Kind=LinuxOutlined}">Linux</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=WindowsOutlined}">Windows</atom:OptionButton>
+                </atom:OptionButtonGroup>
+                <atom:Separator Title="SizeType"/>
+                <atom:OptionButtonGroup ButtonStyle="Outline" SizeType="Large">
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=AppleOutlined}">macOS</atom:OptionButton>
+                    <atom:OptionButton IsChecked="True" Icon="{atom:IconProvider Kind=LinuxOutlined}">Linux</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=WindowsOutlined}">Windows</atom:OptionButton>
+                </atom:OptionButtonGroup>
+                <atom:OptionButtonGroup ButtonStyle="Outline">
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=AppleOutlined}">macOS</atom:OptionButton>
+                    <atom:OptionButton IsChecked="True" Icon="{atom:IconProvider Kind=LinuxOutlined}">Linux</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=WindowsOutlined}">Windows</atom:OptionButton>
+                </atom:OptionButtonGroup>
+                <atom:OptionButtonGroup ButtonStyle="Outline" SizeType="Small">
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=AppleOutlined}">macOS</atom:OptionButton>
+                    <atom:OptionButton IsChecked="True" Icon="{atom:IconProvider Kind=LinuxOutlined}">Linux</atom:OptionButton>
+                    <atom:OptionButton Icon="{atom:IconProvider Kind=WindowsOutlined}">Windows</atom:OptionButton>
+                </atom:OptionButtonGroup>
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
             Title="option style"
             Description="The combination of option button style.">
             <StackPanel Orientation="Vertical" Spacing="10">
