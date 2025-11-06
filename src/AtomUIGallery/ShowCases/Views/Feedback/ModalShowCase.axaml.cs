@@ -1,10 +1,15 @@
 using System.Reactive.Disposables;
+using AtomUI;
 using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
+using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Avalonia.Layout;
 using Avalonia.Threading;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
+using TextBlock = AtomUI.Controls.TextBlock;
+using ToggleSwitch = AtomUI.Controls.ToggleSwitch;
 
 namespace AtomUIGallery.ShowCases.Views;
 
@@ -247,5 +252,46 @@ public partial class ModalShowCase : ReactiveUserControl<ModalViewModel>
         {
             button.IsEnabled = false;
         }
+    }
+    
+    private async void HandleOpenOverlayDialogButtonClick(object? sender, RoutedEventArgs e)
+    {
+        // 鼠标会被卡死
+        await Dispatcher.UIThread.InvokeAsync(() => { }, DispatcherPriority.Background);
+        var content = BuildDialogContent();
+        var options = new DialogOptions()
+        {
+            IsModal                   = false,
+            Title                     = "Basic Modal",
+            IsResizable               = false,
+            IsDragMovable             = true,
+            IsMaximizable             = false,
+            StandardButtons           = DialogStandardButtons.Parse("Cancel,Ok"),
+            DefaultStandardButton     = DialogStandardButton.Ok,
+            HorizontalStartupLocation = DialogHorizontalAnchor.Center,
+            VerticalOffset            = new Dimension(30, DimensionUnitType.Percentage)
+        };
+        Dialog.ShowDialog(content, null, options);
+    }
+
+    private Control BuildDialogContent()
+    {
+        var stackPanel = new StackPanel()
+        {
+            Orientation = Orientation.Horizontal,
+        };
+        stackPanel.Children.Add(new TextBlock()
+        {
+            Text = "Some contents..."
+        });
+        stackPanel.Children.Add(new TextBlock()
+        {
+            Text = "Some contents..."
+        });
+        stackPanel.Children.Add(new TextBlock()
+        {
+            Text = "Some contents..."
+        });
+        return stackPanel;
     }
 }
