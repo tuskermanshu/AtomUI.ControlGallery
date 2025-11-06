@@ -261,7 +261,7 @@ public partial class ModalShowCase : ReactiveUserControl<ModalViewModel>
         var content = BuildDialogContent();
         var options = new DialogOptions()
         {
-            IsModal                   = false,
+            IsModal                   = true,
             Title                     = "Basic Modal",
             IsResizable               = false,
             IsDragMovable             = true,
@@ -269,7 +269,8 @@ public partial class ModalShowCase : ReactiveUserControl<ModalViewModel>
             StandardButtons           = DialogStandardButtons.Parse("Cancel,Ok"),
             DefaultStandardButton     = DialogStandardButton.Ok,
             HorizontalStartupLocation = DialogHorizontalAnchor.Center,
-            VerticalOffset            = new Dimension(30, DimensionUnitType.Percentage)
+            VerticalOffset            = new Dimension(30, DimensionUnitType.Percentage),
+            Width = 400
         };
         Dialog.ShowDialog(content, null, options);
     }
@@ -278,7 +279,8 @@ public partial class ModalShowCase : ReactiveUserControl<ModalViewModel>
     {
         var stackPanel = new StackPanel()
         {
-            Orientation = Orientation.Horizontal,
+            Orientation = Orientation.Vertical,
+            Spacing = 5
         };
         stackPanel.Children.Add(new TextBlock()
         {

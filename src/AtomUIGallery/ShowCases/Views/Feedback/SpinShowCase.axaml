@@ -23,7 +23,7 @@
         <gallerycontrols:ShowCaseItem
             Title="Custom spinning indicator"
             Description="Use custom loading indicator.">
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" Spacing="10">
                 <atom:SpinIndicator SizeType="Small"
                                     VerticalAlignment="Center"
                                     CustomIndicator="{atom:IconProvider Kind=LoadingOutlined,NormalFilledColor=#1677ff}" />
