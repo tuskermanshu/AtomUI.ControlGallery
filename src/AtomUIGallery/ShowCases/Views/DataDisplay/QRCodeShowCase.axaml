@@ -79,7 +79,7 @@
         <gallerycontrols:ShowCaseItem Title="自定义尺寸"
                                       Description="自定义尺寸">
             <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal" Spacing="1" Margin="0,0,0,16">
+                <StackPanel Orientation="Horizontal" Spacing="10" Margin="0,0,0,16">
                     <atom:Button Icon="{atom:IconProvider Kind=MinusOutlined}" Command="{Binding SmallerCommand}">Smaller</atom:Button>
                     <atom:Button Icon="{atom:IconProvider Kind=PlusOutlined}" Command="{Binding LargerCommand}">Larger</atom:Button>
                 </StackPanel>
