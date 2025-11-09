@@ -184,7 +184,7 @@
         
             <DockPanel Margin="0, 0, 0, 0">
                 <StackPanel Orientation="Horizontal" Spacing="5" DockPanel.Dock="Top">
-                    <atom:TextBlock VerticalAlignment="Center">Expand direction:</atom:TextBlock>
+                    <atom:TextBlock VerticalAlignment="Center">Placement:</atom:TextBlock>
                     <atom:OptionButtonGroup ButtonStyle="Outline" Name="PickerPlacementOptionGroup">
                         <atom:OptionButton>TopLeft</atom:OptionButton>
                         <atom:OptionButton>TopRight</atom:OptionButton>

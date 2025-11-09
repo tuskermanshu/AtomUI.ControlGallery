@@ -1,4 +1,5 @@
 ﻿using AtomUIGallery.ShowCases.ViewModels;
+using Avalonia.Controls;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
 
@@ -14,6 +15,7 @@ public partial class DatePickerShowCase : ReactiveUserControl<DatePickerViewMode
             {
                 PickerSizeTypeOptionGroup.OptionCheckedChanged  += viewModel.HandlePickerSizeTypeOptionCheckedChanged;
                 PickerPlacementOptionGroup.OptionCheckedChanged += viewModel.HandlePickerPlacementCheckedChanged;
+                viewModel.PickerPlacement                       =  PlacementMode.BottomEdgeAlignedLeft;
             }
         });
         InitializeComponent();
