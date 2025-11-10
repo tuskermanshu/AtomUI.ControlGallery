@@ -1,11 +1,16 @@
 ﻿using AtomUI.Controls;
+using AtomUI.IconPkg.AntDesign;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Interactivity;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
-using TabItem = AtomUI.Controls.TabItem;
 
 namespace AtomUIGallery.ShowCases.Views;
+
+public class MyTabItemData : TabItemData
+{
+    public object? Content { get; init; }
+}
 
 public partial class TabControlShowCase : ReactiveUserControl<TabControlViewModel>
 {
@@ -25,25 +30,28 @@ public partial class TabControlShowCase : ReactiveUserControl<TabControlViewMode
                 SizeTypeTabControlOptionGroup.OptionCheckedChanged     += viewModel.HandleTabControlSizeTypeOptionCheckedChanged;
                 AddTabDemoTabControl.AddTabRequest                     += HandleTabControlAddTabRequest;
                 
-                viewModel.TabItemDataSource.Add(new TabItemData()
+                viewModel.TabItemDataSource.Add(new MyTabItemData()
                 {
-                    Header = "Tab 1",
-                    Content = "Tab Content 1"
+                    Header  = "Tab 1",
+                    Content = "Tab Content 1",
+                    Icon    = AntDesignIconPackage.WechatFilled()
                 });
                 
-                viewModel.TabItemDataSource.Add(new TabItemData()
+                viewModel.TabItemDataSource.Add(new MyTabItemData()
                 {
                     Header  = "Tab 2",
-                    Content = "Tab Content 2"
+                    Content = "Tab Content 2",
+                    IsClosable = true,
+                    Icon = AntDesignIconPackage.LinuxOutlined()
                 });
                 
-                viewModel.TabStripItemDataSource.Add(new TabStripItemData()
+                viewModel.TabStripItemDataSource.Add(new TabItemData()
                 {
-                    Content = "Tab 1"
+                    Header = "Tab 1"
                 });
-                viewModel.TabStripItemDataSource.Add(new TabStripItemData()
+                viewModel.TabStripItemDataSource.Add(new TabItemData()
                 {
-                    Content = "Tab 2"
+                    Header = "Tab 2"
                 });
             }
         });

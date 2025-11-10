@@ -2,7 +2,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="AtomUIGallery.ShowCases.Views.TabControlShowCase"
              xmlns:atom="https://atomui.net"
-             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls">
+             xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
+             xmlns:views="clr-namespace:AtomUIGallery.ShowCases.Views">
     <atom:TabControl SizeType="Large">
         <atom:TabItem Header="TabControl">
             <gallerycontrols:ShowCasePanel>
@@ -24,7 +25,7 @@
                     <StackPanel Orientation="Vertical" Spacing="20">
                         <atom:TabControl ItemsSource="{Binding TabItemDataSource}">
                             <atom:TabControl.ItemTemplate>
-                                <DataTemplate>
+                                <DataTemplate x:DataType="views:MyTabItemData">
                                     <Border Padding="10">
                                         <TextBlock Text="{Binding Content}" />
                                     </Border>
@@ -336,8 +337,8 @@
                     <StackPanel Orientation="Vertical" Spacing="20">
                         <atom:TabStrip ItemsSource="{Binding TabStripItemDataSource}">
                             <atom:TabStrip.ItemTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding Content}" />
+                                <DataTemplate x:DataType="atom:TabItemData">
+                                    <TextBlock Text="{Binding Header}" />
                                 </DataTemplate>
                             </atom:TabStrip.ItemTemplate>
                         </atom:TabStrip>

@@ -15,7 +15,7 @@
             Description="There are three sizes of an Input box: large (40px), default (32px) and small (24px).">
             <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
                 <atom:LineEdit Watermark="Large" SizeType="Large"
-                                     InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
+                               InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
                 <atom:LineEdit Watermark="Middle" SizeType="Middle"
                                      InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
                 <atom:LineEdit Watermark="Small" SizeType="Small"
