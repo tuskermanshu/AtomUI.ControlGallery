@@ -208,8 +208,7 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
-
-
+                    
                     <atom:FlyoutHost Grid.Row="1" Grid.Column="0"
                                      Trigger="Hover"
                                      Placement="LeftEdgeAlignedTop"
