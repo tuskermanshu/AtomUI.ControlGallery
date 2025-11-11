@@ -3,6 +3,7 @@ using AtomUI.Controls.Primitives;
 using AtomUI.IconPkg.AntDesign;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Input;
+using Avalonia.Threading;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
 
@@ -10,14 +11,16 @@ namespace AtomUIGallery.ShowCases.Views;
 
 public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
 {
+    private NavMenuItemData? _navMenuDefaultSelectedItem;
+    
     public MenuShowCase()
     {
         this.WhenActivated(disposables =>
         {
             if (DataContext is MenuViewModel viewModel)
             {
-                ChangeModeSwitch.IsCheckedChanged  += viewModel.HandleChangeModeCheckChanged;
-                ChangeStyleSwitch.IsCheckedChanged += viewModel.HandleChangeStyleCheckChanged;
+                // ChangeModeSwitch.IsCheckedChanged  += viewModel.HandleChangeModeCheckChanged;
+                // ChangeStyleSwitch.IsCheckedChanged += viewModel.HandleChangeStyleCheckChanged;
                 var defaultOpenPaths = new List<TreeNodePath>();
                 defaultOpenPaths.Add(new TreeNodePath("/3/SubGroup2"));
                 viewModel.DefaultOpenPaths    = defaultOpenPaths;
@@ -28,6 +31,7 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
                 InitMenuFlyoutMenuItems(viewModel);
             }
         });
+        
         InitializeComponent();
     }
 
@@ -121,6 +125,12 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
 
     private void InitNavMenuTreeNodes(MenuViewModel viewModel)
     {
+        _navMenuDefaultSelectedItem = new NavMenuItemData()
+        {
+            Header  = "Option 4",
+            ItemKey = "Option4",
+            Icon = AntDesignIconPackage.TwitterOutlined()
+        };
         var nodes = new List<INavMenuItemData>();
         nodes.Add(new NavMenuItemData()
         {
@@ -160,11 +170,8 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
                     {
                         Header  = "Option 3",
                         ItemKey = "Option3",
-                    }, new NavMenuItemData()
-                    {
-                        Header  = "Option 4",
-                        ItemKey = "Option4",
-                    }
+                    }, 
+                    _navMenuDefaultSelectedItem
                 ]
             }]
         });
@@ -173,7 +180,8 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
             Header  = "Navigation Four",
             ItemKey = "4"
         });
-        viewModel.NavMenuItems = nodes;
+        viewModel.NavMenuItems              = nodes;
+        ItemsSourceDemoNavMenu.SelectedItem = _navMenuDefaultSelectedItem;
     }
 
     private void InitMenuFlyoutMenuItems(MenuViewModel viewModel)
@@ -217,7 +225,7 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
                 ]
             }
         );
-
+    
         viewModel.MenuFlyoutItems = nodes;
     }
 }
