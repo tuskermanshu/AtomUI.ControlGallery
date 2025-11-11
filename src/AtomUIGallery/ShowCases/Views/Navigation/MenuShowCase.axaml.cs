@@ -129,6 +129,7 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
         {
             Header  = "Option 4",
             ItemKey = "Option4",
+            Icon = AntDesignIconPackage.TwitterOutlined()
         };
         var nodes = new List<INavMenuItemData>();
         nodes.Add(new NavMenuItemData()
