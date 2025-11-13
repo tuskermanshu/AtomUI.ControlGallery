@@ -324,9 +324,9 @@
                     Description="Default activate first tab.">
                     <StackPanel Orientation="Vertical" Spacing="20">
                         <atom:TabStrip>
-                            <atom:TabStripItem>Tab 1</atom:TabStripItem>
-                            <atom:TabStripItem>Tab 2</atom:TabStripItem>
-                            <atom:TabStripItem>Tab 3</atom:TabStripItem>
+                            <atom:TabStripItem IsClosable="True">Tab 1</atom:TabStripItem>
+                            <atom:TabStripItem IsClosable="True">Tab 2</atom:TabStripItem>
+                            <atom:TabStripItem IsClosable="True">Tab 3</atom:TabStripItem>
                         </atom:TabStrip>
                     </StackPanel>
                 </gallerycontrols:ShowCaseItem>
