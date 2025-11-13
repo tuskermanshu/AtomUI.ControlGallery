@@ -326,6 +326,8 @@
             <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
                 <atom:TextArea Lines="4" />
                 <atom:TextArea Lines="4" Watermark="maxLength is 6" MaxLength="6" />
+                <atom:TextArea Lines="4" Watermark="maxLength is 6" MaxLength="6" StyleVariant="Filled" />
+                <atom:TextArea Lines="4" Watermark="disabled" MaxLength="6" IsEnabled="False" />
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
 
@@ -336,6 +338,26 @@
                 <atom:TextArea Watermark="Autosize height based on content lines" IsAutoSize="True" />
                 <atom:TextArea Watermark="Autosize height with minimum and maximum number of lines" MinLines="3"
                                MaxLines="6" />
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+
+        <gallerycontrols:ShowCaseItem
+            Title="With character counting"
+            Description="Show character counting.">
+            <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
+                <atom:LineEdit IsShowCount="True" MaxLength="20" />
+                <atom:TextArea IsShowCount="True" MaxLength="100" Watermark="can resize" IsResizable="True" />
+                <atom:TextArea IsShowCount="True" MaxLength="100" Watermark="disable resize" Height="120"
+                               IsResizable="True" />
+            </StackPanel>
+        </gallerycontrols:ShowCaseItem>
+
+        <gallerycontrols:ShowCaseItem
+            Title="Status"
+            Description="Add status to TextArea with status, which could be error or warning.">
+            <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
+                <atom:TextArea IsShowCount="True" MaxLength="100" Watermark="Error" IsResizable="True" Status="Error" />
+                <atom:TextArea IsShowCount="True" MaxLength="100" Watermark="Warning" IsResizable="True" Status="Warning"/>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
