@@ -30,6 +30,7 @@ public partial class OsInfoPage : ReactiveUserControl<OsInfoViewModel>
         LinuxDistroLogos["deepin"]  = "/Assets/OSLogos/Deepin.svg";
         LinuxDistroLogos["macOS"]   = "/Assets/OSLogos/MacOS.svg";
         LinuxDistroLogos["windows"] = "/Assets/OSLogos/Windows.svg";
+        LinuxDistroLogos["opensuse-leap"] = "/Assets/OSLogos/OpenSUSE.svg";
     }
     
     private void InitInfoRecords(OsInfoViewModel viewModel)
@@ -121,6 +122,10 @@ public partial class OsInfoPage : ReactiveUserControl<OsInfoViewModel>
                     id == "deepin")
                 {
                     OsLogo.Width = 240;
+                }
+                else
+                {
+                    OsLogo.Height = 130;
                 }
             }
             else if (OperatingSystem.IsMacOS())
