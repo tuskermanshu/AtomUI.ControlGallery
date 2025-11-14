@@ -25,8 +25,9 @@ public partial class OsInfoPage : ReactiveUserControl<OsInfoViewModel>
 
     private void InitLinuxDistroLogos()
     {
-        LinuxDistroLogos["linux"] = "/Assets/OSLogos/Linux.svg";
+        LinuxDistroLogos["linux"]  = "/Assets/OSLogos/Linux.svg";
         LinuxDistroLogos["ubuntu"] = "/Assets/OSLogos/Ubuntu.svg";
+        LinuxDistroLogos["macOS"] = "/Assets/OSLogos/MacOS.svg";
     }
     
     private void InitInfoRecords(OsInfoViewModel viewModel)
@@ -104,14 +105,25 @@ public partial class OsInfoPage : ReactiveUserControl<OsInfoViewModel>
             if (OperatingSystem.IsLinux())
             {
                 var distroInfo = LinuxDistributionDetector.DetectDistribution();
-                if (LinuxDistroLogos.ContainsKey(distroInfo.Id))
+                var id         = distroInfo.Id;
+                if (LinuxDistroLogos.ContainsKey(id))
                 {
-                    viewModel.LogoPath =  LinuxDistroLogos[distroInfo.Id];
+                    viewModel.LogoPath =  LinuxDistroLogos[id];
                 }
                 else
                 {
                     viewModel.LogoPath =  LinuxDistroLogos["linux"];
                 }
+
+                if (id == "ubuntu")
+                {
+                    OsLogo.Width = 240;
+                }
+            }
+            else if (OperatingSystem.IsMacOS())
+            {
+                viewModel.LogoPath = LinuxDistroLogos["macOS"];
+                OsLogo.Height      = 130;
             }
         }
     }

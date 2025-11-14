@@ -162,51 +162,13 @@ public static class SystemInfoProvider
     {
         try
         {
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
-                // Windows - 使用 GlobalMemoryStatusEx
-                var memoryStatus = new MEMORYSTATUSEX();
-                if (GlobalMemoryStatusEx(memoryStatus))
-                {
-                    var totalGB = memoryStatus.ullTotalPhys / (1024 * 1024 * 1024);
-                    var availableGB = memoryStatus.ullAvailPhys / (1024 * 1024 * 1024);
-                    return $"{totalGB} GB Total, {availableGB} GB Available";
-                }
-            }
-            else if (File.Exists("/proc/meminfo"))
-            {
-                // Linux - 读取 /proc/meminfo
-                var lines = File.ReadAllLines("/proc/meminfo");
-                long totalKB = 0, availableKB = 0;
-                
-                foreach (var line in lines)
-                {
-                    if (line.StartsWith("MemTotal:"))
-                    {
-                        var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (parts.Length >= 2 && long.TryParse(parts[1], out long value))
-                            totalKB = value;
-                    }
-                    else if (line.StartsWith("MemAvailable:"))
-                    {
-                        var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (parts.Length >= 2 && long.TryParse(parts[1], out long value))
-                            availableKB = value;
-                    }
-                }
-                
-                if (totalKB > 0)
-                {
-                    var totalGB = totalKB / (1024 * 1024);
-                    var availableGB = availableKB / (1024 * 1024);
-                    return $"{totalGB} GB Total, {availableGB} GB Available";
-                }
-            }
-            
-            // 回退：使用 GC 获取工作集（不准确）
-            using var process = System.Diagnostics.Process.GetCurrentProcess();
-            var workingSetGB = process.WorkingSet64 / (1024 * 1024 * 1024);
-            return $"≈{workingSetGB} GB (Process Working Set)";
+            var gcInfo = GC.GetGCMemoryInfo();
+            long totalMemoryBytes = gcInfo.TotalAvailableMemoryBytes;
+            long memoryLoadBytes = gcInfo.MemoryLoadBytes;
+            long availableMemory = totalMemoryBytes - memoryLoadBytes;
+            var  totalGB         = totalMemoryBytes / (1024 * 1024 * 1024);
+            var  availableGB     = availableMemory / (1024 * 1024 * 1024);
+            return $"{totalGB} GB Total, {availableGB} GB Available";
         }
         catch (Exception ex)
         {
