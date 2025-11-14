@@ -1,8 +1,8 @@
 ﻿using AtomUIGallery.ShowCases.ViewModels;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
 using AtomUI.Controls;
 using Avalonia.Interactivity;
+using ReactiveUI.Avalonia;
 using RadioButton = Avalonia.Controls.RadioButton;
 
 namespace AtomUIGallery.ShowCases.Views;

@@ -1,95 +1,289 @@
 ﻿using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
+using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 using Avalonia.Interactivity;
-using Avalonia.Layout;
-using Avalonia.ReactiveUI;
-using ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 
 public partial class BoxPanelShowCase : ReactiveUserControl<BoxPanelViewModel>
 {
+    private Border? _addedSpacing; // 跟踪添加的间距
+    private readonly List<Border> _addedPlaceholders = new(); // 跟踪添加的占位符
+
     public BoxPanelShowCase()
     {
-        this.WhenActivated(disposables => { });
         InitializeComponent();
-        
-        Vertical.IsCheckedChanged += HandleModeChecked;
-
-        Horizontal.IsCheckedChanged += HandleModeChecked;
-        
-        Vertical1.IsCheckedChanged += HandleMode1Checked;
-
-        Horizontal1.IsCheckedChanged += HandleMode1Checked;
+        SetupEventHandlers();
     }
-    
-    
-    private void HandleMode1Checked(object? sender, RoutedEventArgs e)
+
+    private void SetupEventHandlers()
     {
-        if (sender is RadioButton button)
+        // Basic - Orientation switch
+        Vertical.IsCheckedChanged += (sender, args) =>
         {
-            if (button.Content?.ToString() == "Vertical")
+            if (Vertical.IsChecked == true)
             {
-                FlexBoxPanel.Orientation = Orientation.Vertical;
+                BasicBoxPanel.Orientation = Avalonia.Layout.Orientation.Vertical;
             }
-            else if (button.Content?.ToString() == "Horizontal")
-            {
-                FlexBoxPanel.Orientation = Orientation.Horizontal;
-            }
-        }
-    }
-    
-    private void HandleModeChecked(object? sender, RoutedEventArgs e)
-    {
-        if (sender is RadioButton button)
+        };
+        Horizontal.IsCheckedChanged += (s, e) =>
         {
-            if (button.Content?.ToString() == "Vertical")
+            if (Horizontal.IsChecked == true)
             {
-                BasicBoxPanel.Orientation = Orientation.Vertical;
+                BasicBoxPanel.Orientation = Avalonia.Layout.Orientation.Horizontal;
             }
-            else if (button.Content?.ToString() == "Horizontal")
+        };
+
+        // Flex Ratio - Orientation switch
+        Vertical1.IsCheckedChanged += (s, e) =>
+        {
+            if (Vertical1.IsChecked == true)
             {
-                BasicBoxPanel.Orientation = Orientation.Horizontal;
+                FlexBoxPanel.Orientation = Avalonia.Layout.Orientation.Vertical;
             }
-        }
+        };
+        Horizontal1.IsCheckedChanged += (s, e) =>
+        {
+            if (Horizontal1.IsChecked == true)
+            {
+                FlexBoxPanel.Orientation = Avalonia.Layout.Orientation.Horizontal;
+            }
+        };
+
+        // JustifyContent
+        JustifyFlexStart.IsCheckedChanged += (s, e) =>
+        {
+            if (JustifyFlexStart.IsChecked == true)
+            {
+                JustifyContentBoxPanel.JustifyContent =
+                    JustifyContent.FlexStart;
+            }
+        };
+        JustifyFlexEnd.IsCheckedChanged += (s, e) =>
+        {
+            if (JustifyFlexEnd.IsChecked == true)
+            {
+                JustifyContentBoxPanel.JustifyContent = JustifyContent.FlexEnd;
+            }
+        };
+        JustifyCenter.IsCheckedChanged += (s, e) =>
+        {
+            if (JustifyCenter.IsChecked == true)
+            {
+                JustifyContentBoxPanel.JustifyContent = JustifyContent.Center;
+            }
+        };
+        JustifySpaceBetween.IsCheckedChanged += (s, e) =>
+        {
+            if (JustifySpaceBetween.IsChecked == true)
+            {
+                JustifyContentBoxPanel.JustifyContent =
+                    JustifyContent.SpaceBetween;
+            }
+        };
+        JustifySpaceAround.IsCheckedChanged += (s, e) =>
+        {
+            if (JustifySpaceAround.IsChecked == true)
+            {
+                JustifyContentBoxPanel.JustifyContent =
+                    JustifyContent.SpaceAround;
+            }
+        };
+        JustifySpaceEvenly.IsCheckedChanged += (s, e) =>
+        {
+            if (JustifySpaceEvenly.IsChecked == true)
+            {
+                JustifyContentBoxPanel.JustifyContent =
+                    JustifyContent.SpaceEvenly;
+            }
+        };
+
+        // AlignItems
+        AlignFlexStart.IsCheckedChanged += (s, e) =>
+        {
+            if (AlignFlexStart.IsChecked == true)
+            {
+                AlignItemsBoxPanel.AlignItems = AlignItems.FlexStart;
+            }
+        };
+        AlignFlexEnd.IsCheckedChanged += (s, e) =>
+        {
+            if (AlignFlexEnd.IsChecked == true)
+            {
+                AlignItemsBoxPanel.AlignItems = AlignItems.FlexEnd;
+            }
+        };
+        AlignCenter.IsCheckedChanged += (s, e) =>
+        {
+            if (AlignCenter.IsChecked == true)
+            {
+                AlignItemsBoxPanel.AlignItems = AlignItems.Center;
+            }
+        };
+        AlignStretch.IsCheckedChanged += (s, e) =>
+        {
+            if (AlignStretch.IsChecked == true)
+            {
+                AlignItemsBoxPanel.AlignItems = AlignItems.Stretch;
+            }
+        };
+
+        // FlexWrap
+        NoWrap.IsCheckedChanged += (s, e) =>
+        {
+            if (NoWrap.IsChecked == true)
+            {
+                WrapBoxPanel.Wrap = FlexWrap.NoWrap;
+            }
+        };
+        Wrap.IsCheckedChanged += (s, e) =>
+        {
+            if (Wrap.IsChecked == true)
+            {
+                WrapBoxPanel.Wrap = FlexWrap.Wrap;
+            }
+        };
+        WrapReverse.IsCheckedChanged += (s, e) =>
+        {
+            if (WrapReverse.IsChecked == true)
+            {
+                WrapBoxPanel.Wrap = FlexWrap.WrapReverse;
+            }
+        };
+
+        // AlignContent
+        ContentFlexStart.IsCheckedChanged += (s, e) =>
+        {
+            if (ContentFlexStart.IsChecked == true)
+            {
+                AlignContentBoxPanel.AlignContent = AlignContent.FlexStart;
+            }
+        };
+        ContentFlexEnd.IsCheckedChanged += (s, e) =>
+        {
+            if (ContentFlexEnd.IsChecked == true)
+            {
+                AlignContentBoxPanel.AlignContent = AlignContent.FlexEnd;
+            }
+        };
+        ContentCenter.IsCheckedChanged += (s, e) =>
+        {
+            if (ContentCenter.IsChecked == true)
+            {
+                AlignContentBoxPanel.AlignContent = AlignContent.Center;
+            }
+        };
+        ContentStretch.IsCheckedChanged += (s, e) =>
+        {
+            if (ContentStretch.IsChecked == true)
+            {
+                AlignContentBoxPanel.AlignContent = AlignContent.Stretch;
+            }
+        };
+        ContentSpaceBetween.IsCheckedChanged += (s, e) =>
+        {
+            if (ContentSpaceBetween.IsChecked == true)
+            {
+                AlignContentBoxPanel.AlignContent =
+                    AlignContent.SpaceBetween;
+            }
+        };
+        ContentSpaceAround.IsCheckedChanged += (s, e) =>
+        {
+            if (ContentSpaceAround.IsChecked == true)
+            {
+                AlignContentBoxPanel.AlignContent =
+                    AlignContent.SpaceAround;
+            }
+        };
+        ContentSpaceEvenly.IsCheckedChanged += (s, e) =>
+        {
+            if (ContentSpaceEvenly.IsChecked == true)
+            {
+                AlignContentBoxPanel.AlignContent =
+                    AlignContent.SpaceEvenly;
+            }
+        };
     }
 
     private void HandleSpaceSliderValueChanged(object? sender, RangeBaseValueChangedEventArgs e)
     {
-        ChangeSpaceBoxPanel.Spacing = e.NewValue;
+        if (ChangeSpaceBoxPanel != null)
+        {
+            ChangeSpaceBoxPanel.Spacing = e.NewValue;
+        }
     }
 
     private void HandleAddSpaceButtonClicked(object? sender, RoutedEventArgs e)
     {
-        if (e.Source is Button button && button.Content?.ToString() == "add a space of size 40")
+        if (ChangeSpaceBoxPanel == null || AddSpaceButton == null)
+            return;
+
+        if (_addedSpacing == null)
         {
-            ChangeSpaceBoxPanel.AddSpacing(40);
-            AddSpaceButton.Content = "remove the space of size 40";
+            // 添加固定间距
+            _addedSpacing = new Border
+            {
+                Width      = ChangeSpaceBoxPanel.Orientation == Avalonia.Layout.Orientation.Horizontal ? 40 : 0,
+                Height     = ChangeSpaceBoxPanel.Orientation == Avalonia.Layout.Orientation.Vertical ? 40 : 0,
+                Background = Avalonia.Media.Brushes.Transparent
+            };
+            ChangeSpaceBoxPanel.Children.Add(_addedSpacing);
+            AddSpaceButton.Content = "Remove space (40px)";
         }
         else
         {
-            ChangeSpaceBoxPanel.Children.Remove(ChangeSpaceBoxPanel.Children[4]);
-            AddSpaceButton.Content = "add a space of size 40";
+            // 移除固定间距
+            ChangeSpaceBoxPanel.Children.Remove(_addedSpacing);
+            _addedSpacing          = null;
+            AddSpaceButton.Content = "Add a space of size 40";
         }
     }
 
+    private int _flexToggle = 0;
+
     private void HandleChangFlexButtonClicked(object? sender, RoutedEventArgs e)
     {
-            BoxPanel.SetFlex(ChangeSpaceBoxPanel.Children[3], BoxPanel.GetFlex(ChangeSpaceBoxPanel.Children[3]) == 1 ? 2 : 1);
+        if (ChangeSpaceBoxPanel?.Children.Count >= 3)
+        {
+            var flexItem = ChangeSpaceBoxPanel.Children[2];
+            _flexToggle = (_flexToggle + 1) % 4; // Cycle through 1, 2, 3, 0
+            BoxPanel.SetFlex(flexItem, _flexToggle == 0 ? 1 : _flexToggle);
+        }
     }
 
     private void HandleAddFlexButtonClicked(object? sender, RoutedEventArgs e)
     {
-        if (e.Source is Button button && button.Content?.ToString() == "add a placeholder flex")
+        if (AddPlaceholderBoxPanel == null || AddFlexButton == null)
+            return;
+
+        if (_addedPlaceholders.Count == 0)
         {
-            AddPlaceholderBoxPanel.AddFlex(1);
-            AddFlexButton.Content = "remove the placeholder flex";
+            // 添加 Flex 占位符
+            var placeholder = new Border
+            {
+                Background = Avalonia.Media.Brushes.LightGray
+            };
+            BoxPanel.SetFlex(placeholder, 1);
+
+            AddPlaceholderBoxPanel.Children.Add(placeholder);
+            _addedPlaceholders.Add(placeholder);
+
+            AddFlexButton.Content = "Remove placeholder";
         }
         else
         {
-            AddPlaceholderBoxPanel.Children.Remove(AddPlaceholderBoxPanel.Children[2]);
-            AddFlexButton.Content = "add a placeholder flex";
+            // 移除最后一个占位符
+            var lastPlaceholder = _addedPlaceholders[_addedPlaceholders.Count - 1];
+            AddPlaceholderBoxPanel.Children.Remove(lastPlaceholder);
+            _addedPlaceholders.RemoveAt(_addedPlaceholders.Count - 1);
+
+            if (_addedPlaceholders.Count == 0)
+            {
+                AddFlexButton.Content = "Add a placeholder flex";
+            }
         }
     }
 }

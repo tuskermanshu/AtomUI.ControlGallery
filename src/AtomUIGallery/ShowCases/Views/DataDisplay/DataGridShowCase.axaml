@@ -846,7 +846,8 @@
                     </StackPanel>
         
                 </StackPanel>
-                <atom:DataGrid x:Name="BasicPagingCaseGrid" Height="400" PaginationVisibility="Bottom">
+                <atom:DataGrid x:Name="BasicPagingCaseGrid" Height="400" PaginationVisibility="Bottom"
+                               PageSize="10">
                     <atom:DataGrid.Columns>
                         <atom:DataGridTemplateColumn Header="Name">
                             <atom:DataGridTemplateColumn.CellTemplate>

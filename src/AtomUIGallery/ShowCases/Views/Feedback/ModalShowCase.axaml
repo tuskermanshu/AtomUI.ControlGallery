@@ -339,5 +339,23 @@
                 </Panel>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
+        
+        <gallerycontrols:ShowCaseItem
+            Title="Static Dialog API"
+            Description="Creating a Dialog using the static method of Dialog.">
+            <WrapPanel Orientation="Horizontal" ItemSpacing="10" LineSpacing="10">
+                <atom:Button ButtonType="Primary" Click="HandleOpenOverlayDialogButtonClick">
+                    Open Overlay Dialog
+                </atom:Button>
+                
+                <atom:Button ButtonType="Primary" Click="HandleOpenWindowDialogButtonClick">
+                    Open Window Dialog
+                </atom:Button>
+                
+                <atom:Button ButtonType="Primary" Click="HandleOpenCustomViewDialogButtonClick">
+                    Open CustomView Dialog
+                </atom:Button>
+            </WrapPanel>
+        </gallerycontrols:ShowCaseItem>
     </gallerycontrols:ShowCasePanel>
 </UserControl>

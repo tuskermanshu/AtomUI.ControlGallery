@@ -1,10 +1,15 @@
 using System.Reactive.Disposables;
+using AtomUI;
 using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
+using Avalonia.Controls;
 using Avalonia.Interactivity;
-using Avalonia.ReactiveUI;
+using Avalonia.Layout;
 using Avalonia.Threading;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
+using TextBlock = AtomUI.Controls.TextBlock;
+using ToggleSwitch = AtomUI.Controls.ToggleSwitch;
 
 namespace AtomUIGallery.ShowCases.Views;
 
@@ -247,5 +252,96 @@ public partial class ModalShowCase : ReactiveUserControl<ModalViewModel>
         {
             button.IsEnabled = false;
         }
+    }
+    
+    private async void HandleOpenOverlayDialogButtonClick(object? sender, RoutedEventArgs e)
+    {
+        // 鼠标会被卡死，强制刷新一次事件循环
+        await Dispatcher.UIThread.InvokeAsync(() => { }, DispatcherPriority.Background);
+        var content = BuildDialogContent();
+        var options = new DialogOptions()
+        {
+            IsModal                   = true,
+            Title                     = "Basic Modal",
+            IsResizable               = false,
+            IsDragMovable             = true,
+            IsMaximizable             = false,
+            StandardButtons           = DialogStandardButtons.Parse("Cancel,Ok"),
+            DefaultStandardButton     = DialogStandardButton.Ok,
+            HorizontalStartupLocation = DialogHorizontalAnchor.Center,
+            VerticalOffset            = new Dimension(30, DimensionUnitType.Percentage),
+            MinWidth                  = 400
+        };
+        Dialog.ShowDialog(content, null, options);
+    }
+
+    private async void HandleOpenWindowDialogButtonClick(object? sender, RoutedEventArgs e)
+    {
+        // 鼠标会被卡死，强制刷新一次事件循环
+        await Dispatcher.UIThread.InvokeAsync(() => { }, DispatcherPriority.Background);
+        var content = BuildDialogContent();
+        var options = new DialogOptions()
+        {
+            IsModal                   = true,
+            Title                     = "Basic Modal",
+            IsResizable               = false,
+            IsDragMovable             = true,
+            IsMaximizable             = false,
+            DialogHostType            = DialogHostType.Window,
+            StandardButtons           = DialogStandardButtons.Parse("Cancel,Ok"),
+            DefaultStandardButton     = DialogStandardButton.Ok,
+            HorizontalStartupLocation = DialogHorizontalAnchor.Center,
+            VerticalOffset            = new Dimension(30, DimensionUnitType.Percentage),
+            MinWidth                  = 400
+        };
+        Dialog.ShowDialog(content, null, options);
+    }
+
+    private async void HandleOpenCustomViewDialogButtonClick(object? sender, RoutedEventArgs e)
+    {
+        // 鼠标会被卡死，强制刷新一次事件循环
+        await Dispatcher.UIThread.InvokeAsync(() => { }, DispatcherPriority.Background);
+        var options = new DialogOptions()
+        {
+            IsModal                   = true,
+            Title                     = "Basic Modal",
+            IsResizable               = false,
+            IsDragMovable             = true,
+            IsMaximizable             = false,
+            DialogHostType            = DialogHostType.Window,
+            StandardButtons           = DialogStandardButtons.Parse("Cancel,Ok"),
+            DefaultStandardButton     = DialogStandardButton.Ok,
+            HorizontalStartupLocation = DialogHorizontalAnchor.Center,
+            VerticalOffset            = new Dimension(30, DimensionUnitType.Percentage),
+            MinWidth                  = 400
+        };
+        var viewModel = new ModalUserControlViewModel()
+        {
+            Name = "AtomUI",
+            Age = 2
+        };
+        Dialog.ShowDialog<ModalUserControlView, ModalUserControlViewModel>(viewModel, options);
+    }
+
+    private Control BuildDialogContent()
+    {
+        var stackPanel = new StackPanel()
+        {
+            Orientation = Orientation.Vertical,
+            Spacing     = 5
+        };
+        stackPanel.Children.Add(new TextBlock()
+        {
+            Text = "Some contents..."
+        });
+        stackPanel.Children.Add(new TextBlock()
+        {
+            Text = "Some contents..."
+        });
+        stackPanel.Children.Add(new TextBlock()
+        {
+            Text = "Some contents..."
+        });
+        return stackPanel;
     }
 }

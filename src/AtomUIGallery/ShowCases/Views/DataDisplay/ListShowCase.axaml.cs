@@ -1,15 +1,16 @@
-﻿using System.Collections.Specialized;
-using AtomUI.Controls;
+﻿using AtomUI.Controls;
 using AtomUI.Controls.Data;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
-using Avalonia.ReactiveUI;
+using Avalonia.Interactivity;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 
 public partial class ListShowCase : ReactiveUserControl<ListViewModel>
 {
+    
     public ListShowCase()
     {
         this.WhenActivated(disposables =>
@@ -54,6 +55,7 @@ public partial class ListShowCase : ReactiveUserControl<ListViewModel>
                     }
                 ];
                 InitializeGroupItems(viewModel);
+                InitializeEmptyDemoItems(viewModel);
                 viewModel.SelectionMode = SelectionMode.Single;
             }
         });
@@ -128,7 +130,7 @@ public partial class ListShowCase : ReactiveUserControl<ListViewModel>
                 Content = "Black",
                 Group   = "Neutral Colors"
             },
-           
+            
             new ListItemData()
             {
                 Content = "Gray",
@@ -181,6 +183,48 @@ public partial class ListShowCase : ReactiveUserControl<ListViewModel>
             },
          
         ];
+    }
+    
+    private void InitializeEmptyDemoItems(ListViewModel viewModel)
+    {
+        viewModel.EmptyDemoItems = [];
+    }
+
+    private void HandleAddEmptyItemClicked(object? sender, RoutedEventArgs e)
+    {
+        if (DataContext is not ListViewModel viewModel)
+        {
+            return;
+        }
+
+        var items = viewModel.EmptyDemoItems != null
+            ? new List<IListItemData>(viewModel.EmptyDemoItems)
+            : new List<IListItemData>();
+
+        items.Add(new ListItemData()
+        {
+            Content = $"Dynamic item "
+        });
+
+        viewModel.EmptyDemoItems = items;
+    }
+
+    private void HandleRemoveEmptyItemClicked(object? sender, RoutedEventArgs e)
+    {
+        if (DataContext is not ListViewModel viewModel)
+        {
+            return;
+        }
+
+        if (viewModel.EmptyDemoItems is null || viewModel.EmptyDemoItems.Count <= 1)
+        {
+            viewModel.EmptyDemoItems = [];
+            return;
+        }
+
+        var items = new List<IListItemData>(viewModel.EmptyDemoItems);
+        items.RemoveAt(items.Count - 1);
+        viewModel.EmptyDemoItems = items;
     }
 
     private void HandleFilterCollectionViewChanged(object? sender, ListCollectionViewChangedEventArgs e)

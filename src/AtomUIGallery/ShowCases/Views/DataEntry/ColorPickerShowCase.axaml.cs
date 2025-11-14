@@ -1,8 +1,8 @@
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
 using Avalonia.Controls.Converters;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 using ColorPicker = AtomUI.Controls.ColorPicker;
 
 namespace AtomUIGallery.ShowCases.Views;

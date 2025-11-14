@@ -99,6 +99,8 @@
                               ItemKey="{x:Static viewmodels:InfoFlyoutViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataDisplay_List}}"
                               ItemKey="{x:Static viewmodels:ListViewModel.ID}" />
+            <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataDisplay_QRCode}}"
+                              ItemKey="{x:Static viewmodels:QRCodeViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataDisplay_Segmented}}"
                               ItemKey="{x:Static viewmodels:SegmentedViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataDisplay_Timeline}}"

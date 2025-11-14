@@ -4,9 +4,9 @@ using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 
-public partial class SegmentedShowCase : ReactiveUserControl<SegmentedViewModel>
+public partial class QRCodeShowCase : ReactiveUserControl<QRCodeViewModel>
 {
-    public SegmentedShowCase()
+    public QRCodeShowCase()
     {
         this.WhenActivated(disposables => { });
         InitializeComponent();

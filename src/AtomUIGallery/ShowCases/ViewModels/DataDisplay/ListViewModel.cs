@@ -35,6 +35,14 @@ public class ListViewModel : ReactiveObject, IRoutableViewModel
         get => _groupListItems;
         set => this.RaiseAndSetIfChanged(ref _groupListItems, value);
     }
+    
+    private List<IListItemData>? _emptyDemoItems;
+
+    public List<IListItemData>? EmptyDemoItems
+    {
+        get => _emptyDemoItems;
+        set => this.RaiseAndSetIfChanged(ref _emptyDemoItems, value);
+    }
 
     private SelectionMode _selectionMode;
     

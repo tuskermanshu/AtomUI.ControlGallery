@@ -1,7 +1,7 @@
 ﻿using AtomUI.Fonts.AlibabaSans;
 using Avalonia;
 using Avalonia.Media;
-using Avalonia.ReactiveUI;
+using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.Desktop;
 

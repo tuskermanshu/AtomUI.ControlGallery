@@ -1,8 +1,8 @@
 ﻿using System.Reactive;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
-using Avalonia.ReactiveUI;
 using ReactiveUI;
+using ReactiveUI.Avalonia;
 using Button = AtomUI.Controls.Button;
 using ToggleSwitch = AtomUI.Controls.ToggleSwitch;
 
