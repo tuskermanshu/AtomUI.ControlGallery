@@ -14,9 +14,6 @@
     
     <ItemGroup>
         <Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.cs"/>
-        <Compile Update="ShowCases\Views\Feedback\ModalUserControlView.axaml.cs">
-          <SubType>Code</SubType>
-        </Compile>
     </ItemGroup>
     
     <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -61,6 +58,11 @@
         <AvaloniaResource Include="Assets/atomui-qq.png"/>
         <AvaloniaResource Include="Assets/atomui-wechat.png"/>
         <AvaloniaResource Include="Assets/gallery-logo.png"/>
+        <AvaloniaResource Include="Assets/OSLogos/Deepin.svg"/>
+        <AvaloniaResource Include="Assets/OSLogos/Linux.svg"/>
+        <AvaloniaResource Include="Assets/OSLogos/Ubuntu.svg"/>
+        <AvaloniaResource Include="Assets/OSLogos/Windows.svg"/>
+        <AvaloniaResource Include="Assets/OSLogos/MacOS.svg"/>
     </ItemGroup>
 
     <ItemGroup>

@@ -3,6 +3,7 @@ using AtomUIGallery.ShowCases.Views;
 using ReactiveUI;
 using Splat;
 
+
 namespace AtomUIGallery.ShowCases;
 
 internal static class ShowCaseRegister
@@ -19,10 +20,11 @@ internal static class ShowCaseRegister
 
     private static void RegisterGeneralCases()
     {
-        Locator.CurrentMutable.Register(() => new AboutUsShowCase(), typeof(IViewFor<AboutUsViewModel>));
+        Locator.CurrentMutable.Register(() => new AboutUsPage(), typeof(IViewFor<AboutUsViewModel>));
         Locator.CurrentMutable.Register(() => new ButtonShowCase(), typeof(IViewFor<ButtonViewModel>));
         Locator.CurrentMutable.Register(() => new CustomizeThemeShowCase(), typeof(IViewFor<CustomizeThemeViewModel>));
         Locator.CurrentMutable.Register(() => new IconShowCase(), typeof(IViewFor<IconViewModel>));
+        Locator.CurrentMutable.Register(() => new OsInfoPage(), typeof(IViewFor<OsInfoViewModel>));
         Locator.CurrentMutable.Register(() => new PaletteShowCase(), typeof(IViewFor<PaletteViewModel>));
         Locator.CurrentMutable.Register(() => new SeparatorShowCase(), typeof(IViewFor<SeparatorViewModel>));
         Locator.CurrentMutable.Register(() => new SplitButtonShowCase(), typeof(IViewFor<SplitButtonViewModel>));

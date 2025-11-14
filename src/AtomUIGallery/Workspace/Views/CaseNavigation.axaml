@@ -9,6 +9,8 @@
                           Icon="{atom:IconProvider Kind=WindowsOutlined}">
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.General_AboutUs}}"
                               ItemKey="{x:Static viewmodels:AboutUsViewModel.ID}" />
+            <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.General_OsInfo}}"
+                              ItemKey="{x:Static viewmodels:OsInfoViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.General_Palette}}"
                               ItemKey="{x:Static viewmodels:PaletteViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.General_Icons}}"
