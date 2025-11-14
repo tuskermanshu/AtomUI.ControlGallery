@@ -3,13 +3,13 @@ using AtomUI.Controls.Primitives;
 using AtomUI.IconPkg.AntDesign;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Input;
-using Avalonia.Threading;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 
-public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
+public partial class 
+    MenuShowCase : ReactiveUserControl<MenuViewModel>
 {
     private NavMenuItemData? _navMenuDefaultSelectedItem;
     
@@ -19,8 +19,8 @@ public partial class MenuShowCase : ReactiveUserControl<MenuViewModel>
         {
             if (DataContext is MenuViewModel viewModel)
             {
-                // ChangeModeSwitch.IsCheckedChanged  += viewModel.HandleChangeModeCheckChanged;
-                // ChangeStyleSwitch.IsCheckedChanged += viewModel.HandleChangeStyleCheckChanged;
+                ChangeModeSwitch.IsCheckedChanged  += viewModel.HandleChangeModeCheckChanged;
+                ChangeStyleSwitch.IsCheckedChanged += viewModel.HandleChangeStyleCheckChanged;
                 var defaultOpenPaths = new List<TreeNodePath>();
                 defaultOpenPaths.Add(new TreeNodePath("/3/SubGroup2"));
                 viewModel.DefaultOpenPaths    = defaultOpenPaths;
