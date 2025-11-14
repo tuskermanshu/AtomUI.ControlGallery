@@ -8,8 +8,8 @@
         <Svg
             Name="OsLogo"
             Path="{Binding LogoPath}"
-            HorizontalAlignment="Center"
-            Margin="40 0 0 30" />
+            HorizontalAlignment="Left"
+            Margin="100 0 0 40" />
 
         <atom:DataGrid Name="OsInfoTable" Margin="10" ItemsSource="{Binding SystemInfoRecords}" SizeType="Small">
             <atom:DataGrid.Columns>
