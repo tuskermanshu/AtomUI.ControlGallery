@@ -42,7 +42,7 @@
                 <atom:QRCode Value="https://atomui.net" Status="Loading">
                     <atom:QRCode.LoadingContent>
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <atom:Spin IsSpinning="True" />
+                            <atom:Spin IsSpinning="True" HorizontalAlignment="Center"/>
                             <atom:TextBlock>Loading...</atom:TextBlock>
                         </StackPanel>
                     </atom:QRCode.LoadingContent>

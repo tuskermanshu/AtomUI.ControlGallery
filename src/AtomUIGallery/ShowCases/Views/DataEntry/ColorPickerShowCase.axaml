@@ -13,15 +13,19 @@
         <gallerycontrols:ShowCaseItem
             Title="Trigger size"
             Description="Ant Design supports three trigger sizes: small, default and large.If a large or small trigger is desired, set the size property to either large or small.respectively. Omit the size property for a trigger with the default size.">
-            <StackPanel Orientation="Horizontal" Spacing="10">
-                <StackPanel Orientation="Vertical" Spacing="10">
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <StackPanel Orientation="Horizontal" Spacing="10">
                     <atom:ColorPicker DefaultValue="#1677ff" SizeType="Small"/>
-                    <atom:ColorPicker DefaultValue="#1677ff" SizeType="Middle"/>
-                    <atom:ColorPicker DefaultValue="#1677ff" SizeType="Large"/>
-                </StackPanel>
-                <StackPanel Orientation="Vertical" Spacing="10">
                     <atom:ColorPicker DefaultValue="#1677ff" SizeType="Small" IsShowText="True"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <atom:ColorPicker DefaultValue="#1677ff" SizeType="Middle"/>
                     <atom:ColorPicker DefaultValue="#1677ff" SizeType="Middle" IsShowText="True"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <atom:ColorPicker DefaultValue="#1677ff" SizeType="Large"/>
                     <atom:ColorPicker DefaultValue="#1677ff" SizeType="Large" IsShowText="True"/>
                 </StackPanel>
             </StackPanel>
