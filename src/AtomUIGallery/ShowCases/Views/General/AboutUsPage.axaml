@@ -1,13 +1,13 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="AtomUIGallery.ShowCases.Views.AboutUsShowCase"
+             x:Class="AtomUIGallery.ShowCases.Views.AboutUsPage"
              xmlns:atom="https://atomui.net"
              xmlns:views="clr-namespace:AtomUIGallery.ShowCases.Views">
     <UserControl.Styles>
         <Style Selector="Image#QinwareLogo">
             <Setter Property="Source" Value="/Assets/qinware-logo.png" />
         </Style>
-        <Style Selector="views|AboutUsShowCase[IsDarkThemeMode=True]">
+        <Style Selector="views|AboutUsPage[IsDarkThemeMode=True]">
             <Style Selector="^ Image#QinwareLogo">
                 <Setter Property="Source" Value="/Assets/qinware-logo-white.png" />
             </Style>

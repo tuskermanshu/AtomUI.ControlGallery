@@ -8,10 +8,10 @@ using ReactiveUI.Avalonia;
 
 namespace AtomUIGallery.ShowCases.Views;
 
-public partial class AboutUsShowCase : ReactiveUserControl<AboutUsViewModel>
+public partial class AboutUsPage : ReactiveUserControl<AboutUsViewModel>
 {
     public static readonly StyledProperty<bool> IsDarkThemeModeProperty =
-        IThemeManager.IsDarkThemeModeProperty.AddOwner<AboutUsShowCase>();
+        IThemeManager.IsDarkThemeModeProperty.AddOwner<AboutUsPage>();
     
     public bool IsDarkThemeMode
     {
@@ -19,7 +19,7 @@ public partial class AboutUsShowCase : ReactiveUserControl<AboutUsViewModel>
         set => SetValue(IsDarkThemeModeProperty, value);
     }
     
-    public AboutUsShowCase()
+    public AboutUsPage()
     {
         this.WhenActivated(disposables =>
         {
