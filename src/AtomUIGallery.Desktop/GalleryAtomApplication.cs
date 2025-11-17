@@ -23,7 +23,7 @@ public class GalleryAtomApplication : BaseGalleryAtomApplication
 
     public GalleryAtomApplication()
     {
-        Name                  = "AtomUI Gallery";
+        Name = "AtomUI Gallery";
     }
     
     public override void OnFrameworkInitializationCompleted()
