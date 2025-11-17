@@ -25,8 +25,8 @@
 
     <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
         <ProjectReference Include="../../packages/AtomUI/packages/AtomUI/AtomUI.csproj"/>
-        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Controls.DataGrid/AtomUI.Controls.DataGrid.csproj" />
-        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Controls.ColorPicker/AtomUI.Controls.ColorPicker.csproj" />
+        <ProjectReference Include="..\..\packages\AtomUI\src\AtomUI.Desktop.Controls.DataGrid\AtomUI.Desktop.Controls.DataGrid.csproj" />
+        <ProjectReference Include="..\..\packages\AtomUI\src\AtomUI.Desktop.Controls.ColorPicker\AtomUI.Desktop.Controls.ColorPicker.csproj" />
         <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Generator/AtomUI.Generator.csproj" 
                           OutputItemType="Analyzer" 
                           ReferenceOutputAssembly="false" 

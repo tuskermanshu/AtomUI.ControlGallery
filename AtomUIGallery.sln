@@ -4,9 +4,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{E310
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AtomUI", "AtomUI", "{AB05E310-C053-41CD-884F-CF7BAC5D394A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Base", "packages\AtomUI\src\AtomUI.Base\AtomUI.Base.csproj", "{26DF9BD4-92F1-42B0-959D-9855EB9B9BCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Core", "packages\AtomUI\src\AtomUI.Core\AtomUI.Core.csproj", "{26DF9BD4-92F1-42B0-959D-9855EB9B9BCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Controls", "packages\AtomUI\src\AtomUI.Controls\AtomUI.Controls.csproj", "{13B9EDE5-1B51-4252-A98C-71218CEE9064}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Desktop.Controls", "packages\AtomUI\src\AtomUI.Desktop.Controls\AtomUI.Desktop.Controls.csproj", "{13B9EDE5-1B51-4252-A98C-71218CEE9064}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Generator", "packages\AtomUI\src\AtomUI.Generator\AtomUI.Generator.csproj", "{2CE89D68-7973-4D77-BE24-9063CF2F8902}"
 EndProject
@@ -51,11 +51,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.IconPkg.AntDesign", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUIGallery.Icon.Application", "src\AtomUIGallery.Icon.Application\AtomUIGallery.Icon.Application.csproj", "{C331F547-C642-48EC-80FC-F713BD3B29E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Controls.DataGrid", "packages\AtomUI\src\AtomUI.Controls.DataGrid\AtomUI.Controls.DataGrid.csproj", "{DBC14FEB-576F-42EC-8488-19B18D4DF437}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Desktop.Controls.DataGrid", "packages\AtomUI\src\AtomUI.Desktop.Controls.DataGrid\AtomUI.Desktop.Controls.DataGrid.csproj", "{DBC14FEB-576F-42EC-8488-19B18D4DF437}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.ReactiveUI", "packages\AtomUI\src\AtomUI.ReactiveUI\AtomUI.ReactiveUI.csproj", "{AF61D817-A6F0-45F9-AC28-1A29DAE49CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Controls.ColorPicker", "packages\AtomUI\src\AtomUI.Controls.ColorPicker\AtomUI.Controls.ColorPicker.csproj", "{E10E932D-EECC-4F44-B08C-63256206D79B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Desktop.Controls.ColorPicker", "packages\AtomUI\src\AtomUI.Desktop.Controls.ColorPicker\AtomUI.Desktop.Controls.ColorPicker.csproj", "{E10E932D-EECC-4F44-B08C-63256206D79B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Fonts.AlibabaSans", "packages\AtomUI\src\AtomUI.Fonts.AlibabaSans\AtomUI.Fonts.AlibabaSans.csproj", "{59C40EC7-5CA9-4B02-A8C4-102DF393ADF2}"
 EndProject
