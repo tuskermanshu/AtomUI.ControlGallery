@@ -1,7 +1,5 @@
 ﻿using System.Reactive;
-using System.Reactive.Disposables;
-using System.Reactive.Linq;
-using AtomUI.Controls;
+using AtomUI.Desktop.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;

@@ -1,4 +1,4 @@
-﻿using AtomUI.Controls;
+﻿using AtomUI.Desktop.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Threading;
 using ReactiveUI;

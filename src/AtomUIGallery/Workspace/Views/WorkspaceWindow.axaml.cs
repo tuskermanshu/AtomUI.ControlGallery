@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using AtomUI.Controls;
+using AtomUI.Desktop.Controls;
 using AtomUI.Theme.Language;
 using AtomUIGallery.Workspace.ViewModels;
 using Avalonia;

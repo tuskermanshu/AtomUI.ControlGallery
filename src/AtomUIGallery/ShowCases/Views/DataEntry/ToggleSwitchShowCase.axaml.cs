@@ -3,8 +3,8 @@ using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
-using Button = AtomUI.Controls.Button;
-using ToggleSwitch = AtomUI.Controls.ToggleSwitch;
+using Button = AtomUI.Desktop.Controls.Button;
+using ToggleSwitch = AtomUI.Desktop.Controls.ToggleSwitch;
 
 namespace AtomUIGallery.ShowCases.Views;
 

@@ -3,7 +3,7 @@ using Avalonia.Controls;
 using Avalonia.VisualTree;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
-using ButtonSpinner = AtomUI.Controls.ButtonSpinner;
+using ButtonSpinner = AtomUI.Desktop.Controls.ButtonSpinner;
 
 namespace AtomUIGallery.ShowCases.Views;
 

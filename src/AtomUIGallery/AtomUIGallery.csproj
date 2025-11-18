@@ -18,8 +18,8 @@
     
     <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
         <PackageReference Include="AtomUI"/>
-        <PackageReference Include="AtomUI.Controls.DataGrid"/>
-        <PackageReference Include="AtomUI.Controls.ColorPicker"/>
+        <PackageReference Include="AtomUI.Desktop.Controls.DataGrid"/>
+        <PackageReference Include="AtomUI.Desktop.Controls.ColorPicker"/>
         <PackageReference Include="AtomUI.Generator"/>
     </ItemGroup>
 

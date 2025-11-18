@@ -1,6 +1,6 @@
 using System.Reactive.Disposables;
 using AtomUI;
-using AtomUI.Controls;
+using AtomUI.Desktop.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
@@ -8,8 +8,8 @@ using Avalonia.Layout;
 using Avalonia.Threading;
 using ReactiveUI;
 using ReactiveUI.Avalonia;
-using TextBlock = AtomUI.Controls.TextBlock;
-using ToggleSwitch = AtomUI.Controls.ToggleSwitch;
+using TextBlock = AtomUI.Desktop.Controls.TextBlock;
+using ToggleSwitch = AtomUI.Desktop.Controls.ToggleSwitch;
 
 namespace AtomUIGallery.ShowCases.Views;
 

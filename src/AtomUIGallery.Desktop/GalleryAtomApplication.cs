@@ -1,4 +1,4 @@
-﻿using AtomUI.Controls;
+﻿using AtomUI.Desktop.Controls;
 using AtomUI.Theme;
 using AtomUI.Theme.Language;
 using Avalonia.Controls.ApplicationLifetimes;
@@ -14,16 +14,16 @@ public class GalleryAtomApplication : BaseGalleryAtomApplication
         {
             builder.WithDefaultLanguageVariant(LanguageVariant.zh_CN);
             builder.WithDefaultTheme(IThemeManager.DEFAULT_THEME_ID);
-            builder.UseOSSControls();
+            builder.UseDesktopControls();
             builder.UseGalleryControls();
-            builder.UseOSSDataGrid();
-            builder.UseColorPicker();
+            builder.UseDesktopDataGrid();
+            builder.UseDesktopColorPicker();
         });
     }
 
     public GalleryAtomApplication()
     {
-        Name = "AtomUI Gallery";
+        Name = "AtomUI Desktop Gallery";
     }
     
     public override void OnFrameworkInitializationCompleted()
