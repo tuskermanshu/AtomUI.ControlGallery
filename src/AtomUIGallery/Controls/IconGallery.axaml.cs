@@ -1,5 +1,5 @@
-﻿using AtomUI.IconPkg;
-using AtomUI.IconPkg.AntDesign;
+﻿using AtomUI.Controls;
+using AtomUI.Icons.AntDesign;
 using AtomUIGallery.Models;
 using Avalonia;
 using Avalonia.Collections;

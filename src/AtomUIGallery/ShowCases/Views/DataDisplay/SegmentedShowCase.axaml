@@ -84,8 +84,8 @@
             Description="Set icon without label for Segmented Item.">
             <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Spacing="10">
                 <atom:Segmented Margin="20">
-                    <atom:SegmentedItem Icon="{atom:IconProvider Kind=BarsOutlined}" />
-                    <atom:SegmentedItem Icon="{atom:IconProvider Kind=AppstoreOutlined}" />
+                    <atom:SegmentedItem Icon="{atom:AntDesignIconProvider Kind=BarsOutlined}" />
+                    <atom:SegmentedItem Icon="{atom:AntDesignIconProvider Kind=AppstoreOutlined}" />
                 </atom:Segmented>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
@@ -95,31 +95,31 @@
             Description="Set icon for Segmented Item.">
             <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Spacing="10">
                 <atom:Segmented Margin="20">
-                    <atom:SegmentedItem Icon="{atom:IconProvider Kind=BarsOutlined}">
+                    <atom:SegmentedItem Icon="{atom:AntDesignIconProvider Kind=BarsOutlined}">
                         List
                     </atom:SegmentedItem>
-                    <atom:SegmentedItem Content="Kanban" Icon="{atom:IconProvider Kind=AppstoreOutlined}" />
+                    <atom:SegmentedItem Content="Kanban" Icon="{atom:AntDesignIconProvider Kind=AppstoreOutlined}" />
                 </atom:Segmented>
 
                 <atom:Segmented Margin="20">
-                    <atom:SegmentedItem Icon="{atom:IconProvider Kind=BarsOutlined}">
+                    <atom:SegmentedItem Icon="{atom:AntDesignIconProvider Kind=BarsOutlined}">
                         Ava 牛逼
                     </atom:SegmentedItem>
-                    <atom:SegmentedItem Content="群主牛逼" Icon="{atom:IconProvider Kind=WechatOutlined}" IsEnabled="False"/>
+                    <atom:SegmentedItem Content="群主牛逼" Icon="{atom:AntDesignIconProvider Kind=WechatOutlined}" IsEnabled="False"/>
 
                     <atom:SegmentedItem Content="微软牛逼"
-                                        Icon="{atom:IconProvider Kind=WindowsOutlined}" />
+                                        Icon="{atom:AntDesignIconProvider Kind=WindowsOutlined}" />
 
                 </atom:Segmented>
 
                 <atom:Segmented SizeType="Large" Margin="20">
-                    <atom:SegmentedItem Icon="{atom:IconProvider Kind=BarsOutlined}">
+                    <atom:SegmentedItem Icon="{atom:AntDesignIconProvider Kind=BarsOutlined}">
                         Ava 牛逼
                     </atom:SegmentedItem>
-                    <atom:SegmentedItem Content="群主牛逼" Icon="{atom:IconProvider Kind=WechatOutlined}" />
+                    <atom:SegmentedItem Content="群主牛逼" Icon="{atom:AntDesignIconProvider Kind=WechatOutlined}" />
 
                     <atom:SegmentedItem Content="微软牛逼"
-                                        Icon="{atom:IconProvider Kind=WindowsOutlined}" />
+                                        Icon="{atom:AntDesignIconProvider Kind=WindowsOutlined}" />
 
                 </atom:Segmented>
 

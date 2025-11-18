@@ -39,18 +39,18 @@
                     OnContent="开"
                     OffContent="关" />
                 <atom:ToggleSwitch
-                    OnContent="{atom:IconProvider Kind=TwitterOutlined}"
-                    OffContent="{atom:IconProvider Kind=WechatOutlined}"/>
+                    OnContent="{atom:AntDesignIconProvider Kind=TwitterOutlined}"
+                    OffContent="{atom:AntDesignIconProvider Kind=WechatOutlined}"/>
                 <atom:ToggleSwitch
                     SizeType="Small"
-                    OnContent="{atom:IconProvider Kind=CheckOutlined}"
-                    OffContent="{atom:IconProvider Kind=WechatOutlined}"/>
+                    OnContent="{atom:AntDesignIconProvider Kind=CheckOutlined}"
+                    OffContent="{atom:AntDesignIconProvider Kind=WechatOutlined}"/>
                 <atom:ToggleSwitch SizeType="Small">
                     <atom:ToggleSwitch.OnContent>
-                        <atom:Icon IconInfo="{atom:IconInfoProvider Kind=CheckOutlined}" />
+                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CheckOutlined}" />
                     </atom:ToggleSwitch.OnContent>
                     <atom:ToggleSwitch.OffContent>
-                        <atom:Icon IconInfo="{atom:IconInfoProvider Kind=CloseOutlined}" />
+                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CloseOutlined}" />
                     </atom:ToggleSwitch.OffContent>
                 </atom:ToggleSwitch>
             </StackPanel>

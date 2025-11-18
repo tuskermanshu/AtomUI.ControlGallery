@@ -36,7 +36,7 @@
                 </atom:Alert>
                 <atom:Alert Type="Error" IsClosable="True"
                             Description="Error Description Error Description Error Description Error Description Error Description Error Description"
-                            CloseIcon="{atom:IconProvider CloseSquareFilled}">
+                            CloseIcon="{atom:AntDesignIconProvider CloseSquareFilled}">
                     Error Text
                 </atom:Alert>
             </StackPanel>

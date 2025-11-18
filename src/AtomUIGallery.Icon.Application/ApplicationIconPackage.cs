@@ -1,4 +1,4 @@
-﻿using AtomUI.IconPkg;
+﻿using AtomUI.Controls;
 
 namespace AtomUIGallery.Icon.Application;
 
@@ -64,22 +64,22 @@ public partial class ApplicationIconPackage : IconPackage
         return null;
     }
     
-    public AtomUI.IconPkg.Icon BuildIcon(ApplicationIconKind iconKind)
+    public AtomUI.Controls.Icon BuildIcon(ApplicationIconKind iconKind)
     {
         return BuildIcon((int)iconKind)!;
     }
 
-    public AtomUI.IconPkg.Icon BuildIcon(ApplicationIconKind iconKind, ColorInfo colorInfo)
+    public AtomUI.Controls.Icon BuildIcon(ApplicationIconKind iconKind, ColorInfo colorInfo)
     {
         return BuildIcon((int)iconKind, colorInfo)!;
     }
 
-    public AtomUI.IconPkg.Icon BuildIcon(ApplicationIconKind iconKind, TwoToneColorInfo twoToneColorInfo)
+    public AtomUI.Controls.Icon BuildIcon(ApplicationIconKind iconKind, TwoToneColorInfo twoToneColorInfo)
     {
         return BuildIcon((int)iconKind, twoToneColorInfo)!;
     }
 
-    public override AtomUI.IconPkg.Icon? BuildIcon(string iconKind)
+    public override AtomUI.Controls.Icon? BuildIcon(string iconKind)
     {
         if (Enum.TryParse(iconKind, out ApplicationIconKind kind))
         {
@@ -89,7 +89,7 @@ public partial class ApplicationIconPackage : IconPackage
         return null;
     }
 
-    public override AtomUI.IconPkg.Icon? BuildIcon(string iconKind, ColorInfo colorInfo)
+    public override AtomUI.Controls.Icon? BuildIcon(string iconKind, ColorInfo colorInfo)
     {
         if (Enum.TryParse(iconKind, out ApplicationIconKind kind))
         {
@@ -99,7 +99,7 @@ public partial class ApplicationIconPackage : IconPackage
         return null;
     }
 
-    public override AtomUI.IconPkg.Icon? BuildIcon(string iconKind, TwoToneColorInfo twoToneColorInfo)
+    public override AtomUI.Controls.Icon? BuildIcon(string iconKind, TwoToneColorInfo twoToneColorInfo)
     {
         if (Enum.TryParse(iconKind, out ApplicationIconKind kind))
         {

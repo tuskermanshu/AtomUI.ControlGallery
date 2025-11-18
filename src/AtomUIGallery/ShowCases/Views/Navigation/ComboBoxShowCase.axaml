@@ -143,7 +143,7 @@
                 </atom:ComboBox>
 
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
-                               RightAddOn="{atom:IconProvider Kind=SettingOutlined}">
+                               RightAddOn="{atom:AntDesignIconProvider Kind=SettingOutlined}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
@@ -168,8 +168,8 @@
             Description="Add a prefix or suffix icons inside input.">
             <StackPanel Orientation="Vertical" Spacing="10">
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
-                               ContentLeftAddOn="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
-                               ContentRightAddOn="{atom:IconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}">
+                               ContentLeftAddOn="{atom:AntDesignIconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
+                               ContentRightAddOn="{atom:AntDesignIconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
@@ -219,7 +219,7 @@
 
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
                                Status="Error"
-                               ContentLeftAddOn="{atom:IconProvider Kind=ClockCircleOutlined}">
+                               ContentLeftAddOn="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
@@ -228,7 +228,7 @@
 
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
                                Status="Warning"
-                               ContentLeftAddOn="{atom:IconProvider Kind=ClockCircleOutlined}">
+                               ContentLeftAddOn="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
@@ -238,7 +238,7 @@
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
                                Status="Error"
                                StyleVariant="Filled"
-                               ContentLeftAddOn="{atom:IconProvider Kind=ClockCircleOutlined}">
+                               ContentLeftAddOn="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
@@ -248,7 +248,7 @@
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
                                Status="Warning"
                                StyleVariant="Filled"
-                               ContentLeftAddOn="{atom:IconProvider Kind=ClockCircleOutlined}">
+                               ContentLeftAddOn="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
@@ -258,7 +258,7 @@
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
                                Status="Error"
                                StyleVariant="Borderless"
-                               ContentLeftAddOn="{atom:IconProvider Kind=ClockCircleOutlined}">
+                               ContentLeftAddOn="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
@@ -268,7 +268,7 @@
                 <atom:ComboBox PlaceholderText="Please select" Width="300"
                                Status="Warning"
                                StyleVariant="Borderless"
-                               ContentLeftAddOn="{atom:IconProvider Kind=ClockCircleOutlined}">
+                               ContentLeftAddOn="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}">
                     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
                     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
                     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>

@@ -133,7 +133,7 @@
             <StackPanel Orientation="Vertical" Spacing="20">
                 <StackPanel Orientation="Horizontal">
                     <atom:DotBadge Offset="-7,8">
-                        <atom:Button ButtonType="Link" Icon="{atom:IconProvider Kind=NotificationOutlined}" />
+                        <atom:Button ButtonType="Link" Icon="{atom:AntDesignIconProvider Kind=NotificationOutlined}" />
                     </atom:DotBadge>
                     <atom:DotBadge Offset="-14,12">
                         <atom:Button ButtonType="Link" Content="Link something" />

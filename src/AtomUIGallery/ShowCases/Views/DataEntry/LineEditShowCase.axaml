@@ -15,11 +15,11 @@
             Description="There are three sizes of an Input box: large (40px), default (32px) and small (24px).">
             <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
                 <atom:LineEdit Watermark="Large" SizeType="Large"
-                               InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=UserOutlined}" />
                 <atom:LineEdit Watermark="Middle" SizeType="Middle"
-                               InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=UserOutlined}" />
                 <atom:LineEdit Watermark="Small" SizeType="Small"
-                               InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=UserOutlined}" />
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
 
@@ -73,7 +73,7 @@
             <StackPanel Orientation="Vertical" Spacing="10">
                 <atom:LineEdit LeftAddOn="http://" RightAddOn=".com" Width="400" HorizontalAlignment="Left"
                                Text="mysite" />
-                <atom:LineEdit RightAddOn="{atom:IconProvider Kind=SettingOutlined}" Width="400"
+                <atom:LineEdit RightAddOn="{atom:AntDesignIconProvider Kind=SettingOutlined}" Width="400"
                                HorizontalAlignment="Left"
                                Text="mysite" />
                 <atom:LineEdit LeftAddOn="http://" InnerRightContent=".com" Width="400" HorizontalAlignment="Left"
@@ -116,8 +116,8 @@
             Description="Add a prefix or suffix icons inside input.">
             <StackPanel Orientation="Vertical" Spacing="10">
                 <atom:LineEdit Watermark="Enter your username"
-                               InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
-                               InnerRightContent="{atom:IconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
+                               InnerRightContent="{atom:AntDesignIconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}" />
                 <atom:LineEdit InnerLeftContent="￥" InnerRightContent="RMB" />
                 <atom:LineEdit InnerLeftContent="￥" InnerRightContent="RMB" IsEnabled="False" />
             </StackPanel>
@@ -131,27 +131,27 @@
                 <atom:LineEdit Watermark="Error" Status="Error" />
                 <atom:LineEdit Watermark="Warning" Status="Warning" />
                 <atom:LineEdit Watermark="Error with prefix"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" Status="Error" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}" Status="Error" />
                 <atom:LineEdit Watermark="Warning with prefix"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" Status="Warning" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}" Status="Warning" />
 
                 <atom:LineEdit Watermark="Error" Status="Error"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" StyleVariant="Filled" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}" StyleVariant="Filled" />
                 <atom:LineEdit Watermark="Warning" Status="Warning"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" StyleVariant="Filled" />
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}" StyleVariant="Filled" />
 
                 <atom:LineEdit Watermark="Error" Status="Error"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                StyleVariant="Borderless" />
                 <atom:LineEdit Watermark="Warning" Status="Warning"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                StyleVariant="Borderless" />
 
                 <atom:LineEdit Watermark="Error" Status="Error"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                StyleVariant="Underlined" />
                 <atom:LineEdit Watermark="Warning" Status="Warning"
-                               InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                               InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                StyleVariant="Underlined" />
 
                 <atom:Separator Title="LeftAddOn and RightAddOn" />
@@ -229,7 +229,7 @@
                                  HorizontalAlignment="Left"
                                  SearchButtonStyle="Primary"
                                  SearchButtonText="搜索一下"
-                                 InnerRightContent="{atom:IconProvider Kind=AudioOutlined, NormalFilledColor=#1677ff, Width=16, Height=16}"
+                                 InnerRightContent="{atom:AntDesignIconProvider Kind=AudioOutlined, NormalFilledColor=#1677ff, Width=16, Height=16}"
                                  IsEnableClearButton="True"
                                  SizeType="Large" />
                 <atom:Separator Title="Filled" />
@@ -287,7 +287,7 @@
                                  IsEnableClearButton="True"
                                  SizeType="Large" IsEnabled="False">
                     <atom:SearchEdit.InnerRightContent>
-                        <atom:Icon IconInfo="{atom:IconInfoProvider Kind=AudioOutlined}"
+                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=AudioOutlined}"
                                    Width="16"
                                    Height="16"
                                    NormalFilledBrush="{DynamicResource {x:Static atom:SharedTokenKey.ColorPrimary}}"

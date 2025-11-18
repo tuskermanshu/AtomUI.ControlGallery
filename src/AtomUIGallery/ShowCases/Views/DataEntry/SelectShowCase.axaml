@@ -319,7 +319,7 @@
                                  DefaultValues="lucy"
                                  IsSearchEnabled="True"
                                  Width="200"
-                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                                 ContentRightAddOn="{atom:AntDesignIconProvider Kind=SmileOutlined}">
                         <atom:SelectOption Header="Jack" Value="jack" />
                         <atom:SelectOption Header="Lucy" Value="lucy" />
                         <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
@@ -331,7 +331,7 @@
                                  IsSearchEnabled="True"
                                  Width="200"
                                  IsEnabled="False"
-                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                                 ContentRightAddOn="{atom:AntDesignIconProvider Kind=SmileOutlined}">
                         <atom:SelectOption Header="Jack" Value="jack" />
                         <atom:SelectOption Header="Lucy" Value="lucy" />
                         <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
@@ -354,7 +354,7 @@
                                  DefaultValues="lucy"
                                  IsSearchEnabled="True"
                                  Width="200"
-                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                                 ContentRightAddOn="{atom:AntDesignIconProvider Kind=SmileOutlined}">
                         <atom:SelectOption Header="Jack" Value="jack" />
                         <atom:SelectOption Header="Lucy" Value="lucy" />
                         <atom:SelectOption Header="yiminghe" Value="Yiminghe" />
@@ -366,7 +366,7 @@
                                  IsSearchEnabled="True"
                                  Width="200"
                                  IsEnabled="False"
-                                 ContentRightAddOn="{atom:IconProvider Kind=SmileOutlined}">
+                                 ContentRightAddOn="{atom:AntDesignIconProvider Kind=SmileOutlined}">
                         <atom:SelectOption Header="Jack" Value="jack" />
                         <atom:SelectOption Header="Lucy" Value="lucy" />
                         <atom:SelectOption Header="yiminghe" Value="Yiminghe" />

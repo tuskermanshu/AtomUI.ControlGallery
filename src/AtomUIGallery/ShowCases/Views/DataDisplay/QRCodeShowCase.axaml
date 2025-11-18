@@ -52,12 +52,12 @@
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
                                         VerticalAlignment="Center" Spacing="5">
-                                <atom:Icon IconInfo="{atom:IconInfoProvider Kind=CloseCircleFilled}"
+                                <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CloseCircleFilled}"
                                            NormalFilledBrush="Red" Width="16" Height="16" />
                                 <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">二维码过期</atom:TextBlock>
                             </StackPanel>
                             <atom:Button HorizontalAlignment="Center"
-                                         Icon="{atom:IconProvider Kind=ReloadOutlined}" ButtonType="Link">
+                                         Icon="{atom:AntDesignIconProvider Kind=ReloadOutlined}" ButtonType="Link">
                                 点击刷新
                             </atom:Button>
                         </StackPanel>
@@ -68,7 +68,7 @@
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Spacing="5">
-                            <atom:Icon IconInfo="{atom:IconInfoProvider Kind=CheckCircleFilled}"
+                            <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CheckCircleFilled}"
                                        NormalFilledBrush="Green" Width="16" Height="16" />
                             <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">已扫描</atom:TextBlock>
                         </StackPanel>
@@ -80,8 +80,8 @@
                                       Description="自定义尺寸">
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal" Spacing="10" Margin="0,0,0,16">
-                    <atom:Button Icon="{atom:IconProvider Kind=MinusOutlined}" Command="{Binding SmallerCommand}">Smaller</atom:Button>
-                    <atom:Button Icon="{atom:IconProvider Kind=PlusOutlined}" Command="{Binding LargerCommand}">Larger</atom:Button>
+                    <atom:Button Icon="{atom:AntDesignIconProvider Kind=MinusOutlined}" Command="{Binding SmallerCommand}">Smaller</atom:Button>
+                    <atom:Button Icon="{atom:AntDesignIconProvider Kind=PlusOutlined}" Command="{Binding LargerCommand}">Larger</atom:Button>
                 </StackPanel>
                 <atom:QRCode Value="https://atomui.net" Icon="avares://AtomUIGallery/Assets/ATOMUI-LOGO.png"
                              Size="{Binding Size}" IconSize="{Binding IconSize}" />

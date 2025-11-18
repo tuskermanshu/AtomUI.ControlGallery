@@ -153,19 +153,19 @@ If a large or small collapse is desired, set the size property to either large o
             <StackPanel Orientation="Vertical" Spacing="20">
                 <atom:Collapse ExpandIconPosition="{Binding CollapseExpandIconPosition}">
                     <atom:CollapseItem Header="This is panel header 1"
-                                       AddOnContent="{atom:IconProvider Kind=SettingOutlined}">
+                                       AddOnContent="{atom:AntDesignIconProvider Kind=SettingOutlined}">
                         <atom:TextBlock TextWrapping="Wrap">
                             A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
                         </atom:TextBlock>
                     </atom:CollapseItem>
                     <atom:CollapseItem Header="This is panel header 2"
-                                       AddOnContent="{atom:IconProvider Kind=SettingOutlined}">
+                                       AddOnContent="{atom:AntDesignIconProvider Kind=SettingOutlined}">
                         <atom:TextBlock TextWrapping="Wrap">
                             A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
                         </atom:TextBlock>
                     </atom:CollapseItem>
                     <atom:CollapseItem Header="This is panel header 3"
-                                       AddOnContent="{atom:IconProvider Kind=SettingOutlined}">
+                                       AddOnContent="{atom:AntDesignIconProvider Kind=SettingOutlined}">
                         <atom:TextBlock TextWrapping="Wrap">
                             A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
                         </atom:TextBlock>

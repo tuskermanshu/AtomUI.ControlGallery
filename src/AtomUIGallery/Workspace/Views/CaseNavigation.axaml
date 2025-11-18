@@ -6,7 +6,7 @@
              xmlns:lang="using:AtomUIGallery.Workspace.Localization.CaseNavigationLang">
     <atom:NavMenu Mode="Inline" Width="260" Name="ShowCaseNavMenu">
         <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.General}}"
-                          Icon="{atom:IconProvider Kind=WindowsOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=WindowsOutlined}">
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.General_AboutUs}}"
                               ItemKey="{x:Static viewmodels:AboutUsViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.General_OsInfo}}"
@@ -26,13 +26,13 @@
         </atom:NavMenuItem>
         
         <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Layout}}"
-                          Icon="{atom:IconProvider Kind=LayoutOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=LayoutOutlined}">
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Layout_BoxPanel}}"
                               ItemKey="{x:Static viewmodels:BoxPanelViewModel.ID}" />
         </atom:NavMenuItem>
 
         <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Navigation}}"
-                          Icon="{atom:IconProvider Kind=MenuOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=MenuOutlined}">
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Navigation_Breadcrumb}}"
                               ItemKey="{x:Static viewmodels:BreadcrumbViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Navigation_ButtonSpinner}}"
@@ -52,7 +52,7 @@
         </atom:NavMenuItem>
 
         <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataEntry}}"
-                          Icon="{atom:IconProvider Kind=FormOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=FormOutlined}">
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataEntry_CheckBox}}"
                               ItemKey="{x:Static viewmodels:CheckBoxViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataEntry_ColorPicker}}"
@@ -76,7 +76,7 @@
         </atom:NavMenuItem>
 
         <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataDisplay}}"
-                          Icon="{atom:IconProvider Kind=AreaChartOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=AreaChartOutlined}">
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataDisplay_Avatar}}"
                               ItemKey="{x:Static viewmodels:AvatarViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.DataDisplay_Badge}}"
@@ -116,7 +116,7 @@
         </atom:NavMenuItem>
 
         <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Feedback}}"
-                          Icon="{atom:IconProvider Kind=UserSwitchOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=UserSwitchOutlined}">
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Feedback_Alert}}"
                               ItemKey="{x:Static viewmodels:AlertViewModel.ID}" />
             <atom:NavMenuItem Header="{DynamicResource {x:Static lang:CaseNavigationLangResourceKey.Feedback_Drawer}}"

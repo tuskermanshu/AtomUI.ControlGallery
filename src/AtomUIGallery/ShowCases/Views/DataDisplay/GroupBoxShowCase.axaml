@@ -83,7 +83,7 @@
         <gallerycontrols:ShowCaseItem
             Title="Header Icon"
             Description="GroupBox Header supports specifying Icon.">
-            <atom:GroupBox HeaderTitle="Title Info" HeaderIcon="{atom:IconProvider Kind=GithubOutlined}">
+            <atom:GroupBox HeaderTitle="Title Info" HeaderIcon="{atom:AntDesignIconProvider Kind=GithubOutlined}">
                 <Panel Height="100">
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
                         Content of group box

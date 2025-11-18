@@ -23,8 +23,8 @@
             Description="The icon should be placed in front of the text.">
             <StackPanel>
                 <atom:Breadcrumb>
-                    <atom:BreadcrumbItem Icon="{atom:IconProvider Kind=HomeOutlined}"></atom:BreadcrumbItem>
-                    <atom:BreadcrumbItem Icon="{atom:IconProvider Kind=UserOutlined}" NavigateContext="#">Application List</atom:BreadcrumbItem>
+                    <atom:BreadcrumbItem Icon="{atom:AntDesignIconProvider Kind=HomeOutlined}"></atom:BreadcrumbItem>
+                    <atom:BreadcrumbItem Icon="{atom:AntDesignIconProvider Kind=UserOutlined}" NavigateContext="#">Application List</atom:BreadcrumbItem>
                     <atom:BreadcrumbItem>Application</atom:BreadcrumbItem>
                 </atom:Breadcrumb>
             </StackPanel>

@@ -20,19 +20,16 @@
     </ItemGroup>
 
     <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
-        <PackageReference Include="AtomUI"/>
-        <PackageReference Include="AtomUI.IconPkg.Generator"
+        <PackageReference Include="AtomUI.Core"/>
+        <PackageReference Include="AtomUI.Icons.Generator"
                           OutputItemType="Analyzer"
                           ReferenceOutputAssembly="false"
                           PrivateAssets="all"/>
     </ItemGroup>
-
+    
     <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.IconPkg.Generator/AtomUI.IconPkg.Generator.csproj"
-                          OutputItemType="Analyzer" 
-                          ReferenceOutputAssembly="false" 
-                          PrivateAssets="all"/>
-        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.IconPkg/AtomUI.IconPkg.csproj"/>
+        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Core/AtomUI.Core.csproj" />
+        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Icons.Generator/AtomUI.Icons.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" PrivateAssets="all" />
     </ItemGroup>
 
 </Project>

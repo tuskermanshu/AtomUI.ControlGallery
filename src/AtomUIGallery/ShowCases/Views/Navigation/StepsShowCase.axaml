@@ -35,11 +35,11 @@
         OccupyEntireRow="True"
         MinHeight="200">
         <atom:Steps CurrentStep="0">
-            <atom:StepsItem Header="Login" Status="Finish" Icon="{atom:IconProvider Kind=UserOutlined}" />
-            <atom:StepsItem Header="Verification" Status="Finish" Icon="{atom:IconProvider Kind=SolutionOutlined}" />
+            <atom:StepsItem Header="Login" Status="Finish" Icon="{atom:AntDesignIconProvider Kind=UserOutlined}" />
+            <atom:StepsItem Header="Verification" Status="Finish" Icon="{atom:AntDesignIconProvider Kind=SolutionOutlined}" />
             <atom:StepsItem Header="Pay" Status="Process"
-                            Icon="{atom:IconProvider Kind=LoadingOutlined, Animation=Spin}" />
-            <atom:StepsItem Header="Done" Status="Wait" Icon="{atom:IconProvider Kind=SmileOutlined}" />
+                            Icon="{atom:AntDesignIconProvider Kind=LoadingOutlined, Animation=Spin}" />
+            <atom:StepsItem Header="Done" Status="Wait" Icon="{atom:AntDesignIconProvider Kind=SmileOutlined}" />
         </atom:Steps>
     </gallerycontrols:ShowCaseItem>
     

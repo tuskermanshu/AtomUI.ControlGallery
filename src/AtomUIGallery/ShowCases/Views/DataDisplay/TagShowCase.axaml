@@ -17,7 +17,7 @@
                 <atom:Tag>Link</atom:Tag>
                 <atom:Tag IsClosable="true">Prevent Default</atom:Tag>
                 <atom:Tag IsClosable="True"
-                          CloseIcon="{atom:IconProvider Kind=CloseCircleOutlined}">
+                          CloseIcon="{atom:AntDesignIconProvider Kind=CloseCircleOutlined}">
                     Tag 2
                 </atom:Tag>
             </WrapPanel>
@@ -69,27 +69,27 @@
                 <atom:TextBlock FontWeight="Bold" FontSize="14" Margin="0, 20, 0, 10">Custom</atom:TextBlock>
                 <WrapPanel HorizontalAlignment="Left">
                     <atom:Tag TagColor="success"
-                              Icon="{atom:IconProvider Kind=CheckCircleOutlined}">
+                              Icon="{atom:AntDesignIconProvider Kind=CheckCircleOutlined}">
                         success
                     </atom:Tag>
                     <atom:Tag TagColor="info"
-                              Icon="{atom:IconProvider Kind=SyncOutlined}">
+                              Icon="{atom:AntDesignIconProvider Kind=SyncOutlined}">
                         processing
                     </atom:Tag>
                     <atom:Tag TagColor="error"
-                              Icon="{atom:IconProvider Kind=CloseCircleOutlined}">
+                              Icon="{atom:AntDesignIconProvider Kind=CloseCircleOutlined}">
                         error
                     </atom:Tag>
                     <atom:Tag TagColor="warning"
-                              Icon="{atom:IconProvider Kind=ExclamationCircleOutlined}">
+                              Icon="{atom:AntDesignIconProvider Kind=ExclamationCircleOutlined}">
                         warning
                     </atom:Tag>
                     <atom:Tag TagColor="default"
-                              Icon="{atom:IconProvider Kind=ClockCircleOutlined}">
+                              Icon="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}">
                         default
                     </atom:Tag>
                     <atom:Tag TagColor="default"
-                              Icon="{atom:IconProvider Kind=MinusCircleOutlined}">
+                              Icon="{atom:AntDesignIconProvider Kind=MinusCircleOutlined}">
                         default
                     </atom:Tag>
                 </WrapPanel>
@@ -103,19 +103,19 @@
 If you want specific control over the positioning and placement of the Icon, then that should be done by placing the Icon component within the Tag rather than using the icon property.">
             <WrapPanel HorizontalAlignment="Left" Orientation="Horizontal">
                 <atom:Tag TagColor="#55acee"
-                          Icon="{atom:IconProvider Kind=TwitterOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=TwitterOutlined}">
                     Twitter
                 </atom:Tag>
                 <atom:Tag TagColor="#cd201f"
-                          Icon="{atom:IconProvider Kind=YoutubeOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=YoutubeOutlined}">
                     Youtube
                 </atom:Tag>
                 <atom:Tag TagColor="#3b5999"
-                          Icon="{atom:IconProvider Kind=FacebookOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=FacebookOutlined}">
                     Facebook
                 </atom:Tag>
                 <atom:Tag TagColor="#55acee"
-                          Icon="{atom:IconProvider Kind=LinkedinOutlined}">
+                          Icon="{atom:AntDesignIconProvider Kind=LinkedinOutlined}">
                     Linkedin
                 </atom:Tag>
             </WrapPanel>

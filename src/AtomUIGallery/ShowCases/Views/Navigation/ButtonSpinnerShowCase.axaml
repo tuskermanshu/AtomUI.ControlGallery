@@ -106,7 +106,7 @@
                 </atom:ButtonSpinner>
         
                 <atom:ButtonSpinner
-                    RightAddOn="{atom:IconProvider Kind=SettingOutlined}"
+                    RightAddOn="{atom:AntDesignIconProvider Kind=SettingOutlined}"
                     Width="400"
                     HorizontalAlignment="Left">
                     <atom:TextBlock
@@ -135,8 +135,8 @@
             <StackPanel Orientation="Vertical" Spacing="10">
         
                 <atom:ButtonSpinner
-                    InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
-                    InnerRightContent="{atom:IconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
+                    InnerRightContent="{atom:AntDesignIconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}"
                     Width="400"
                     HorizontalAlignment="Left">
                     <atom:TextBlock
@@ -195,7 +195,7 @@
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
-                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                     HorizontalAlignment="Left">
                     <atom:TextBlock
                         HorizontalAlignment="Left"
@@ -206,7 +206,7 @@
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
-                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                     HorizontalAlignment="Left">
                     <atom:TextBlock
                         HorizontalAlignment="Left"
@@ -217,7 +217,7 @@
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
-                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                     HorizontalAlignment="Left"
                     StyleVariant="Filled">
                     <atom:TextBlock
@@ -229,7 +229,7 @@
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
-                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                     HorizontalAlignment="Left"
                     StyleVariant="Filled">
                     <atom:TextBlock
@@ -241,7 +241,7 @@
                 <atom:ButtonSpinner
                     Status="Error"
                     Width="400"
-                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                     HorizontalAlignment="Left"
                     StyleVariant="Borderless">
                     <atom:TextBlock
@@ -253,7 +253,7 @@
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
-                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                     HorizontalAlignment="Left"
                     StyleVariant="Borderless">
                     <atom:TextBlock

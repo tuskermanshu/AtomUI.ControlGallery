@@ -12,13 +12,13 @@
                 <atom:DropdownButton.DropdownFlyout>
                     <atom:MenuFlyout>
                         <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                       Icon="{atom:IconProvider Kind=ScissorOutlined}" />
-                        <atom:MenuItem Header="Copy" InputGesture="Ctrl+C" Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                       Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
+                        <atom:MenuItem Header="Copy" InputGesture="Ctrl+C" Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                         <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                       Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                       Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         <atom:MenuItem Header="Paste">
                             <atom:MenuItem Header="Paste" InputGesture="Ctrl+P"
-                                           Icon="{atom:IconProvider Kind=FileDoneOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=FileDoneOutlined}" />
                             <atom:MenuItem Header="Paste from History" InputGesture="Ctrl+Shift+V" />
                         </atom:MenuItem>
                     </atom:MenuFlyout>
@@ -35,14 +35,14 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                             <atom:MenuItem Header="Paste">
                                 <atom:MenuItem Header="Paste" InputGesture="Ctrl+P"
-                                               Icon="{atom:IconProvider Kind=FileDoneOutlined}" />
+                                               Icon="{atom:AntDesignIconProvider Kind=FileDoneOutlined}" />
                                 <atom:MenuItem Header="Paste from History" InputGesture="Ctrl+Shift+V" />
                             </atom:MenuItem>
                         </atom:MenuFlyout>
@@ -54,11 +54,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -68,11 +68,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -82,11 +82,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -108,11 +108,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -123,11 +123,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -138,11 +138,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -153,11 +153,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -168,11 +168,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -183,11 +183,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -209,11 +209,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -224,11 +224,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -239,11 +239,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -254,11 +254,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -269,11 +269,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>
@@ -284,11 +284,11 @@
                     <atom:DropdownButton.DropdownFlyout>
                         <atom:MenuFlyout>
                             <atom:MenuItem Header="Cut" InputGesture="Ctrl+X"
-                                           Icon="{atom:IconProvider Kind=ScissorOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=ScissorOutlined}" />
                             <atom:MenuItem Header="Copy" InputGesture="Ctrl+C"
-                                           Icon="{atom:IconProvider Kind=CopyOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=CopyOutlined}" />
                             <atom:MenuItem Header="Delete" InputGesture="Ctrl+D"
-                                           Icon="{atom:IconProvider Kind=DeleteOutlined}" />
+                                           Icon="{atom:AntDesignIconProvider Kind=DeleteOutlined}" />
                         </atom:MenuFlyout>
                     </atom:DropdownButton.DropdownFlyout>
                 </atom:DropdownButton>

@@ -13,19 +13,19 @@
                                       Description="Three sizes and two shapes are available.">
             <StackPanel Orientation="Vertical" Spacing="20">
                 <StackPanel Orientation="Horizontal" Spacing="10">
-                    <atom:Avatar Icon="{atom:IconProvider UserOutlined}" Size="64" />
-                    <atom:Avatar Icon="{atom:IconProvider UserOutlined}" SizeType="Large" />
-                    <atom:Avatar Icon="{atom:IconProvider UserOutlined}" />
-                    <atom:Avatar Icon="{atom:IconProvider UserOutlined}" SizeType="Small" />
-                    <atom:Avatar Icon="{atom:IconProvider UserOutlined}" Size="14" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider UserOutlined}" Size="64" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider UserOutlined}" SizeType="Large" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider UserOutlined}" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider UserOutlined}" SizeType="Small" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider UserOutlined}" Size="14" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Spacing="10">
-                    <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" Size="64" />
-                    <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" SizeType="Large" />
-                    <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" />
-                    <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" SizeType="Small" />
-                    <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" Size="14" />
+                    <atom:Avatar Shape="Square" Icon="{atom:AntDesignIconProvider UserOutlined}" Size="64" />
+                    <atom:Avatar Shape="Square" Icon="{atom:AntDesignIconProvider UserOutlined}" SizeType="Large" />
+                    <atom:Avatar Shape="Square" Icon="{atom:AntDesignIconProvider UserOutlined}" />
+                    <atom:Avatar Shape="Square" Icon="{atom:AntDesignIconProvider UserOutlined}" SizeType="Small" />
+                    <atom:Avatar Shape="Square" Icon="{atom:AntDesignIconProvider UserOutlined}" Size="14" />
                 </StackPanel>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
@@ -34,12 +34,12 @@
                                       Description="Image, Icon and letter are supported, and the latter two kinds of avatar can have custom colors and background colors.">
             <StackPanel Orientation="Vertical" Spacing="20">
                 <StackPanel Orientation="Horizontal" Spacing="10">
-                    <atom:Avatar Icon="{atom:IconProvider UserOutlined}" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider UserOutlined}" />
                     <atom:Avatar>U</atom:Avatar>
                     <atom:Avatar Size="40">USER</atom:Avatar>
                     <atom:Avatar Src="avares://AtomUIGallery/Assets/AvatarShowCase/AntDesign.svg" />
                     <atom:Avatar Background="#fde3cf" Foreground="#f56a00">U</atom:Avatar>
-                    <atom:Avatar Background="#87d068" Icon="{atom:IconProvider UserOutlined}" />
+                    <atom:Avatar Background="#87d068" Icon="{atom:AntDesignIconProvider UserOutlined}" />
                 </StackPanel>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
@@ -48,10 +48,10 @@
                                       Description="Usually used for reminders and notifications.">
             <StackPanel Orientation="Horizontal" Spacing="20">
                 <atom:CountBadge Count="5">
-                    <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" />
+                    <atom:Avatar Shape="Square" Icon="{atom:AntDesignIconProvider UserOutlined}" />
                 </atom:CountBadge>
                 <atom:DotBadge>
-                    <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" />
+                    <atom:Avatar Shape="Square" Icon="{atom:AntDesignIconProvider UserOutlined}" />
                 </atom:DotBadge>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>
@@ -84,8 +84,8 @@
                 <atom:AvatarGroup>
                     <atom:Avatar Src="avares://AtomUIGallery/Assets/AvatarShowCase/PeopleAvatar1.svg"/>
                     <atom:Avatar Background="#f56a00">K</atom:Avatar>
-                    <atom:Avatar Background="#87d068" Icon="{atom:IconProvider UserOutlined}" />
-                    <atom:Avatar Icon="{atom:IconProvider AntDesignOutlined}" Background="#1677ff"/>
+                    <atom:Avatar Background="#87d068" Icon="{atom:AntDesignIconProvider UserOutlined}" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider AntDesignOutlined}" Background="#1677ff"/>
                 </atom:AvatarGroup>
                 <atom:Separator/>
                 <atom:AvatarGroup MaxDisplayCount="2"
@@ -93,8 +93,8 @@
                                   FoldInfoAvatarBackground="#fde3cf">
                     <atom:Avatar Src="avares://AtomUIGallery/Assets/AvatarShowCase/PeopleAvatar2.svg"/>
                     <atom:Avatar Background="#f56a00">K</atom:Avatar>
-                    <atom:Avatar Background="#87d068" Icon="{atom:IconProvider UserOutlined}" />
-                    <atom:Avatar Icon="{atom:IconProvider AntDesignOutlined}" Background="#1677ff"/>
+                    <atom:Avatar Background="#87d068" Icon="{atom:AntDesignIconProvider UserOutlined}" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider AntDesignOutlined}" Background="#1677ff"/>
                 </atom:AvatarGroup>
                 <atom:Separator/>
                 <atom:AvatarGroup MaxDisplayCount="2"
@@ -103,8 +103,8 @@
                                   SizeType="Large">
                     <atom:Avatar Src="avares://AtomUIGallery/Assets/AvatarShowCase/PeopleAvatar3.svg"/>
                     <atom:Avatar Background="#f56a00">K</atom:Avatar>
-                    <atom:Avatar Background="#87d068" Icon="{atom:IconProvider UserOutlined}" />
-                    <atom:Avatar Icon="{atom:IconProvider AntDesignOutlined}" Background="#1677ff"/>
+                    <atom:Avatar Background="#87d068" Icon="{atom:AntDesignIconProvider UserOutlined}" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider AntDesignOutlined}" Background="#1677ff"/>
                 </atom:AvatarGroup>
                 <atom:Separator/>
                 <atom:AvatarGroup MaxDisplayCount="2"
@@ -114,15 +114,15 @@
                                   FoldAvatarFlyoutTriggerType="Click">
                     <atom:Avatar BitmapSrc="/Assets/AvatarShowCase/PeopleAvatar4.png"/>
                     <atom:Avatar Background="#f56a00">K</atom:Avatar>
-                    <atom:Avatar Background="#87d068" Icon="{atom:IconProvider UserOutlined}" />
-                    <atom:Avatar Icon="{atom:IconProvider AntDesignOutlined}" Background="#1677ff"/>
+                    <atom:Avatar Background="#87d068" Icon="{atom:AntDesignIconProvider UserOutlined}" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider AntDesignOutlined}" Background="#1677ff"/>
                 </atom:AvatarGroup>
                 <atom:Separator/>
                 <atom:AvatarGroup Shape="Square">
                     <atom:Avatar Background="#fde3cf">A</atom:Avatar>
                     <atom:Avatar Background="#f56a00">K</atom:Avatar>
-                    <atom:Avatar Background="#87d068" Icon="{atom:IconProvider UserOutlined}" />
-                    <atom:Avatar Icon="{atom:IconProvider AntDesignOutlined}" Background="#1677ff"/>
+                    <atom:Avatar Background="#87d068" Icon="{atom:AntDesignIconProvider UserOutlined}" />
+                    <atom:Avatar Icon="{atom:AntDesignIconProvider AntDesignOutlined}" Background="#1677ff"/>
                 </atom:AvatarGroup>
             </StackPanel>
         </gallerycontrols:ShowCaseItem>

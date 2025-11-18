@@ -74,7 +74,7 @@
                 <atom:TimelineItem>
                     2024-01-01 AtomUI Officially Initiated
                 </atom:TimelineItem>
-                <atom:TimelineItem IndicatorIcon="{atom:IconProvider Kind=ClockCircleOutlined}"
+                <atom:TimelineItem IndicatorIcon="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                    IndicatorColor ="Red"
                                    Label="2024-01-01">
                     2024-01-01 AtomUI Officially Initiated

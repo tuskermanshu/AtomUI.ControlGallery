@@ -54,7 +54,7 @@
                                     HorizontalAlignment="Left"
                                     Width="400" 
                                     Value="3" />
-                <atom:NumericUpDown RightAddOn="{atom:IconProvider Kind=SettingOutlined}"
+                <atom:NumericUpDown RightAddOn="{atom:AntDesignIconProvider Kind=SettingOutlined}"
                                     HorizontalAlignment="Left"
                                     Width="400"
                                     Value="3" />
@@ -77,8 +77,8 @@
             Description="Add a prefix or suffix icons inside input.">
             <StackPanel Orientation="Vertical" Spacing="10">
                 <atom:NumericUpDown Watermark="Enter your value"
-                                    InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
-                                    InnerRightContent="{atom:IconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}" />
+                                    InnerLeftContent="{atom:AntDesignIconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
+                                    InnerRightContent="{atom:AntDesignIconProvider Kind=InfoCircleOutlined, NormalFilledColor=#8C8C8C}" />
                 <atom:NumericUpDown InnerLeftContent="￥" InnerRightContent="RMB" />
                 <atom:NumericUpDown InnerLeftContent="￥" InnerRightContent="RMB" IsEnabled="False" />
             </StackPanel>
@@ -91,22 +91,22 @@
                 <atom:NumericUpDown Watermark="Error" Status="Error" />
                 <atom:NumericUpDown Watermark="Warning" Status="Warning" />
                 <atom:NumericUpDown Watermark="Error with prefix"
-                                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" Status="Error" />
+                                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}" Status="Error" />
                 <atom:NumericUpDown Watermark="Warning with prefix"
-                                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" Status="Warning" />
+                                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}" Status="Warning" />
 
                 <atom:NumericUpDown Watermark="Error" Status="Error"
-                                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                     StyleVariant="Filled" />
                 <atom:NumericUpDown Watermark="Warning" Status="Warning"
-                                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                     StyleVariant="Filled" />
 
                 <atom:NumericUpDown Watermark="Error" Status="Error"
-                                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                     StyleVariant="Borderless" />
                 <atom:NumericUpDown Watermark="Warning" Status="Warning"
-                                    InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
                                     StyleVariant="Borderless" />
             </StackPanel>
         </gallerycontrols:ShowCaseItem>

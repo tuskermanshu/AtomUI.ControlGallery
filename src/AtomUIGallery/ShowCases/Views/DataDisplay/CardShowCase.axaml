@@ -131,9 +131,9 @@
                        </StackPanel>
                    </atom:CardMetaContent>
                    <atom:Card.Actions>
-                       <atom:IconButton Icon="{atom:IconProvider Kind=EditOutlined}"/>
-                       <atom:IconButton Icon="{atom:IconProvider Kind=SettingOutlined}"/>
-                       <atom:IconButton Icon="{atom:IconProvider Kind=EllipsisOutlined}"/>
+                       <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=EditOutlined}"/>
+                       <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=SettingOutlined}"/>
+                       <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=EllipsisOutlined}"/>
                    </atom:Card.Actions>
                </atom:Card>
         
@@ -148,9 +148,9 @@
                        </StackPanel>
                    </atom:CardMetaContent>
                    <atom:Card.Actions>
-                       <atom:IconButton Icon="{atom:IconProvider Kind=EditOutlined}"/>
-                       <atom:IconButton Icon="{atom:IconProvider Kind=SettingOutlined}"/>
-                       <atom:IconButton Icon="{atom:IconProvider Kind=EllipsisOutlined}"/>
+                       <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=EditOutlined}"/>
+                       <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=SettingOutlined}"/>
+                       <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=EllipsisOutlined}"/>
                    </atom:Card.Actions>
                </atom:Card>
            </StackPanel>
@@ -245,9 +245,9 @@
                     </atom:CardMetaContent.Avatar>
                 </atom:CardMetaContent>
                 <atom:Card.Actions>
-                    <atom:IconButton Icon="{atom:IconProvider Kind=EditOutlined}"/>
-                    <atom:IconButton Icon="{atom:IconProvider Kind=SettingOutlined}"/>
-                    <atom:IconButton Icon="{atom:IconProvider Kind=EllipsisOutlined}"/>
+                    <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=EditOutlined}"/>
+                    <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=SettingOutlined}"/>
+                    <atom:IconButton Icon="{atom:AntDesignIconProvider Kind=EllipsisOutlined}"/>
                 </atom:Card.Actions>
             </atom:Card>
         </gallerycontrols:ShowCaseItem>

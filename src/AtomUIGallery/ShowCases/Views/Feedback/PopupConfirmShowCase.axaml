@@ -170,7 +170,7 @@
             <atom:PopupConfirm
                 Title="Delete the task"
                 ConfirmContent="Are you sure to delete this task?"
-                Icon="{atom:IconProvider Kind=QuestionCircleOutlined}"
+                Icon="{atom:AntDesignIconProvider Kind=QuestionCircleOutlined}"
                 ConfirmStatus="Error"
                 OkText="Ok"
                 CancelText="Cancel">

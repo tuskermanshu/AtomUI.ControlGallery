@@ -50,7 +50,7 @@
                     <atom:SkeletonImage IsActive="{Binding IsSkeletonActive}"/>
                     <atom:SkeletonNode IsActive="{Binding IsSkeletonActive}" Width="160"/>
                     <atom:SkeletonNode IsActive="{Binding IsSkeletonActive}">
-                        <atom:Icon IconInfo="{atom:IconInfoProvider Kind=DotChartOutlined}"
+                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=DotChartOutlined}"
                                    NormalFilledBrush="#bfbfbf"
                                    Width="40"
                                    Height="40"/>

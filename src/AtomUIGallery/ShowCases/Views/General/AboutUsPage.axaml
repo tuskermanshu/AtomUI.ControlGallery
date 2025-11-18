@@ -40,11 +40,11 @@
 
             <StackPanel HorizontalAlignment="Center" Spacing="10" Orientation="Horizontal">
                 <atom:HyperLinkButton NavigateUri="https://qinware.com">Home Page</atom:HyperLinkButton>
-                <atom:HyperLinkButton Icon="{atom:IconProvider GiteeOutlined}"
+                <atom:HyperLinkButton Icon="{atom:AntDesignIconProvider GiteeOutlined}"
                                       NavigateUri="https://gitee.com/chinware/atomui">
                     Gitee
                 </atom:HyperLinkButton>
-                <atom:HyperLinkButton Icon="{atom:IconProvider GithubOutlined}"
+                <atom:HyperLinkButton Icon="{atom:AntDesignIconProvider GithubOutlined}"
                                       NavigateUri="https://github.com/chinware/atomui">
                     Github
                 </atom:HyperLinkButton>
