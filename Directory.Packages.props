@@ -11,9 +11,10 @@
         <PackageVersion Include="Avalonia.Win32" Version="$(AvaloniaVersion)"/>
         
         <PackageVersion Include="ReactiveUI.Avalonia" Version="11.3.8"/>
-        <PackageVersion Include="AtomUI" Version="$(AtomUIVersion)"/>
+        <PackageVersion Include="AtomUI.Core" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Desktop.Controls.DataGrid" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Desktop.Controls.ColorPicker" Version="$(AtomUIVersion)"/>
+        <PackageVersion Include="AtomUI.Icons.AntDesign" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Icons.Generator" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Generator" Version="$(AtomUIVersion)"/>
         <!-- TODO 版本是否跟随 AvaloniaVersion？-->
