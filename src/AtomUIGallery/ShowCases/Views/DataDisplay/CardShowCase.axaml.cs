@@ -1,5 +1,5 @@
 using System.Reactive.Disposables;
-using AtomUI.Desktop.Controls;
+using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia;
 using Avalonia.Controls.Primitives;
