@@ -17,16 +17,18 @@
     </ItemGroup>
     
     <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
-        <PackageReference Include="AtomUI"/>
         <PackageReference Include="AtomUI.Desktop.Controls.DataGrid"/>
         <PackageReference Include="AtomUI.Desktop.Controls.ColorPicker"/>
-        <PackageReference Include="AtomUI.Generator"/>
+        <PackageReference Include="AtomUI.Generator"
+                          OutputItemType="Analyzer"
+                          ReferenceOutputAssembly="false"
+                          PrivateAssets="all" />
     </ItemGroup>
 
     <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <ProjectReference Include="../../packages/AtomUI/packages/AtomUI/AtomUI.csproj"/>
-        <ProjectReference Include="..\..\packages\AtomUI\src\AtomUI.Desktop.Controls.DataGrid\AtomUI.Desktop.Controls.DataGrid.csproj" />
-        <ProjectReference Include="..\..\packages\AtomUI\src\AtomUI.Desktop.Controls.ColorPicker\AtomUI.Desktop.Controls.ColorPicker.csproj" />
+        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Desktop.Controls/AtomUI.Desktop.Controls.csproj"/>
+        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Desktop.Controls.DataGrid/AtomUI.Desktop.Controls.DataGrid.csproj" />
+        <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Desktop.Controls.ColorPicker/AtomUI.Desktop.Controls.ColorPicker.csproj" />
         <ProjectReference Include="../../packages/AtomUI/src/AtomUI.Generator/AtomUI.Generator.csproj" 
                           OutputItemType="Analyzer" 
                           ReferenceOutputAssembly="false" 
@@ -35,7 +37,6 @@
 
     <ItemGroup>
         <PackageReference Include="Avalonia"/>
-        <PackageReference Include="Avalonia.Desktop"/>
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics"/>
         <PackageReference Include="CommunityToolkit.Mvvm"/>
     </ItemGroup>
@@ -63,10 +64,6 @@
         <AvaloniaResource Include="Assets/OSLogos/Ubuntu.svg"/>
         <AvaloniaResource Include="Assets/OSLogos/Windows.svg"/>
         <AvaloniaResource Include="Assets/OSLogos/MacOS.svg"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="ReactiveUI.Avalonia"/>
     </ItemGroup>
 
     <ItemGroup>
