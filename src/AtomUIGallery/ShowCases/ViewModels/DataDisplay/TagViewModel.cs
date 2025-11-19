@@ -1,4 +1,4 @@
-﻿using AtomUI.Desktop.Controls;
+﻿using AtomUI.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;

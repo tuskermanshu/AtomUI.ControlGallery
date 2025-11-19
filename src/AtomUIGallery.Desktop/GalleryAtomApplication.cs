@@ -14,6 +14,7 @@ public class GalleryAtomApplication : BaseGalleryAtomApplication
         {
             builder.WithDefaultLanguageVariant(LanguageVariant.zh_CN);
             builder.WithDefaultTheme(IThemeManager.DEFAULT_THEME_ID);
+            builder.UseAlibabaSansFont();
             builder.UseDesktopControls();
             builder.UseGalleryControls();
             builder.UseDesktopDataGrid();

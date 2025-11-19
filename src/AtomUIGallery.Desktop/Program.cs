@@ -51,7 +51,7 @@ internal class Program
         return AppBuilder.Configure<GalleryAtomApplication>()
                          .UseReactiveUI()
                          .UsePlatformDetect()
-                         .WithAlibabaSansFont()
+                         // .WithAlibabaSansFont()
                          .With(new Win32PlatformOptions())
                          .LogToTrace();
         

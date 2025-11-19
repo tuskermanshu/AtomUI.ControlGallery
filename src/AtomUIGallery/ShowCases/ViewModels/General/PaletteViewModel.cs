@@ -1,5 +1,5 @@
 ﻿using System.Collections.ObjectModel;
-using AtomUI.Desktop.Controls;
+using AtomUI.Controls;
 using AtomUI.Theme.Palette;
 using ReactiveUI;
 

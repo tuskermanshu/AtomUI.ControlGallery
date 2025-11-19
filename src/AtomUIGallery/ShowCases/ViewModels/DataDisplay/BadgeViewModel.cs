@@ -1,6 +1,6 @@
 ﻿using System.Reactive.Disposables;
 using System.Reactive.Disposables.Fluent;
-using AtomUI.Desktop.Controls;
+using AtomUI.Controls;
 using ReactiveUI;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
