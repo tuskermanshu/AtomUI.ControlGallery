@@ -1,6 +1,6 @@
 ﻿using AtomUI.Controls;
 
-namespace AtomUIGallery.Icon.Application;
+namespace AtomUIGallery.Icons.Application;
 
 public partial class ApplicationIconPackage : IconPackage<ApplicationIconKind>
 {

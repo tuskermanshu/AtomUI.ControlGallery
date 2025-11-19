@@ -67,7 +67,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="../AtomUIGallery.Icon.Application/AtomUIGallery.Icon.Application.csproj"/>
+        <ProjectReference Include="..\AtomUIGallery.Icons.Application\AtomUIGallery.Icons.Application.csproj" />
     </ItemGroup>
     
 </Project>

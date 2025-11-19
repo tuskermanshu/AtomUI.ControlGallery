@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUIGallery.Desktop", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Icons.AntDesign", "packages\AtomUI\src\AtomUI.Icons.AntDesign\AtomUI.Icons.AntDesign.csproj", "{01FE0D59-9A44-4079-AA82-09152C8ED94F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUIGallery.Icon.Application", "src\AtomUIGallery.Icon.Application\AtomUIGallery.Icon.Application.csproj", "{C331F547-C642-48EC-80FC-F713BD3B29E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUIGallery.Icons.Application", "src\AtomUIGallery.Icons.Application\AtomUIGallery.Icons.Application.csproj", "{C331F547-C642-48EC-80FC-F713BD3B29E4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomUI.Desktop.Controls.DataGrid", "packages\AtomUI\src\AtomUI.Desktop.Controls.DataGrid\AtomUI.Desktop.Controls.DataGrid.csproj", "{DBC14FEB-576F-42EC-8488-19B18D4DF437}"
 EndProject

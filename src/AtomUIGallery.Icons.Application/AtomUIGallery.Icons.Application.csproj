@@ -4,6 +4,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PublishTrimmed>false</PublishTrimmed>
+        <RootNamespace>AtomUIGallery.Icon.Application</RootNamespace>
     </PropertyGroup>
 
     <PropertyGroup>
