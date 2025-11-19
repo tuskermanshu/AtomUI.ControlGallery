@@ -2,6 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="AtomUIGallery.ShowCases.Views.RadioButtonShowCase"
              xmlns:atom="https://atomui.net"
+             xmlns:antdicons="https://atomui.net/icons/antdesign"
              xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
              xmlns:showCase="clr-namespace:AtomUIGallery.ShowCases.Views">
     <gallerycontrols:ShowCasePanel>
@@ -42,33 +43,25 @@
             <WrapPanel Orientation="Horizontal" ItemSpacing="10">
                 <atom:RadioButton>
                     <StackPanel Spacing="5" Orientation="Vertical">
-                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=LineChartOutlined}" 
-                                   Width="18"
-                                   Height="18"/>
+                        <antdicons:LineChartOutlined Width="18" Height="18"/>
                         <TextBlock>LineChart</TextBlock>
                     </StackPanel>
                 </atom:RadioButton>
                 <atom:RadioButton>
                     <StackPanel Spacing="5" Orientation="Vertical">
-                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=DotChartOutlined}"
-                                   Width="18"
-                                   Height="18"/>
+                        <antdicons:DotChartOutlined Width="18" Height="18"/>
                         <TextBlock>DotChart</TextBlock>
                     </StackPanel>
                 </atom:RadioButton>
                 <atom:RadioButton>
                     <StackPanel Spacing="5" Orientation="Vertical">
-                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=BarChartOutlined}"
-                                   Width="18"
-                                   Height="18"/>
+                        <antdicons:BarChartOutlined Width="18" Height="18"/>
                         <TextBlock>BarChart</TextBlock>
                     </StackPanel>
                 </atom:RadioButton>
                 <atom:RadioButton>
                     <StackPanel Spacing="5" Orientation="Vertical">
-                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=PieChartOutlined}"
-                                   Width="18"
-                                   Height="18"/>
+                        <antdicons:PieChartOutlined Width="18" Height="18"/>
                         <TextBlock>PieChart</TextBlock>
                     </StackPanel>
                 </atom:RadioButton>

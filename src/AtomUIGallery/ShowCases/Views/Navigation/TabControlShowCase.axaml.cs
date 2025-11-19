@@ -34,7 +34,7 @@ public partial class TabControlShowCase : ReactiveUserControl<TabControlViewMode
                 {
                     Header  = "Tab 1",
                     Content = "Tab Content 1",
-                    Icon    = AntDesignIconPackage.WechatFilled()
+                    Icon    = new WechatFilled()
                 });
                 
                 viewModel.TabItemDataSource.Add(new MyTabItemData()
@@ -42,7 +42,7 @@ public partial class TabControlShowCase : ReactiveUserControl<TabControlViewMode
                     Header  = "Tab 2",
                     Content = "Tab Content 2",
                     IsClosable = true,
-                    Icon = AntDesignIconPackage.LinuxOutlined()
+                    Icon = new LinuxOutlined()
                 });
                 
                 viewModel.TabStripItemDataSource.Add(new TabItemData()

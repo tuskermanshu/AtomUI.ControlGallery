@@ -9,8 +9,8 @@ public class IconInfoItem : TemplatedControl
     public static readonly StyledProperty<string> IconNameProperty = 
         AvaloniaProperty.Register<IconInfoItem, string>(nameof(IconName));
     
-    public static readonly StyledProperty<IconInfo> IconInfoProperty = 
-        AvaloniaProperty.Register<IconInfoItem, IconInfo>(nameof(IconInfo));
+    public static readonly StyledProperty<Icon> IconProperty = 
+        AvaloniaProperty.Register<IconInfoItem, Icon>(nameof(Icon));
 
     public string IconName
     {
@@ -18,9 +18,9 @@ public class IconInfoItem : TemplatedControl
         set => SetValue(IconNameProperty, value);
     }
     
-    public IconInfo IconInfo
+    public Icon Icon
     {
-        get => GetValue(IconInfoProperty);
-        set => SetValue(IconInfoProperty, value);
+        get => GetValue(IconProperty);
+        set => SetValue(IconProperty, value);
     }
 }

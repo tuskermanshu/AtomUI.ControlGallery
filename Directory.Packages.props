@@ -9,7 +9,8 @@
         <PackageVersion Include="Avalonia.Controls.ColorPicker" Version="$(AvaloniaVersion)"/>
         <PackageVersion Include="Avalonia.Controls.DataGrid" Version="$(AvaloniaVersion)"/>
         <PackageVersion Include="Avalonia.Win32" Version="$(AvaloniaVersion)"/>
-        <PackageVersion Include="ReactiveUI.Avalonia" Version="$(AvaloniaVersion)"/>
+        
+        <PackageVersion Include="ReactiveUI.Avalonia" Version="11.3.8"/>
         <PackageVersion Include="AtomUI" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Desktop.Controls.DataGrid" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Desktop.Controls.ColorPicker" Version="$(AtomUIVersion)"/>

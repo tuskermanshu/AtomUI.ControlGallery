@@ -41,19 +41,19 @@ public partial class
         nodes.Add(new MenuItemData()
         {
             Header       = "Cut",
-            Icon         = AntDesignIconPackage.ScissorOutlined(),
+            Icon         = new ScissorOutlined(),
             InputGesture = KeyGesture.Parse("Ctrl+X"),
         });
         nodes.Add(new MenuItemData()
         {
             Header       = "Copy",
-            Icon         = AntDesignIconPackage.CopyOutlined(),
+            Icon         = new CopyOutlined(),
             InputGesture = KeyGesture.Parse("Ctrl+C"),
         });
         nodes.Add(new MenuItemData()
         {
             Header       = "Delete",
-            Icon         = AntDesignIconPackage.CopyOutlined(),
+            Icon         = new CopyOutlined(),
             InputGesture = KeyGesture.Parse("Ctrl+D"),
         });
         nodes.Add(new MenuItemData() {
@@ -62,7 +62,7 @@ public partial class
                     new MenuItemData()
                     {
                         Header       = "Paste",
-                        Icon         = AntDesignIconPackage.FileDoneOutlined(),
+                        Icon         = new FileDoneOutlined(),
                         InputGesture = KeyGesture.Parse("Ctrl+P")
                     },
                     new MenuItemData()
@@ -129,25 +129,25 @@ public partial class
         {
             Header  = "Option 4",
             ItemKey = "Option4",
-            Icon = AntDesignIconPackage.TwitterOutlined()
+            Icon = new TwitterOutlined()
         };
         var nodes = new List<INavMenuItemData>();
         nodes.Add(new NavMenuItemData()
         {
             Header  = "Navigation One",
-            Icon    = AntDesignIconPackage.MailOutlined(),
+            Icon    = new MailOutlined(),
             ItemKey = "1"
         });
         nodes.Add(new NavMenuItemData()
         {
             Header  = "Navigation Two",
-            Icon    = AntDesignIconPackage.AppstoreOutlined(),
+            Icon    = new AppstoreOutlined(),
             ItemKey = "2"
         });
         nodes.Add(new NavMenuItemData()
         {
             Header  = "Navigation Three - Submenu",
-            Icon    = AntDesignIconPackage.SettingOutlined(),
+            Icon    = new SettingOutlined(),
             ItemKey = "3",
             Children = [new NavMenuItemData()
             {
@@ -192,18 +192,18 @@ public partial class
         {
             Header       = "Cut",
             InputGesture = KeyGesture.Parse("Ctrl+X"),
-            Icon = AntDesignIconPackage.ScissorOutlined(),
+            Icon = new ScissorOutlined(),
         });
         nodes.Add(new MenuItemData() {
                 Header       = "Copy",
                 InputGesture = KeyGesture.Parse("Ctrl+C"),
-                Icon         = AntDesignIconPackage.CopyOutlined(),
+                Icon         = new CopyOutlined(),
             }
         );
         nodes.Add(new MenuItemData() {
                 Header       = "Delete",
                 InputGesture = KeyGesture.Parse("Ctrl+D"),
-                Icon         = AntDesignIconPackage.DeleteOutlined(),
+                Icon         = new DeleteOutlined(),
             }
         );
         
@@ -214,7 +214,7 @@ public partial class
                     {
                         Header       = "Paste",
                         InputGesture = KeyGesture.Parse("Ctrl+P"),
-                        Icon         = AntDesignIconPackage.FileDoneOutlined(),
+                        Icon         = new FileDoneOutlined(),
                     },
                     new MenuSeparatorData(),
                     new MenuItemData()

@@ -6,6 +6,7 @@
              x:Class="AtomUIGallery.ShowCases.Views.QRCodeShowCase"
              xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
              xmlns:atom="https://atomui.net"
+             xmlns:antdicons="https://atomui.net/icons/antdesign"
              xmlns:viewModels="clr-namespace:AtomUIGallery.ShowCases.ViewModels"
              x:DataType="viewModels:QRCodeViewModel"
              x:CompileBindings="True">
@@ -52,8 +53,7 @@
                         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
                                         VerticalAlignment="Center" Spacing="5">
-                                <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CloseCircleFilled}"
-                                           NormalFilledBrush="Red" Width="16" Height="16" />
+                                <antdicons:CloseCircleFilled NormalFilledBrush="Red" Width="16" Height="16" />
                                 <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">二维码过期</atom:TextBlock>
                             </StackPanel>
                             <atom:Button HorizontalAlignment="Center"
@@ -68,8 +68,7 @@
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Spacing="5">
-                            <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CheckCircleFilled}"
-                                       NormalFilledBrush="Green" Width="16" Height="16" />
+                            <antdicons:CheckCircleFilled NormalFilledBrush="Green" Width="16" Height="16" />
                             <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">已扫描</atom:TextBlock>
                         </StackPanel>
                     </atom:QRCode.ScannedContent>

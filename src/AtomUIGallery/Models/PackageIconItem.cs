@@ -5,11 +5,11 @@ namespace AtomUIGallery.Models;
 public record PackageIconItem
 {
     public string IconName { get; set; }
-    public IconInfo IconInfo { get; set; }
+    public Icon Icon { get; set; }
 
-    public PackageIconItem(string iconName, IconInfo iconInfo)
+    public PackageIconItem(string iconName, Icon iconInfo)
     {
         IconName = iconName;
-        IconInfo = iconInfo;
+        Icon = iconInfo;
     }
 }

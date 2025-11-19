@@ -2,6 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="AtomUIGallery.ShowCases.Views.ToggleSwitchShowCase"
              xmlns:atom="https://atomui.net"
+             xmlns:antdicons="https://atomui.net/icons/antdesign"
              xmlns:gallerycontrols="clr-namespace:AtomUIGallery.Controls"
              xmlns:showCase="clr-namespace:AtomUIGallery.ShowCases.Views">
     <gallerycontrols:ShowCasePanel>
@@ -47,10 +48,10 @@
                     OffContent="{atom:AntDesignIconProvider Kind=WechatOutlined}"/>
                 <atom:ToggleSwitch SizeType="Small">
                     <atom:ToggleSwitch.OnContent>
-                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CheckOutlined}" />
+                        <antdicons:CheckOutlined/>
                     </atom:ToggleSwitch.OnContent>
                     <atom:ToggleSwitch.OffContent>
-                        <atom:Icon IconInfo="{atom:AntDesignIconInfoProvider Kind=CloseOutlined}" />
+                        <antdicons:CloseOutlined/>
                     </atom:ToggleSwitch.OffContent>
                 </atom:ToggleSwitch>
             </StackPanel>

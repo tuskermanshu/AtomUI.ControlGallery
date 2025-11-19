@@ -199,7 +199,7 @@ public partial class NotificationShowCase : ReactiveUserControl<NotificationView
         _basicManager?.Show(new Notification(
             "Notification Title",
             "This is the content of the notification. This is the content of the notification. This is the content of the notification.",
-            icon: AntDesignIconPackage.SettingOutlined()
+            icon: new SettingOutlined()
         ));
     }
 

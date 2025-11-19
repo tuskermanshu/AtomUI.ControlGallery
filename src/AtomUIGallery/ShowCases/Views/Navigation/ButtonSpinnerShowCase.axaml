@@ -253,7 +253,7 @@
                 <atom:ButtonSpinner
                     Status="Warning"
                     Width="400"
-                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined}"
+                    InnerLeftContent="{atom:AntDesignIconProvider Kind=ClockCircleOutlined, NormalFilledColor=Red}"
                     HorizontalAlignment="Left"
                     StyleVariant="Borderless">
                     <atom:TextBlock
