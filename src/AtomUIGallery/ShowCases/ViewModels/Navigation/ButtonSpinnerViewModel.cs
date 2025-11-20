@@ -1,6 +1,8 @@
 ﻿using AtomUI.Controls;
 using Avalonia.Controls;
 using ReactiveUI;
+using ButtonSpinner = AtomUI.Desktop.Controls.ButtonSpinner;
+using TextBlock = AtomUI.Desktop.Controls.TextBlock;
 
 namespace AtomUIGallery.ShowCases.ViewModels;
 
