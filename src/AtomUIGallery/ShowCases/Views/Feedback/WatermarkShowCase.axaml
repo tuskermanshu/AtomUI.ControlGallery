@@ -6,7 +6,7 @@
     <gallerycontrols:ShowCasePanel>
 
         <gallerycontrols:ShowCaseItem Title="Basic" Description="The most basic usage.">
-            <Border Height="300"          HorizontalAlignment="Stretch" atom:Watermark.Glyph="{atom:TextGlyph 'AtomUI'}" />
+            <Border Height="300" HorizontalAlignment="Stretch" atom:Watermark.Glyph="{atom:TextGlyph 'AtomUI'}" />
         </gallerycontrols:ShowCaseItem>
 
         <gallerycontrols:ShowCaseItem Title="Multi-line watermark"
