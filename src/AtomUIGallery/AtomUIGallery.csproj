@@ -17,6 +17,7 @@
     </ItemGroup>
     
     <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+        <PackageReference Include="AtomUI.Desktop.Controls"/>
         <PackageReference Include="AtomUI.Desktop.Controls.DataGrid"/>
         <PackageReference Include="AtomUI.Desktop.Controls.ColorPicker"/>
         <PackageReference Include="AtomUI.Generator"
@@ -36,7 +37,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia"/>
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics"/>
         <PackageReference Include="CommunityToolkit.Mvvm"/>
     </ItemGroup>
@@ -67,7 +67,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\AtomUIGallery.Icons.Application\AtomUIGallery.Icons.Application.csproj" />
+        <ProjectReference Include="../AtomUIGallery.Icons.Application/AtomUIGallery.Icons.Application.csproj" />
     </ItemGroup>
     
 </Project>

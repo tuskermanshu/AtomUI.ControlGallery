@@ -3,22 +3,17 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     </PropertyGroup>
     <ItemGroup>
-        <PackageVersion Include="Avalonia" Version="$(AvaloniaVersion)"/>
-        <PackageVersion Include="Avalonia.Desktop" Version="$(AvaloniaVersion)"/>
-        <PackageVersion Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)"/>
-        <PackageVersion Include="Avalonia.Controls.ColorPicker" Version="$(AvaloniaVersion)"/>
-        <PackageVersion Include="Avalonia.Controls.DataGrid" Version="$(AvaloniaVersion)"/>
-        <PackageVersion Include="Avalonia.Win32" Version="$(AvaloniaVersion)"/>
         
+        <PackageVersion Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)"/>
         <PackageVersion Include="ReactiveUI.Avalonia" Version="11.3.8"/>
         <PackageVersion Include="AtomUI.Core" Version="$(AtomUIVersion)"/>
+        <PackageVersion Include="AtomUI.Desktop.Controls" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Desktop.Controls.DataGrid" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Desktop.Controls.ColorPicker" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Icons.AntDesign" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Icons.Generator" Version="$(AtomUIVersion)"/>
         <PackageVersion Include="AtomUI.Generator" Version="$(AtomUIVersion)"/>
         <!-- TODO 版本是否跟随 AvaloniaVersion？-->
-        <PackageVersion Include="Avalonia.Svg" Version="11.3.0"/>
         <PackageVersion Include="Avalonia.Controls.TreeDataGrid" Version="11.1.1"/>
         <PackageVersion Include="System.Reactive" Version="6.1.1"/>
 
